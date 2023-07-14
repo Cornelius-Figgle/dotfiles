@@ -1,0 +1,101 @@
+theme = "no_bg"  # allows the terminal to configure bg colour (and use transparency)
+
+[editor]
+scrolloff = 5
+mouse = true
+middle-click-paste = true
+scroll-lines = 3
+shell = ["bash"]
+line-number = "absolute"
+cursorline = true
+cursorcolumn = true
+# gutters configured below
+auto-completion = true
+auto-format = true
+auto-save = false
+completion-trigger-len = 3
+completion-replace = true
+auto-info = true
+true-color = false
+undercurl = false
+rulers = [80]
+bufferline = "never"
+color-modes = true
+text-width = 79
+workspace-lsp-roots = []
+
+[editor.statusline]
+left = ["mode", "spinner", "file-modification-indicator", "file-base-name", "version-control"]
+center = []
+right = ["diagnostics", "position", "total-line-numbers", "spacer", "file-line-ending", "file-encoding"]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+enable = true
+display-messages = false
+auto-signature-help = true
+display-inlay-hints = false
+display-signature-help-docs = true
+snippets = true
+goto-reference-include-declaration = true
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+
+[editor.file-picker]
+hidden = false
+follow-symlinks = true
+deduplicate-links = false
+parents = true
+ignore = true
+git-ignore = false  # not ignoring .gitignore'd files bc I still want to see those (build files, secrets, temp files etc)
+git-global = false
+git-exclude = false
+# max-depth = "None"  # `"None"` is not a valid toml datatype
+
+[editor.auto-pairs]
+"(" = ")"
+"{" = "}"
+"[" = "]"
+'"' = '"'
+"'" = "'"
+"`" = "`"
+"<" = ">"
+
+[editor.search]
+smart-case = true
+wrap-around = true
+
+[editor.whitespace.render]
+space = "none"
+tab = "all"
+newline = "none"
+
+[editor.indent-guides]
+render = true
+character = "┆"  # example chars: "▏", "┆", "┊", "⸽"
+skip-levels = 0
+
+[editor.gutters]
+layout = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+
+[editor.gutters.line-numbers]
+min-width = 3
+
+[editor.soft-wrap]
+enable = false
+max-wrap = 20
+max-indent-retain = 40
+wrap-indicator = "↪"
+wrap-at-text-width = false
+
+[keys.normal]
+C-s = ":w"
+r = ":config-reload"
+p = ":clipboard-paste-after"
+y = ":clipboard-yank"
