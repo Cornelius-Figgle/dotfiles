@@ -26,4 +26,6 @@
 "config/helix/themes" = "~/.config/helix/themes"
 
 [hypr.files]
-"config/hypr/hyprland.conf" = "~/.config/hypr/hypland.conf"
+"config/hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
+"config/hypr/hyprland.conf" = "~/.config/hypr/hyprpaper.conf"
+"config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
