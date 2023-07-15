@@ -18,7 +18,7 @@ dotfiles/
 │   │   │   └── ...
 │   │   ├── install.ps1
 │   │   └── WALLPAPER
-│   ├── Quandale-Butter/
+│   ├── Quandale-Butterson/
 │   │   ├── config/
 │   │   │   └── ...
 │   │   ├── install.ps1
