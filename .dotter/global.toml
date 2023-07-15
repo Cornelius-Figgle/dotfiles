@@ -18,6 +18,8 @@
 [dunst.files]
 "config/dunst/config.conf" = "~/.config/dunst/dunstrc"
 
+[glaze-wm]
+depends = ["helix", "pwsh", "wt"]
 [glaze-wm.files]
 "config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
 
@@ -25,7 +27,13 @@
 "config/helix/config.toml" = "~/.config/helix/config.toml"
 "config/helix/themes" = "~/.config/helix/themes"
 
+[hypr]
+depends = ["bash", "dunst", "helix", "kitty", "ly", "rofi", "swaylock", "waybar"]
 [hypr.files]
 "config/hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
 "config/hypr/hyprland.conf" = "~/.config/hypr/hyprpaper.conf"
 "config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
+
+[kitty.files]
+"config/kitty/config.conf" = "~/.config/kitty/config"
+"config/kitty/curent-theme.conf" = "~/.config/kitty/current-theme.conf"
