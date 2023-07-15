@@ -1,0 +1,70 @@
+/* note: padding is inner offset, margin is outer */
+/* note: offset are (top left bottom right) */
+
+/* tools:  https://www.hexcolortool.com/#404040,0.5 */
+/* colours:
+	- bg: 0% Hue, 0% Sat, 25% Light, 50% Opac
+		- rgba(64, 64, 64, 0.5)
+	- black: 0% Hue, 0% Sat, 10% Light, 100% Opac
+		- #1a1a1a
+	- white: 0% Hue, 0% Sat, 75% Light, 100% Opac
+		- #bfbfbf
+	- grey: 0% Hue, 0% Sat, 50% Light, 100% Opac
+		- #808080
+	*/
+
+
+* {
+	font-family: CaskaydiaCove Nerd Font;
+	font-size: 14px;
+	font-weight: 900;
+}
+
+window#waybar {  /* note: bg of the bar */
+	background-color: rgba(64, 64, 64, 0.5);
+	transition-property: background-color;
+	transition-duration: .5s;
+	border-radius: 10px;
+}
+
+
+/* note: list of all modules :( */
+#pulseaudio,
+#backlight,
+#network,
+#battery,
+#clock,
+#custom-power-menu {
+	color: #bfbfbf;
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	padding: 10px 5px;
+	margin: 2.5px 5px;
+}
+
+/* note: module-specific formatting */
+/* note: defining workspaces seperately to make it a bit cleaner */
+/* note: redefined margins are for the top and bottom modules to ensure uniform offsets*/
+#workspaces {
+	background-color: #1a1a1a;
+	border-radius: 10px;
+	padding: 10px 5px;
+	margin: 5px 5px 2.5px 5px;
+}
+#workspaces button {
+	color: #bfbfbf;
+}
+#workspaces button:hover {
+	/* info: https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+	box-shadow: inherit;
+	text-shadow: inherit;
+	background: #1a1a1a;
+	/* old: border: none; */
+}
+#workspaces button.active {
+	color: #808080;
+}
+
+#custom-power-menu {
+	margin: 2.5px 5px 5px 5px;
+}

@@ -1,0 +1,57 @@
+{
+	"position": "left",
+	// "height": 0,  // auto height
+	"width": 60, // auto width
+	"margin": "10 0 10 10",
+	// "spacing": 5,
+
+	"modules-left": [
+		"wlr/workspaces",
+	],
+	"modules-right": [
+		"pulseaudio",
+		"backlight",
+		"network",
+		"battery",
+		"clock",
+		"custom/power-menu",
+	],
+
+
+	"wlr/workspaces" : {
+		"format": "{icon}",
+		"on-click": "activate",
+	},
+
+	"pulseaudio": {
+		"format": "AUD\n{volume}%",
+		"format-bluetooth": "BTAUD\n{volume}%",
+		"format-bluetooth-muted": "BT MU\n{volume}%",
+		"format-muted": "MUTE\n{volume}%",
+		"on-click": "bluetoothctl connect B2:52:23:15:1A:1C",  // my headphones
+	},
+	"backlight": {
+		"format": "DISP\n{percent}%",
+		"on-click": "~/source/personal/src/deltas/media_delta.sh bright down 100",
+		"on-scroll-down": "~/source/personal/src/deltas/media_delta.sh bright down 5",
+		"on-scroll-up": "~/source/personal/src/deltas/media_delta.sh bright up 5",
+	},
+	"network": {
+    "format-wifi": "WIFI\n{signalStrength}%",
+    "format-ethernet": "ETH",
+    "format-linked": "LOAD\nING",
+    "format-disconnected": "NO\nCONN",
+    "tooltip-format": "{ipaddr}/{cidr} via {ifname}",
+	},
+	"battery": {
+		"format": "BAT\n{capacity}%",
+		"on-click": "~/source/personal/src/deltas/power-profiles",
+	},
+	"clock": {
+		"format": "{:%H\n%M}",
+	},
+	"custom/power-menu": {
+		"format": "⏻",
+		"on-click": "~/source/personal/src/deltas/powermenu.sh",
+	},
+}
