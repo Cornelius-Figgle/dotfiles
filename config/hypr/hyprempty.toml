@@ -1,0 +1,2 @@
+command = "/bin/bash"
+args = ["/home/max/source/personal/src/deltas/launcher.sh"]
