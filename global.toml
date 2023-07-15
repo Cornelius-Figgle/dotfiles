@@ -11,3 +11,19 @@
 
 [bash.files]
 "config/bash/config.sh" = "~/.bashrc"
+
+[cava.files]
+"config/cava/config.conf" = "~/.config/cava/config"
+
+[dunst.files]
+"config/dunst/config.conf" = "~/.config/dunst/dunstrc"
+
+[glaze-wm.files]
+"config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
+
+[helix.files]
+"config/helix/config.toml" = "~/.config/helix/config.toml"
+"config/helix/themes" = "~/.config/helix/themes"
+
+[hypr.files]
+"config/hypr/hyprland.conf" = "~/.config/hypr/hypland.conf"
