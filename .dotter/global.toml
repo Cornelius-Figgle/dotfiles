@@ -34,6 +34,11 @@ depends = ["bash", "dunst", "helix", "kitty", "ly", "rofi", "swaylock", "waybar"
 "config/hypr/hyprland.conf" = "~/.config/hypr/hyprpaper.conf"
 "config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
 
+[kitty]
+depends = ["bash"]
 [kitty.files]
 "config/kitty/config.conf" = "~/.config/kitty/config"
 "config/kitty/curent-theme.conf" = "~/.config/kitty/current-theme.conf"
+
+[ly.files]
+"config/ly/config.ini" = "/etc/ly/config.ini"
