@@ -1,9 +1,7 @@
 includes = [".dotter/include/windows.toml"]
 packages = ["bash", "glaze-wm", "helix", "pypoetry", "winfetch", "wt"]
 
-[glaze-wm.variables]
-primary_monitor = 2
-
 [files]
 
 [variables]
+primary_monitor = 2
