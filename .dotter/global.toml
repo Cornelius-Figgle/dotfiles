@@ -51,7 +51,7 @@ sh_cmd = "['bash']"
 
 [spicetify.files]
 "config/spicetify/config.ini" = "~/.config/spicetify/config-xpui.ini"
-"config/spicetify/Themes" = {target="~/.config/spicetify/themes", type="symbolic", recursive=false}
+"config/spicetify/Themes" = {target="~/.config/spicetify/Themes", type="symbolic", recursive=false}
 "config/spicetify/Extensions" = {target="~/.config/spicetify/Extensions", type="symbolic", recursive=false}
 
 [swaylock.files]
