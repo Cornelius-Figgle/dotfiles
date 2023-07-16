@@ -35,15 +35,6 @@
             "keys": "ctrl+n"
         },
         {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
-        },
-        {
             "command": "unbound",
             "keys": "ctrl+shift+w"
         },
@@ -72,15 +63,17 @@
             "keys": "win+`"
         },
         {
-            "command": "toggleFocusMode",
-            "keys": "ctrl+shift+h"
-        },
-        {
             "command": 
             {
-                "action": "quakeMode"
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
             },
-            "keys": "alt+`"
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": "toggleFocusMode",
+            "keys": "ctrl+shift+h"
         },
         {
             "command": 
@@ -88,6 +81,13 @@
                 "action": "newTab"
             },
             "keys": "ctrl+t"
+        },
+        {
+            "command": 
+            {
+                "action": "quakeMode"
+            },
+            "keys": "alt+`"
         }
     ],
     "alwaysShowNotificationIcon": false,
@@ -99,12 +99,6 @@
     "firstWindowPreference": "defaultProfile",
     "initialCols": 144,
     "initialRows": 38,
-    "newTabMenu": 
-    [
-        {
-            "type": "remainingProfiles"
-        }
-    ],
     "profiles": 
     {
         "defaults": 
@@ -458,8 +452,7 @@
             },
             "window": 
             {
-                "applicationTheme": "dark",
-                "useMica": false
+                "applicationTheme": "dark"
             }
         },
         {
@@ -472,8 +465,7 @@
             },
             "window": 
             {
-                "applicationTheme": "light",
-                "useMica": false
+                "applicationTheme": "light"
             }
         },
         {
@@ -486,8 +478,7 @@
             },
             "window": 
             {
-                "applicationTheme": "system",
-                "useMica": false
+                "applicationTheme": "system"
             }
         }
     ],
