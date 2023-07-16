@@ -57,4 +57,4 @@ sh_cmd = "['bash']"
 "config/winfetch/config.ps1" = "~/.config/winfetch/config.ps1"
 
 [wt.files]
-"config/wt/config.json" = "~/scoop/apps/windows-terminal/current/settings/settings.json"
+"config/wt/config.json" = "~/AppData/Local/Microsoft/Windows Terminal/settings.json"
