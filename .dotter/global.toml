@@ -12,6 +12,7 @@
 
 [glaze-wm.files]
 "config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
+"scripts/autostart_wrapper.vbs" = "~/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/autostart_wrapper.vbs"
 [glaze-wm.variables]
 primary_monitor = 1
 
