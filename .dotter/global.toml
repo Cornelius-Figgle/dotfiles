@@ -43,9 +43,6 @@ sh_cmd = "['bash']"
 [neofetch.files]
 "config/neofetch/config.conf" = "~/.config/neofetch/config.conf"
 
-# [pwsh.files]
-# "config/pwsh/config.ps1" = ""
-
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
 

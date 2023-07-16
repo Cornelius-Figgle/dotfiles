@@ -1,16 +1,16 @@
 # pwsh config management & auto-creation
 
 $CONFIG_DATA = @'
-# btw this file should be created automatically if it doesn't already exist
+# btw this file should be created automatically if it does not already exist
 # and should not be modified
 
-# this file exists bc `mklink` is stupid and doesn't let me symlink across networked drives
+# this file exists bc `mklink` is stupid and does not let me symlink across networked drives
 # and pwsh stores its files in `U:\My Documents\PowerShell` (on my setup at least - I have `U:` mapped to a server user folder or smth)
 # so we get around this by just copying it into this file
 
 try {
     # copy in main config
-    . "$HOME\source\dotfiles\pwsh\config.ps1"
+    . "$env:userprofile\source\dotfiles\pwsh\config.ps1"
 } catch [System.Exception] {
     # if file not found
     try {
@@ -29,4 +29,4 @@ Write-Output $CONFIG_DATA | Out-File -FilePath $SYS_CFG_PATH  # writes the file 
 Write-Output "sys config file written"
 
 Write-Output "reloading pwsh profile now"
-& $profile  # reloads profile
+& $profile
