@@ -18,17 +18,9 @@ function mimic3 {
 }
 
 
-# using an artificial try/catch here
-# catches the errors with `&&` and runs the catch with `||`
-# for more info: https://stackoverflow.com/a/22010339/19860022
-{
-	if ! [ $1 ]; then
-		# allows us to pass a hostname through the cli args
-		$HOSTNAME &&
-	else
-		$1 &&
-	fi
-} || {
-	# save log for exception
-	:
-}
+if ! [ $1 ]; then
+	# allows us to pass a hostname through the cli args
+	$HOSTNAME
+else
+	$1
+fi
