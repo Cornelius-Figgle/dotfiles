@@ -12,6 +12,8 @@
 
 [glaze-wm.files]
 "config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
+[glaze-wm.variables]
+primary_monitor = 1
 
 [helix.files]
 "config/helix/config.toml" = "~/.config/helix/config.toml"
