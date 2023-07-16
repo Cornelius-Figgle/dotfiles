@@ -16,6 +16,9 @@
 [glaze-wm.variables]
 primary_monitor = 1
 
+[git.files]
+"config/git/config.ini" = "~/.gitconfig"
+
 [helix.files]
 "config/helix/config.toml" = "~/.config/helix/config.toml"
 "config/helix/themes" = "~/.config/helix/themes"
