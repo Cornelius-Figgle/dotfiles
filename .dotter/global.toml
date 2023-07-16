@@ -34,6 +34,9 @@ sh_cmd = "['bash']"
 [ly.files]
 "config/ly/config.ini" = "/etc/ly/config.ini"
 
+[neofetch.files]
+"config/neofetch/config.conf" = "~/.config/neofetch/config.conf"
+
 # [pwsh.files]
 # "config/pwsh/config.ps1" = ""
 
