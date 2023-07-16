@@ -52,6 +52,11 @@ sh_cmd = "['bash']"
 # [rofi.files]
 # 
 
+[spicetify.files]
+"config/spicetify/config.ini" = "~/.config/spicetify/config-xpui.ini"
+"config/spicetify/Themes" = {target="~/.config/spicetify/themes", type="symbolic", recursive=false}
+"config/spicetify/Extensions" = {target="~/.config/spicetify/Extensions", type="symbolic", recursive=false}
+
 [swaylock.files]
 "config/swaylock/config" = "~/.config/swaylock/config"
 

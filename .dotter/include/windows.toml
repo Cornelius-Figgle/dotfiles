@@ -15,3 +15,9 @@ sh_cmd = "['pwsh', '-c']"
 
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/AppData/Roaming/pypoetry/config.toml"
+
+[spicetify.files]
+"config/spicetify/config.ini" = "~/appdata/roaming/spicetify/config-xpui.ini"
+"config/spicetify/Themes" = {target="~/appdata/roaming/spicetify/themes", type="symbolic", recursive=false}
+"config/spicetify/Extensions" = {target="~/appdata/roaming/spicetify/Extensions", type="symbolic", recursive=false}
+
