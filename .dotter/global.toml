@@ -18,6 +18,9 @@ primary_monitor = 1
 
 [git.files]
 "config/git/config.ini" = "~/.gitconfig"
+[git.variables]
+autocrlf = "input"
+gh_path = "/usr/bin/gh"
 
 [helix.files]
 "config/helix/config.toml" = "~/.config/helix/config.toml"
