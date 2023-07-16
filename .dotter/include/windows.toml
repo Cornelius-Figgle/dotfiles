@@ -6,6 +6,8 @@
 [helix.files]
 "config/helix/config.toml" = "~/appdata/roaming/helix/config.toml"
 "config/helix/themes" = "~/appdata/roaming/helix/themes"
+[helix.variables]
+sh_cmd = "['pwsh', '-c']"
 
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/AppData/Roaming/pypoetry/config.toml"
