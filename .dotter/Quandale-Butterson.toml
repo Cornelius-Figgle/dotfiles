@@ -1,5 +1,5 @@
 includes = [".dotter/include/windows.toml"]
-packages = ["bash", "glaze-wm", "helix", "pypoetry", "winfetch", "wt"]
+packages = ["bash", "glaze-wm", "helix", "pypoetry", "spicetify", "winfetch", "wt"]
 
 [files]
 
