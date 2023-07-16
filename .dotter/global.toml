@@ -36,3 +36,25 @@
 
 [ly.files]
 "config/ly/config.ini" = "/etc/ly/config.ini"
+
+# [pwsh.files]
+# "config/pwsh/config.ps1" = ""
+
+[pypoetry.files]
+"config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
+
+# [rofi.files]
+# 
+
+[swaylock.files]
+"config/swaylock/config" = "~/.config/swaylock/config"
+
+[waybar.files]
+"config/waybar/config.json" = "~/.config/waybar/config"
+"config/waybar/style.css" = "~/.config/waybar/style.css"
+
+[winfetch.files]
+"config/winfetch/config.ps1" = "~/.config/winfetch/config.ps1"
+
+[wt]
+"config/wt/config.json" = "~/scoop/apps/windows-terminal/current/settings/settings.json"
