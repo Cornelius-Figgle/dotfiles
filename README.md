@@ -11,20 +11,20 @@ dotter deploy --force
 # Layout
 
 ```
-dotfiles
-  .dotter
-    include
-      windows.toml
-    NightCrawler.toml
-    Quandale-Butterson.toml
-    global.toml
-    mimic3.toml
-    rosa.toml
-  config
-    ...
-  scripts
-    ...
-  .gitignore
-  LICENSE
-  README.md
+dotfiles/
+├── .dotter/
+│   ├── include/
+│   │   └── windows.toml
+│   ├── NightCrawler.toml
+│   ├── Quandale-Butterson.toml
+│   ├── global.toml
+│   ├── mimic3.toml
+│   └── rosa.toml
+├── config/
+│   └── ...
+├── scripts/
+│   └── ...
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
