@@ -1,0 +1,6 @@
+includes = []
+packages = ["bash", "cava", "dunst", "git", "helix", "hypr", "kitty", "ly", "neofetch", "pypoetry", "spicetify", "swaylock", "waybar"]
+
+[files]
+
+[variables]
