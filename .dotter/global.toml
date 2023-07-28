@@ -1,68 +1,68 @@
 # global config location for `dotter`
 # maps the files in the git repo to where the system expects them to be
 
-[bash.files]
-"config/bash/config.sh" = "~/.bashrc"
+#[bash.files]
+#"config/bash/config.sh" = "~/.bashrc"
 
-[cava.files]
-"config/cava/config.conf" = "~/.config/cava/config"
+#[cava.files]
+#"config/cava/config.conf" = "~/.config/cava/config"
 
-[dunst.files]
-"config/dunst/config.conf" = "~/.config/dunst/dunstrc"
+#[dunst.files]
+#"config/dunst/config.conf" = "~/.config/dunst/dunstrc"
 
-[glaze-wm.files]
-"config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
-"scripts/autostart_wrapper.vbs" = "~/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/autostart_wrapper.vbs"
-[glaze-wm.variables]
-primary_monitor = 1
+#[glaze-wm.files]
+#"config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
+#"scripts/autostart_wrapper.vbs" = "~/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/autostart_wrapper.vbs"
+#[glaze-wm.variables]
+#primary_monitor = 1
 
-[git.files]
-"config/git/config.ini" = "~/.gitconfig"
-[git.variables]
-autocrlf = "input"
-gh_path = "/usr/bin/gh"
+#[git.files]
+#"config/git/config.ini" = "~/.gitconfig"
+#[git.variables]
+#autocrlf = "input"
+#gh_path = "/usr/bin/gh"
 
-[helix.files]
-"config/helix/config.toml" = "~/.config/helix/config.toml"
-"config/helix/themes" = {target="~/.config/helix/themes", type="symbolic", recursive=false}
-[helix.variables]
-sh_cmd = "['bash']"
+#[helix.files]
+#"config/helix/config.toml" = "~/.config/helix/config.toml"
+#"config/helix/themes" = {target="~/.config/helix/themes", type="symbolic", recursive=false}
+#[helix.variables]
+#sh_cmd = "['bash']"
 
-[hypr.files]
-"config/hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
-"config/hypr/hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"
-"config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
+#[hypr.files]
+#"config/hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
+#"config/hypr/hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"
+#"config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
 
-[kitty.files]
-"config/kitty/config.conf" = "~/.config/kitty/config"
-"config/kitty/curent-theme.conf" = "~/.config/kitty/current-theme.conf"
+#[kitty.files]
+#"config/kitty/config.conf" = "~/.config/kitty/config"
+#"config/kitty/curent-theme.conf" = "~/.config/kitty/current-theme.conf"
 
-[ly.files]
-"config/ly/config.ini" = "/etc/ly/config.ini"
+#[ly.files]
+#"config/ly/config.ini" = "/etc/ly/config.ini"
 
-[neofetch.files]
-"config/neofetch/config.conf" = "~/.config/neofetch/config.conf"
+#[neofetch.files]
+#"config/neofetch/config.conf" = "~/.config/neofetch/config.conf"
 
-[pypoetry.files]
-"config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
+#[pypoetry.files]
+#"config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
 
 # [rofi.files]
 # 
 
-[spicetify.files]
-"config/spicetify/config.ini" = "~/.config/spicetify/config-xpui.ini"
-"config/spicetify/Themes" = {target="~/.config/spicetify/Themes", type="symbolic", recursive=false}
-"config/spicetify/Extensions" = {target="~/.config/spicetify/Extensions", type="symbolic", recursive=false}
+#[spicetify.files]
+#"config/spicetify/config.ini" = "~/.config/spicetify/config-xpui.ini"
+#"config/spicetify/Themes" = {target="~/.config/spicetify/Themes", type="symbolic", recursive=false}
+#"config/spicetify/Extensions" = {target="~/.config/spicetify/Extensions", type="symbolic", recursive=false}
 
-[swaylock.files]
-"config/swaylock/config" = "~/.config/swaylock/config"
+#[swaylock.files]
+#"config/swaylock/config" = "~/.config/swaylock/config"
 
-[waybar.files]
-"config/waybar/config.json" = "~/.config/waybar/config"
-"config/waybar/style.css" = "~/.config/waybar/style.css"
+#[waybar.files]
+#"config/waybar/config.json" = "~/.config/waybar/config"
+#"config/waybar/style.css" = "~/.config/waybar/style.css"
 
-[winfetch.files]
-"config/winfetch/config.ps1" = "~/.config/winfetch/config.ps1"
+#[winfetch.files]
+#"config/winfetch/config.ps1" = "~/.config/winfetch/config.ps1"
 
-[wt.files]
-"config/wt/config.json" = "~/AppData/Local/Microsoft/Windows Terminal/settings.json"
+#[wt.files]
+#"config/wt/config.json" = "~/AppData/Local/Microsoft/Windows Terminal/settings.json"
