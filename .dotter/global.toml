@@ -30,7 +30,7 @@ sh_cmd = "['bash']"
 
 [hypr.files]
 "config/hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
-"config/hypr/hyprland.conf" = "~/.config/hypr/hyprpaper.conf"
+"config/hypr/hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"
 "config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
 
 [kitty.files]
