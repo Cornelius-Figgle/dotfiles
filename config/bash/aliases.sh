@@ -14,9 +14,13 @@ alias aur-restore='echo "NO RESTORE LINE YET"'
 
 function svpush () {
 	git add .
-	git commit -m "$*"  # info: https://unix.stackexchange.com/a/197794/551787
+	git commit -m "$*"  # https://unix.stackexchange.com/a/197794/551787
 	git push
 }
+
+function helix() {
+	hx $*
+ }
 
 # the below are deprecated bc they make the $PATH messy
 # alias pip='python3 -m pip'
