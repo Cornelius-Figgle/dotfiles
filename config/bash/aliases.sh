@@ -12,11 +12,6 @@ alias aur-backup='pacman -Qqm'
 alias pacman-restore='xargs pacman -S --needed --noconfirm'
 alias aur-restore='echo "NO RESTORE LINE YET"'
 
-if [ $HOSTNAME = "mimic3" ]; then
-	alias ter='/mnt/p/00\ Max/mimic/ter_start.sh'
-	alias mc='/mnt/p/00\ Max/mimic/mc_start.sh'
-fi
-
 function svpush () {
 	git add .
 	git commit -m "$*"  # info: https://unix.stackexchange.com/a/197794/551787
