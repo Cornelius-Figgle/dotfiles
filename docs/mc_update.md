@@ -9,7 +9,7 @@ Connect to server
 
 ```pwsh
 # pwsh
-ssh max@mimic2
+ssh max@192.168.0.12
 ```
 
 Tell ppl to get off and close the server, then close tmux window
@@ -104,8 +104,7 @@ Restart the server
 
 ```bash
 cd ~
-mc  # assuming alias is configured
-    # use `bash /media/srv/00\ Max/__serv/ubuntu/mc_start.sh` if not
+bash ~/source/dotfiles/scripts/mc_start.sh
 ```
 
 If the `mc_start.sh` is not available, use the following:
