@@ -15,6 +15,8 @@ dotfiles/
 ├── .dotter/
 │   ├── include/
 │   │   └── windows.toml
+│   ├── scripts/
+│   │   └── pwsh_deploy.ps1
 │   ├── NightCrawler.toml
 │   ├── Quandale-Butterson.toml
 │   ├── global.toml
