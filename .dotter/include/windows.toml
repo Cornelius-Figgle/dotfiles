@@ -9,7 +9,7 @@ gh_path = "'C:\\Users\\Max.Harrison\\scoop\\apps\\gh\\current\\bin\\gh.exe'"
 
 [helix.files]
 "config/helix/config.toml" = "~/appdata/roaming/helix/config.toml"
-"config/helix/themes" = {target="~/appdata/roaming/helix/themes", type="symbolic", recursive=false}
+"config/helix/themes" = {target="~/appdata/roaming/helix/themes", type="symbolic", recurse=false}
 [helix.variables]
 sh_cmd = "['pwsh', '-c']"
 
@@ -18,6 +18,6 @@ sh_cmd = "['pwsh', '-c']"
 
 [spicetify.files]
 "config/spicetify/config.ini" = "~/appdata/roaming/spicetify/config-xpui.ini"
-"config/spicetify/Themes" = {target="~/appdata/roaming/spicetify/themes", type="symbolic", recursive=false}
-"config/spicetify/Extensions" = {target="~/appdata/roaming/spicetify/Extensions", type="symbolic", recursive=false}
+"config/spicetify/Themes" = {target="~/appdata/roaming/spicetify/themes", type="symbolic", recurse=false}
+"config/spicetify/Extensions" = {target="~/appdata/roaming/spicetify/Extensions", type="symbolic", recurse=false}
 
