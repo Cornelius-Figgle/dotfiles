@@ -24,7 +24,7 @@ gh_path = "/usr/bin/gh"
 
 [helix.files]
 "config/helix/config.toml" = "~/.config/helix/config.toml"
-"config/helix/themes" = {target="~/.config/helix/themes", type="symbolic", recursive=false}
+"config/helix/themes" = {target="~/.config/helix/themes", type="symbolic", recurse=false}
 [helix.variables]
 sh_cmd = "['bash']"
 
@@ -51,8 +51,8 @@ sh_cmd = "['bash']"
 
 [spicetify.files]
 "config/spicetify/config.ini" = "~/.config/spicetify/config-xpui.ini"
-"config/spicetify/Themes" = {target="~/.config/spicetify/Themes", type="symbolic", recursive=false}
-"config/spicetify/Extensions" = {target="~/.config/spicetify/Extensions", type="symbolic", recursive=false}
+"config/spicetify/Themes" = {target="~/.config/spicetify/Themes", type="symbolic", recurse=false}
+"config/spicetify/Extensions" = {target="~/.config/spicetify/Extensions", type="symbolic", recurse=false}
 
 [swaylock.files]
 "config/swaylock/config" = "~/.config/swaylock/config"
