@@ -19,8 +19,9 @@ dotfiles/
 │   │   └── pwsh_deploy.ps1
 │   ├── NightCrawler.toml
 │   ├── Quandale-Butterson.toml
+│   ├── arnold-krimmler.toml
 │   ├── global.toml
-│   ├── mimic3.toml
+│   ├── mimic4.toml
 │   └── rosa.toml
 ├── config/
 │   └── ...
