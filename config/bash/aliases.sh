@@ -12,10 +12,15 @@ alias aur-backup='pacman -Qqm'
 alias pacman-restore='xargs pacman -S --needed --noconfirm'
 alias aur-restore='echo "NO RESTORE LINE YET"'
 
-function svpush () {
+function svpush() {
 	git add .
 	git commit -m "$*"  # https://unix.stackexchange.com/a/197794/551787
 	git push
+}
+
+function cddir() {
+	mkdir $1
+ 	cd $1
 }
 
 function helix() {
