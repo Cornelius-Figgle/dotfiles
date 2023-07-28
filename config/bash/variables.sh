@@ -12,7 +12,7 @@ export EDITOR="helix"
 PS1='\w \$ '
 
 export PYTHONIOENCODING="utf-8"
-eval "$(thefuck --alias)"
+# eval "$(thefuck --alias)"
 
 export ProgressPreference='SilentlyContinue'
 
