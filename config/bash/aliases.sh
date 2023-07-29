@@ -3,7 +3,7 @@ alias winfetch='pwsh -c winfetch'  # pwsh has weird module loading bars so we ca
 alias lxappearance='GDK_BACKEND=x11 lxappearance'
 
 alias glances='glances --percpu --disable-irix --separator --programs'
-alias rdp='xfreerdp -v NightCrawler -d FULLIMAGE -u max.harrison --sec tls \
+alias rdp='xfreerdp -v 192.168.0.8 -d FULLIMAGE -u max.harrison --sec tls \
 	--disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims \
 	-f'  # future: add rofi script for this
 
