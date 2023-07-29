@@ -34,7 +34,7 @@ sh_cmd = "['bash']"
 "config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
 
 [kitty.files]
-"config/kitty/config.conf" = "~/.config/kitty/config"
+"config/kitty/config.conf" = "~/.config/kitty/kitty.conf"
 "config/kitty/current-theme.conf" = "~/.config/kitty/current-theme.conf"
 
 [ly.files]
