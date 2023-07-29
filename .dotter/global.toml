@@ -35,7 +35,7 @@ sh_cmd = "['bash']"
 
 [kitty.files]
 "config/kitty/config.conf" = "~/.config/kitty/config"
-"config/kitty/curent-theme.conf" = "~/.config/kitty/current-theme.conf"
+"config/kitty/current-theme.conf" = "~/.config/kitty/current-theme.conf"
 
 [ly.files]
 "config/ly/config.ini" = "/etc/ly/config.ini"
