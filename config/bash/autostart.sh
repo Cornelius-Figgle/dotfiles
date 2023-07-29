@@ -11,6 +11,7 @@ function arnold-krimmler {
 	:
 }
 function mimic4 {
+	echo
 	tmux ls
  	# python3 -c "import psutil ; print(f'CPU: {psutil.cpu_percent(interval=2)}%')"
 	# python3 -c "import psutil ; print(f'Memory: {psutil.virtual_memory().percent}%')"
