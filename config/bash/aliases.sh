@@ -23,9 +23,12 @@ function cddir() {
  	cd $1
 }
 
-function helix() {
-	hx $*
- }
+
+if [ $HOSTNAME = "mimic4" ]; then
+	function helix() {
+		hx $*
+	 }
+fi
 
 # the below are deprecated bc they make the $PATH messy
 # alias pip='python3 -m pip'

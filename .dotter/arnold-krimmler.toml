@@ -1,6 +1,5 @@
 includes = []
-packages = ["bash", "cava", "dunst", "git", "helix", "hypr", "ly", "neofetch", "pypoetry", "spicetify", "swaylock", "waybar"]
-# KITTY NEEDS FIXING, TEMP REMOVED
+packages = ["bash", "cava", "dunst", "git", "helix", "kitty", "hypr", "ly", "neofetch", "pypoetry", "spicetify", "swaylock", "waybar"]
 
 [files]
 
