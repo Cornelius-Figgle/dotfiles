@@ -46,8 +46,8 @@ sh_cmd = "['bash']"
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
 
-# [rofi.files]
-# 
+[rofi.files]
+"config/rofi/" = {target="~/.config/rofi", type="symbolic", recurse=false} 
 
 [spicetify.files]
 "config/spicetify/config.ini" = "~/.config/spicetify/config-xpui.ini"
