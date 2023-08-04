@@ -12,7 +12,7 @@ configuration {
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"🔍";
-    drun-display-format:            "{name}";
+    drun-display-format:            "$(basename {name})";
     disable-history:                false;
     fullscreen:                     false;
 	hide-scrollbar: 				true;

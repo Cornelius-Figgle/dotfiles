@@ -7,7 +7,7 @@ echo "ipc = off" >> ~/.config/hypr/hyprpaper.conf
 monitors=$(hyprctl monitors -j | jq -r ".[] | .name")
 
 
-	wallpaper=$(fd ".png|.jpg|.jpeg" ~/source/dotfiles/wallpapers/ | rofi -dmenu -no-config -theme ~/.config/rofi/wallpaper.rasi)
+wallpaper=$(fd ".png|.jpg|.jpeg" ~/source/dotfiles/wallpapers/ | rofi -dmenu -no-config -theme ~/.config/rofi/wallpaper.rasi)
 
 for monitor in $monitors; do
 	# wallpaper=$(fd ".png|.jpg|.jpeg" ~/source/dotfiles/wallpapers/ | shuf -n1)
