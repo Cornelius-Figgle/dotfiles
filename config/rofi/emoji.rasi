@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:							"JetBrainsMonoNL Nerd Font 10";
+	font:							"CaskaydiaCove Nerd Font";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"🧐";
@@ -47,7 +47,7 @@ textbox-prompt-colon {
 	text-color: 					@ac;
 	expand: false;
 	str: "🧐";
-	font:							"JetBrainsMonoNL Nerd Font 10";
+	font:							"CaskaydiaCove Nerd Font";
 }
 
 entry {
