@@ -13,8 +13,6 @@ for monitor in $monitors; do
 	echo "wallpaper = $monitor,$wallpaper" >> ~/.config/hypr/hyprpaper.conf
 done
 
-if $wallpaper; then
-	hyprctl hyprpaper unload all
-	killall hyprpaper
-	hyprpaper &
-fi
+hyprctl hyprpaper unload all
+killall hyprpaper
+hyprpaper &
