@@ -78,7 +78,6 @@ set -g @offline_icon "offline"
 
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'tmux-plugins/tmux-mem-cpu-load'
 set -g @plugin 'noscript/tmux-mighty-scroll'
 set -g @plugin 'ofirgall/tmux-window-name'
 set -g @plugin 'tmux-plugins/tmux-yank'
