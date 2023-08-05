@@ -56,6 +56,9 @@ sh_cmd = "['bash']"
 [swaylock.files]
 "config/swaylock/config" = "~/.config/swaylock/config"
 
+[tmux.files]
+"config/tmux/config.tmux" = "~/.tmux.conf"
+
 [waybar.files]
 "config/waybar/config.json" = "~/.config/waybar/config"
 "config/waybar/style.css" = "~/.config/waybar/style.css"
