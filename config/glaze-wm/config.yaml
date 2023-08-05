@@ -81,6 +81,9 @@ window_rules:
   - command: "ignore"
     match_process_name: "VirtualBoxVM"
 
+  - command: "ignore"
+    match_process_name: "FL64.exe"
+
   # Launches system dialogs as floating by default (eg. File Explorer save/open dialog).
   - command: "set floating"
     match_class_name: "#32770"
