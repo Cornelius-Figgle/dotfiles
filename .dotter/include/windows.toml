@@ -20,4 +20,6 @@ sh_cmd = "['pwsh', '-c']"
 "config/spicetify/config.ini" = "~/appdata/roaming/spicetify/config-xpui.ini"
 "config/spicetify/Themes" = {target="~/appdata/roaming/spicetify/themes", type="symbolic", recurse=false}
 "config/spicetify/Extensions" = {target="~/appdata/roaming/spicetify/Extensions", type="symbolic", recurse=false}
-
+[spicetify.variables]
+spotify_path = "~\\scoop\\apps\\spotify\\current"
+prefs_path = "~\\AppData\\Roaming\\Spotify\\prefs"
