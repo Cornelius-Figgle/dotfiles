@@ -4,6 +4,7 @@ gaps:
 
 general:
   show_floating_on_top: true
+  # focus_border_color: "#42c0fb"
 
 bar:
   # enabled: false  # this doesn't work - https://github.com/lars-berger/GlazeWM/issues/330
@@ -44,7 +45,7 @@ bar:
     - type: "clock"
       # Documentation on formatting date/time string:
       # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
-      time_formatting: "HH:mm:ss"
+      time_formatting: "yyyy-MM-dd T HH:mm:ss"
       margin: "0 5px 0 10px"
 
 workspaces:
