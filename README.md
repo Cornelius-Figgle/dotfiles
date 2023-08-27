@@ -2,7 +2,7 @@
 
 # Usage
 
-Make sure you have [`dotter`](https://github.com/SuperCuber/dotter) installed and have created `.dotter/HOSTNAME.toml`, then:
+Make sure you have [`dotter`](https://github.com/SuperCuber/dotter) installed and have created `.dotter/$(HOSTNAME).toml`, then:
 
 ```shell
 dotter deploy --force
