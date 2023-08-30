@@ -11,7 +11,7 @@
 "config/dunst/config.conf" = "~/.config/dunst/dunstrc"
 
 [glaze-wm]
-depends = ["bash" "git" "helix" "winfetch" "wt"]
+depends = ["bash", "git", "helix", "winfetch", "wt"]
 [glaze-wm.files]
 "config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
 "scripts/autostart_wrapper.vbs" = "~/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/autostart_wrapper.vbs"
@@ -31,7 +31,7 @@ gh_path = "/usr/bin/gh"
 sh_cmd = "['bash']"
 
 [hypr]
-depends = ["bash" "dunst" "git" "helix" "kitty" "ly" "neofetch" "rofi" "swaylock" "waybar"]
+depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "swaylock", "waybar"]
 [hypr.files]
 "config/hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
 "config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
@@ -64,7 +64,7 @@ prefs_path = "~/.config/spotify/prefs"
 "config/swaylock/config" = "~/.config/swaylock/config"
 
 [tmux]
-depends = ["bash" "git" "helix" "neofetch"]
+depends = ["bash", "git", "helix", "neofetch"]
 [tmux.files]
 "config/tmux/config.tmux" = "~/.tmux.conf"
 
