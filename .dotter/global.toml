@@ -31,14 +31,16 @@ gh_path = "/usr/bin/gh"
 sh_cmd = "['bash']"
 
 [hypr]
-depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "swaylock", "waybar"]
+depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "swaylock", "tmux", "waybar"]
 [hypr.files]
 "config/hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
 "config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
 
+[kanshi.files]
+"config/kanshi/config" = "~/.config/kanshi/config"
+
 [kitty.files]
 "config/kitty/config.conf" = "~/.config/kitty/kitty.conf"
-"config/kitty/current-theme.conf" = "~/.config/kitty/current-theme.conf"
 
 [ly.files]
 "config/ly/config.ini" = "/etc/ly/config.ini"
@@ -48,6 +50,11 @@ depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "
 
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
+
+[river]
+depends = ["bash", "dunst", "git", "helix", "kitty", "neofetch", "swaylock", "tmux", "yambar"]
+[river.files]
+"config/river/init" = "~/.config/river/init"
 
 [rofi.files]
 "config/rofi/" = {target="~/.config/rofi", type="symbolic", recurse=false} 
@@ -67,6 +74,7 @@ prefs_path = "~/.config/spotify/prefs"
 depends = ["bash", "git", "helix", "neofetch"]
 [tmux.files]
 "config/tmux/config.tmux" = "~/.tmux.conf"
+"config/tmux/silent-tmux.tmux" = "~/.silent-tmux.conf"
 
 [waybar.files]
 "config/waybar/config.json" = "~/.config/waybar/config"
@@ -77,3 +85,6 @@ depends = ["bash", "git", "helix", "neofetch"]
 
 [wt.files]
 "config/wt/config.json" = "~/AppData/Local/Microsoft/Windows Terminal/settings.json"
+
+[yambar.files]
+"config/yambar/config.yml" = "~/.config/yambar/config.yml"

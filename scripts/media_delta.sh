@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # note: clear notify space
-killall dunst
+pkill dunst
 
 # note: cli args
 op=$1  # args: {vol|mute|mic|bright|media}

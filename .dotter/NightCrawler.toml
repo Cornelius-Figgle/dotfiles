@@ -1,7 +1,0 @@
-includes = [".dotter/include/windows.toml"]
-packages = ["glaze-wm", "pypoetry", "spicetify"]
-
-[files]
-
-[variables]
-primary_monitor = 2
