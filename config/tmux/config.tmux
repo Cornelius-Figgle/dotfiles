@@ -4,9 +4,6 @@
 # reloads config
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
-# default `$TERM`
-set -g default-terminal xterm
-
 # prefix key
 unbind C-a
 set -g prefix C-a
@@ -73,6 +70,15 @@ set -g pane-border-style fg=brightblack
 
 set -g @online_icon "online"
 set -g @offline_icon "offline"
+
+# ---------------------------------------------------------------------
+
+# default `$TERM`
+set -g default-terminal xterm
+
+# fixes tab-completion
+# https://web.archive.org/web/20140109014333/http://blog.e-thang.net/2012/08/14/tmux-and-bash-tab-completion/
+unbind -n Tab
 
 # ---------------------------------------------------------------------
 
