@@ -23,12 +23,9 @@ function cddir() {
  	cd $1
 }
 
-
-if [ $HOSTNAME = "mimic4" ]; then
-	function helix() {
-		hx $*
-	 }
-fi
+function qh() {
+	echo $(whoami) @ $(hostname) on $(ip -o route get to 8.8.8.8 | sed -n 's/.*src \([0-9.]\+\).*/\1/p')
+}
 
 # the below are deprecated bc they make the $PATH messy
 # alias pip='python3 -m pip'

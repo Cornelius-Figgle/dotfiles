@@ -78,6 +78,7 @@ set -g default-terminal xterm
 
 # fixes tab-completion
 # https://web.archive.org/web/20140109014333/http://blog.e-thang.net/2012/08/14/tmux-and-bash-tab-completion/
+# https://www.reddit.com/r/tmux/comments/ma26ej/tab_button_not_working_in_tmux/gs39i4z/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 unbind -n Tab
 
 # ---------------------------------------------------------------------
