@@ -1,39 +1,48 @@
+# general settings
 ignore-empty-password
 show-failed-attempts
 
+# ui settings
 indicator
 indicator-idle-visible
 screenshots
 clock
 
+# image effects
 effect-blur=7x5
 effect-vignette=0.5:0.5
-font=JetBrains Mono NL SemiBold
+effect-greyscale
+font=Monospace 14
 datestr=%Y-%m-%d
 timestr=%H:%M:%S
 indicator-radius=100
 
+# typing: pink
 key-hl-color=b48ead
 bs-hl-color=E9C98A
 separator-color=1e1e1e
 text-caps-lock-color=7882A2
 
-line-color=1e1e1e
+# normal: purple
+line-color=00000000
 ring-color=7882A2
-inside-color=1e1e1e
+inside-color=00000000
 text-color=7882A2
 
-line-ver-color=1e1e1e
+# verifying: green
+line-ver-color=00000000
 ring-ver-color=6EB56C
-inside-ver-color=1e1e1e
+inside-ver-color=00000000
 text-ver-color=6EB56C
 
-line-clear-color=1e1e1e
+# cleared: yellow
+line-clear-color=00000000
 ring-clear-color=E5C688
-inside-clear-color=1e1e1e
+inside-clear-color=00000000
 text-clear-color=E5C688
 
-line-wrong-color=1E1E1E
+# incorrect: red
+line-wrong-color=00000000
 ring-wrong-color=FB958B
-inside-wrong-color=1E1E1E
+inside-wrong-color=00000000
 text-wrong-color=FB958B
