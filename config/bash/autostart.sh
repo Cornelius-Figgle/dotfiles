@@ -5,11 +5,13 @@ function tmux-silent {
 	# automatically attaches to any unattached tmux sessions, or creates a new one
 	# https://unix.stackexchange.com/questions/529048/how-can-i-attach-to-the-the-first-unattached-tmux-session-or-create-a-new-sessi/529049#529049
 	if [ ! "$TMUX" ]; then
-		session="$(tmux ls -F '#{session_name}|#{?session_attached,y,n}' 2>/dev/null | grep 'n$')"
-		if [ "$session" ]; then
-    	exec tmux attach -t "$(echo "$session" | tail -n1 | cut -d'|' -f1)"
-		else
-    	exec tmux -f ~/.silent-tmux.conf
+		if [ ! $(tty | grep 'tty') ]; then
+			session="$(tmux ls -F '#{session_name}|#{?session_attached,y,n}' 2>/dev/null | grep 'n$')"
+			if [ "$session" ]; then
+    		exec tmux attach -t "$(echo "$session" | tail -n1 | cut -d'|' -f1)"
+			else
+    		exec tmux -f ~/.silent-tmux.conf
+			fi
 		fi
 	fi
 }

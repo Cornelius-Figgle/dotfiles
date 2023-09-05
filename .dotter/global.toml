@@ -52,7 +52,7 @@ depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "
 "config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
 
 [river]
-depends = ["bash", "dunst", "git", "helix", "kitty", "neofetch", "swaylock", "tmux", "yambar"]
+depends = ["bash", "dunst", "git", "helix", "kitty", "neofetch", "swaylock", "tofi", "tmux", "yambar"]
 [river.files]
 "config/river/init" = "~/.config/river/init"
 
@@ -69,6 +69,9 @@ prefs_path = "~/.config/spotify/prefs"
 
 [swaylock.files]
 "config/swaylock/config" = "~/.config/swaylock/config"
+
+[tofi.files]
+"config/tofi/config.cfg" = "~/.config/tofi/config"
 
 [tmux]
 depends = ["bash", "git", "helix", "neofetch"]

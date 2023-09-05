@@ -20,13 +20,17 @@ riverctl spawn pipewire
 # spawners
 riverctl map normal $mod Q spawn kitty
 riverctl map normal $mod B spawn brave-browser-stable
-riverctl map normal $mod R spawn "kitty --class 'launcher' ~/source/sway-launcher-desktop/sway-launcher-desktop.sh"
+riverctl map normal $mod R spawn "tofi-drun | xargs riverctl spawn"
+riverctl map normal $mod+Shift R spawn "tofi-run | xargs riverctl spawn"
+riverctl map normal $mod A spawn "hyprpicker -anr"
+riverctl map normal $mod Z spawn swaylock
+riverctl map normal $mod S spawn 'grim -g "$(slurp)"'
+riverctl map normal $mod+Shift S spawn grim
 
 # controls
 riverctl map normal $mod Space toggle-float
 riverctl map normal None F11 toggle-fullscreen
 riverctl map normal $mod C close
-riverctl map normal $mod Z spawn swaylock
 riverctl map normal $mod+Shift W spawn ~/.config/river/init  # sort of reloads, but doesn't unset anything previously declared (just overwrites)
 riverctl map normal $mod+Shift E exit
 
