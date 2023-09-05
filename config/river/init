@@ -18,20 +18,21 @@ riverctl spawn yambar && sleep 0.1 && riverctl focus-output next  && riverctl sp
 riverctl spawn pipewire 
 
 # spawners
-riverctl map normal $mod Q spawn kitty
-riverctl map normal $mod B spawn brave-browser-stable
+riverctl map normal $mod Q spawn "kitty"
+riverctl map normal $mod B spawn "brave-browser-stable"
+riverctl map normal $mod E spawn "nautilus"
 riverctl map normal $mod R spawn "tofi-drun | xargs riverctl spawn"
 riverctl map normal $mod+Shift R spawn "tofi-run | xargs riverctl spawn"
 riverctl map normal $mod A spawn "hyprpicker -anr"
-riverctl map normal $mod Z spawn swaylock
-riverctl map normal $mod S spawn 'grim -g "$(slurp)"'
-riverctl map normal $mod+Shift S spawn grim
+riverctl map normal $mod Z spawn "swaylock"
+riverctl map normal $mod S spawn 'riverctl spawn "grim -g \"$(slurp)\" $XDG_SCREENSHOTS_DIR/$(date +\"%s_grim.png\")"'
+riverctl map normal $mod+Shift S spawn 'riverctl spawn "grim $XDG_SCREENSHOTS_DIR/$(date +\"%s_grim.png\")"'
 
 # controls
 riverctl map normal $mod Space toggle-float
 riverctl map normal None F11 toggle-fullscreen
 riverctl map normal $mod C close
-riverctl map normal $mod+Shift W spawn ~/.config/river/init  # sort of reloads, but doesn't unset anything previously declared (just overwrites)
+riverctl map normal $mod+Shift W spawn "~/.config/river/init"  # sort of reloads, but doesn't unset anything previously declared (just overwrites)
 riverctl map normal $mod+Shift E exit
 
 # media keys
