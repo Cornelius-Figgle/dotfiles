@@ -77,6 +77,7 @@ done
 
 # window rules
 riverctl float-filter-add app-id 'launcher'
+riverctl float-filter-add app-id "org.gnome.Nautilus"
 
 # cleanup
 riverctl spawn "notify-send 'River Init Loaded'"
