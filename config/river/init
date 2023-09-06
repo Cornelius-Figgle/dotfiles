@@ -19,6 +19,7 @@ riverctl spawn pipewire
 
 # spawners
 riverctl map normal $mod Q spawn "kitty"
+riverctl map normal $mod+Shift Q spawn "kitty --class 'floating'"
 riverctl map normal $mod B spawn "brave-browser-stable"
 riverctl map normal $mod E spawn "nautilus"
 riverctl map normal $mod R spawn "tofi-drun | xargs riverctl spawn"
@@ -77,6 +78,7 @@ done
 
 # window rules
 riverctl float-filter-add app-id 'launcher'
+riverctl float-filter-add app-id 'floating'
 riverctl float-filter-add app-id "org.gnome.Nautilus"
 
 # cleanup
