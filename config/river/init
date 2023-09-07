@@ -8,14 +8,16 @@ riverctl keyboard-layout gb
 riverctl spawn rivertile
 riverctl default-layout rivertile
 
-# kill before exec
-pkill yambar
+restart() { ( pkill $1; riverctl spawn $@ )>/dev/null 2>&1 & }
+start()   { ( ps -C $1 || riverctl spawn $@ )>/dev/null 2>&1 & }
 
 # auto exec
-riverctl spawn kanshi
-riverctl spawn yambar && sleep 0.1 && riverctl focus-output next  && riverctl spawn yambar
+start "udiskie"
+start "kanshi"
+restart "yambar" && sleep 0.1 && riverctl focus-output next  && riverctl spawn "yambar"
 #riverctl spawn ~/source/dotfiles/scripts/2_FHD_swaybg.sh
-riverctl spawn pipewire 
+start "pipewire"
+start "wireplumber"
 
 # spawners
 riverctl map normal $mod Q spawn "kitty"
