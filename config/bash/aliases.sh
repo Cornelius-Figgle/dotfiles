@@ -6,6 +6,7 @@ alias glances='glances --percpu --disable-irix --separator --programs'
 alias rdp='xfreerdp -v 192.168.0.8 -d FULLIMAGE -u max.harrison --sec tls \
 	--disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims \
 	-f'  # future: add rofi script for this
+alias irc='ssh -t max@192.168.0.21 tmux a'
 
 alias pacman-backup='pacman -Qqe | grep -v "$(pacman -Qqm)"'
 alias aur-backup='pacman -Qqm'
@@ -26,10 +27,3 @@ function cddir() {
 function qh() {
 	echo $(whoami) @ $(hostname) on $(ip -o route get to 8.8.8.8 | sed -n 's/.*src \([0-9.]\+\).*/\1/p')
 }
-
-# the below are deprecated bc they make the $PATH messy
-# alias pip='python3 -m pip'
-# alias venv='python3 -m venv'
-# alias python='python3'
-# alias py='python3'
-
