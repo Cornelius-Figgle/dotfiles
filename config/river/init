@@ -18,6 +18,8 @@ restart "yambar" && sleep 0.1 && riverctl focus-output next  && riverctl spawn "
 #riverctl spawn ~/source/dotfiles/scripts/2_FHD_swaybg.sh
 start "pipewire"
 start "wireplumber"
+start "wl-paste --type text --watch cliphist store"
+start "wl-paste --type image --watch cliphist store"
 
 # spawners
 riverctl map normal $mod Q spawn "kitty"
@@ -28,6 +30,7 @@ riverctl map normal $mod R spawn "tofi-drun | xargs riverctl spawn"
 riverctl map normal $mod+Shift R spawn "tofi-run | xargs riverctl spawn"
 riverctl map normal $mod A spawn "hyprpicker -anr"
 riverctl map normal $mod Z spawn "swaylock"
+riverctl map normal $mod V spawn "cliphist list | tofi | cliphist decode | wl-copy && wl-paste"
 
 for mode in normal locked; do
   riverctl map $mode $mod S spawn 'riverctl spawn "grim -g \"$(slurp)\" $XDG_SCREENSHOTS_DIR/$(date +\"%s_grim.png\")"'
