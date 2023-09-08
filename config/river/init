@@ -22,8 +22,8 @@ start "wl-paste --type text --watch cliphist store"
 start "wl-paste --type image --watch cliphist store"
 
 # spawners
-riverctl map normal $mod Q spawn "kitty"
-riverctl map normal $mod+Shift Q spawn "kitty --class 'floating'"
+riverctl map normal $mod Q spawn "foot"
+riverctl map normal $mod+Shift Q spawn "foot --app-id 'floating'"
 riverctl map normal $mod B spawn "brave-browser-stable"
 riverctl map normal $mod E spawn "nautilus"
 riverctl map normal $mod R spawn "tofi-drun | xargs riverctl spawn"
