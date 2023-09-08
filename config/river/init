@@ -15,7 +15,7 @@ start()   { ( ps -C $1 || riverctl spawn $@ )>/dev/null 2>&1 & }
 start "udiskie"
 start "kanshi"
 restart "yambar" && sleep 0.1 && riverctl focus-output next  && riverctl spawn "yambar"
-#riverctl spawn ~/source/dotfiles/scripts/2_FHD_swaybg.sh
+restart "~/source/dotfiles/scripts/2_FHD_swaybg.sh"
 start "pipewire"
 start "wireplumber"
 start "wl-paste --type text --watch cliphist store"
