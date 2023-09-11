@@ -35,15 +35,6 @@
             "keys": "ctrl+n"
         },
         {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
-        },
-        {
             "command": "unbound",
             "keys": "ctrl+shift+w"
         },
@@ -70,6 +61,15 @@
         {
             "command": "unbound",
             "keys": "win+`"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
         },
         {
             "command": "toggleFocusMode",
@@ -117,6 +117,7 @@
             "colorScheme": "One Half Dark",
             "cursorShape": "vintage",
             "experimental.retroTerminalEffect": false,
+            "opacity": 49,
             "scrollbarState": "hidden",
             "snapOnInput": false,
             "startingDirectory": "%USERPROFILE%",
