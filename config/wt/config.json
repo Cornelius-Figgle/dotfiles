@@ -91,6 +91,8 @@
         }
     ],
     "alwaysShowNotificationIcon": false,
+    "alwaysShowTabs": true,
+    "centerOnLaunch": true,
     "confirmCloseAllTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
@@ -99,6 +101,13 @@
     "firstWindowPreference": "defaultProfile",
     "initialCols": 144,
     "initialRows": 38,
+    "launchMode": "focus",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
@@ -108,6 +117,7 @@
             "colorScheme": "One Half Dark",
             "cursorShape": "vintage",
             "experimental.retroTerminalEffect": false,
+            "opacity": 49,
             "scrollbarState": "hidden",
             "snapOnInput": false,
             "startingDirectory": "%USERPROFILE%",
@@ -437,8 +447,9 @@
             "yellow": "#808000"
         }
     ],
+    "showTabsInTitlebar": true,
     "startOnUserLogin": false,
-    "tabWidthMode": "titleLength",
+    "tabWidthMode": "equal",
     "theme": "dark",
     "themes": 
     [
@@ -452,7 +463,8 @@
             },
             "window": 
             {
-                "applicationTheme": "dark"
+                "applicationTheme": "dark",
+                "useMica": false
             }
         },
         {
@@ -465,7 +477,8 @@
             },
             "window": 
             {
-                "applicationTheme": "light"
+                "applicationTheme": "light",
+                "useMica": false
             }
         },
         {
@@ -478,7 +491,8 @@
             },
             "window": 
             {
-                "applicationTheme": "system"
+                "applicationTheme": "system",
+                "useMica": false
             }
         }
     ],

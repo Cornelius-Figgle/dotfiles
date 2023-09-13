@@ -48,7 +48,7 @@ $ShowDisks = @("C:", "D:", "T:", "V:")
 # $ShowDisks = @("*")
 
 # Configure which package managers are shown
-$ShowPkgs = @("winget", "scoop", "pip")
+$ShowPkgs = @("winget", "scoop")
 
 # Use the following option to specify custom package managers
 $CustomPkgs = @("cargo", "pip")
