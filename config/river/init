@@ -53,8 +53,8 @@ done
 riverctl map normal $mod Left focus-view previous
 riverctl map normal $mod Right focus-view next
 
-riverctl map normal $mod+Shift bracketleft focus-output previous
-riverctl map normal $mod+Shift bracketright focus-output next
+riverctl map normal $mod bracketleft focus-output previous
+riverctl map normal $mod bracketright focus-output next
 
 # move windows
 riverctl map normal $mod+Shift Left swap previous
@@ -67,8 +67,8 @@ riverctl map normal $mod J move down 100
 riverctl map normal $mod K move up 100
 riverctl map normal $mod L move right 100
 
-riverctl map normal $mod bracketleft spawn "riverctl send-to-output previous && riverctl focus-output previous"
-riverctl map normal $mod bracketright spawn "riverctl send-to-output next && riverctl focus-output next"
+riverctl map normal $mod+Shift bracketleft spawn "riverctl send-to-output previous && riverctl focus-output previous"
+riverctl map normal $mod+Shift bracketright spawn "riverctl send-to-output next && riverctl focus-output next"
 
 # resize windows
 riverctl map-pointer normal $mod BTN_RIGHT resize-view
