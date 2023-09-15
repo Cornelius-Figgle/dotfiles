@@ -1,6 +1,0 @@
-includes = []
-packages = ["cava", "hypr", "pypoetry", "spicetify"]
-
-[files]
-
-[variables]
