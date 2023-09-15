@@ -1,6 +1,0 @@
-includes = [".dotter/include/windows.toml"]
-packages = ["glaze-wm", "pypoetry"]
-
-[files]
-
-[variables]
