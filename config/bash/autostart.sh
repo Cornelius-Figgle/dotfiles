@@ -19,10 +19,7 @@ function tmux-silent {
 function nightcrawler2 {
 	tmux-silent
 }
-function quandale-butterson {
-	:
-}
-function arnold-krimmler {
+function wolverine {
 	tmux-silent
 }
 function mimic4 {
