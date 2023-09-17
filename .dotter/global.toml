@@ -50,6 +50,8 @@ depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "
 
 [neofetch.files]
 "config/neofetch/config.conf" = "~/.config/neofetch/config.conf"
+[neofetch.variables]
+disks = "'/boot/EFI' '/' '/home'"
 
 [pwsh.files]
 "config/pwsh/config.ps1" = "~/Documents/Powershell/Microsoft.Powershell_profile.ps1"
