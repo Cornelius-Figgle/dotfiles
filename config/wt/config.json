@@ -21,46 +21,7 @@
         },
         {
             "command": "find",
-            "keys": "ctrl+f"
-        },
-        {
-            "command": "closePane",
-            "keys": "ctrl+w"
-        },
-        {
-            "command": 
-            {
-                "action": "newWindow"
-            },
-            "keys": "ctrl+n"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+w"
-        },
-        {
-            "command": "unbound",
             "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+n"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+space"
-        },
-        {
-            "command": "unbound",
-            "keys": "win+ctrl+shift+t"
-        },
-        {
-            "command": "unbound",
-            "keys": "win+ctrl+t"
-        },
-        {
-            "command": "unbound",
-            "keys": "win+`"
         },
         {
             "command": 
@@ -72,8 +33,15 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": "toggleFocusMode",
-            "keys": "ctrl+shift+h"
+            "command": "unbound",
+            "keys": "ctrl+shift+space"
+        },
+        {
+            "command": 
+            {
+                "action": "closeTab"
+            },
+            "keys": "ctrl+w"
         },
         {
             "command": 
@@ -81,26 +49,13 @@
                 "action": "newTab"
             },
             "keys": "ctrl+t"
-        },
-        {
-            "command": 
-            {
-                "action": "quakeMode"
-            },
-            "keys": "alt+`"
         }
     ],
-    "alwaysShowNotificationIcon": false,
-    "alwaysShowTabs": true,
     "centerOnLaunch": true,
     "confirmCloseAllTabs": false,
     "copyFormatting": "none",
-    "copyOnSelect": false,
+    "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "experimental.rendering.forceFullRepaint": false,
-    "firstWindowPreference": "defaultProfile",
-    "initialCols": 144,
-    "initialRows": 38,
     "launchMode": "focus",
     "newTabMenu": 
     [
@@ -112,16 +67,9 @@
     {
         "defaults": 
         {
-            "adjustIndistinguishableColors": "indexed",
-            "antialiasingMode": "cleartype",
             "colorScheme": "One Half Dark",
             "cursorShape": "vintage",
-            "experimental.retroTerminalEffect": false,
-            "opacity": 49,
-            "scrollbarState": "hidden",
-            "snapOnInput": false,
-            "startingDirectory": "%USERPROFILE%",
-            "suppressApplicationTitle": true,
+            "opacity": 50,
             "useAtlasEngine": true
         },
         "list": 
@@ -129,88 +77,32 @@
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": true,
-                "name": "PowerShell"
+                "hidden": false,
+                "name": "Windows PowerShell"
             },
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "Cmd"
+                "name": "Command Prompt"
             },
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
-                "name": "Pwsh",
+                "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": true,
-                "name": "Azure",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "commandline": "python.exe",
-                "guid": "{ef0f78f2-b988-45c1-8dd3-e7f860dd1c65}",
+                "guid": "{cfda4042-508e-5f22-8ea0-79ccb85adc7f}",
                 "hidden": false,
-                "icon": "\\\\dc1\\Users\\Max.Harrison\\My Documents\\My Pictures\\Images\\ico\\python.ico",
-                "name": "Python"
-            },
-            {
-                "altGrAliasing": true,
-                "antialiasingMode": "grayscale",
-                "closeOnExit": "automatic",
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
-                "elevate": true,
-                "font": 
-                {
-                    "face": "Cascadia Mono",
-                    "size": 12.0
-                },
-                "guid": "{6c33bb5a-b731-4d35-b206-89dbd7f8d3e2}",
-                "hidden": true,
-                "historySize": 9001,
-                "icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
-                "name": "Adm Cmd",
-                "padding": "8, 8, 8, 8",
-                "useAcrylic": false
-            },
-            {
-                "commandline": "%userprofile%\\scoop\\apps\\git\\current\\bin\\bash.exe -i -l",
-                "experimental.retroTerminalEffect": false,
-                "guid": "{590e2079-13a0-4073-91b9-f0120e958deb}",
-                "hidden": false,
-                "icon": "C:\\Users\\Max.Harrison\\scoop\\apps\\git\\current\\mingw64\\share\\git\\git-for-windows.ico",
-                "name": "Git Bash"
-            },
-            {
-                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Debian --cd ~",
-                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-                "hidden": false,
-                "name": "Debian",
+                "name": "wolverine-void",
                 "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d cava-wsl --cd ~",
-                "guid": "{7fc4c3e0-fb7c-50e4-8eee-27cbf6ab2e81}",
-                "hidden": false,
-                "name": "cava-wsl",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Ubuntu --cd ~",
-                "guid": "{3926813f-5114-48b5-872e-64a551e2b8fe}",
-                "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-                "name": "Ubuntu"
-            },
-            {
-                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Arch --cd ~",
-                "guid": "{147618eb-5fcc-4a3c-86e8-81148a3bb059}",
-                "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-                "name": "Arch"
             }
         ]
     },
@@ -401,29 +293,6 @@
             "yellow": "#C4A000"
         },
         {
-            "background": "#300A24",
-            "black": "#171421",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#08458F",
-            "brightCyan": "#2C9FB3",
-            "brightGreen": "#26A269",
-            "brightPurple": "#A347BA",
-            "brightRed": "#C01C28",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#A2734C",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#FFFFFF",
-            "green": "#26A269",
-            "name": "Ubuntu-ColorScheme",
-            "purple": "#881798",
-            "red": "#C21A23",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#A2734C"
-        },
-        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -447,10 +316,6 @@
             "yellow": "#808000"
         }
     ],
-    "showTabsInTitlebar": true,
-    "startOnUserLogin": false,
-    "tabWidthMode": "equal",
-    "theme": "dark",
     "themes": 
     [
         {
@@ -495,6 +360,5 @@
                 "useMica": false
             }
         }
-    ],
-    "useAcrylicInTabRow": false
+    ]
 }

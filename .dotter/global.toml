@@ -51,6 +51,9 @@ depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "
 [neofetch.files]
 "config/neofetch/config.conf" = "~/.config/neofetch/config.conf"
 
+[pwsh.files]
+"config/pwsh/config.ps1" = "~/Documents/Powershell/Microsoft.Powershell_profile.ps1"
+
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
 
@@ -90,7 +93,7 @@ depends = ["bash", "git", "helix", "neofetch"]
 "config/winfetch/config.ps1" = "~/.config/winfetch/config.ps1"
 
 [wt.files]
-"config/wt/config.json" = "~/AppData/Local/Microsoft/Windows Terminal/settings.json"
+"config/wt/config.json" = "~/scoop/persist/windows-terminal/settings/settings.json"
 
 [yambar.files]
 "config/yambar/config.yml" = "~/.config/yambar/config.yml"

@@ -50,7 +50,7 @@ bar:
 
 workspaces:
   - name: "1"
-    bind_to_monitor: {{ primary_monitor }}
+    bind_to_monitor: 1
   - name: "2"
   - name: "3"
   - name: "4"
@@ -195,6 +195,9 @@ keybindings:
 
   - command: "exec explorer"
     binding: "Alt+E"
+
+  - command: "exec run"
+    binding: "Alt+Shift+Run"
   
   # overwrite Windows hotkeys? (when `explorer` has been killed)
   - command: "exec explorer %userprofile%"
@@ -210,7 +213,7 @@ keybindings:
     binding: "Alt+Shift+Q"
 
   # laucnh chrome
-  - command: "exec chrome"
+  - command: "exec brave"
     binding: "Alt+B"
 
   # Focus the workspace that last had focus.
