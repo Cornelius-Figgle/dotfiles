@@ -1,11 +1,22 @@
 # ====================
-# Functions / Aliases
+# Aliases
 # ====================
 
 New-Alias -Name ahk -Value autohotkey
 
 Function glances-alias-fn { (glances --percpu --disable-irix --separator --programs @args) }
 # New-Alias -Name glances -Value glances-alias-fn  # disabled bc pwsh is bloody slow
+
+if (wsl -v) {
+	Remove-Alias -Name ls
+	Function ls {
+		wsl ls $args[0]  # use wsl for alias
+	}
+}
+
+# ====================
+# Functions
+# ====================
 
 Function svpush {
 	(git add .)

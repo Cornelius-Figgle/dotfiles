@@ -67,6 +67,7 @@
     {
         "defaults": 
         {
+            "adjustIndistinguishableColors": "always",
             "colorScheme": "doom one (black bg)",
             "cursorShape": "vintage",
             "font": 
@@ -74,6 +75,7 @@
                 "face": "Cascadia Code"
             },
             "opacity": 50,
+            "scrollbarState": "hidden",
             "useAtlasEngine": true
         },
         "list": 
