@@ -19,7 +19,7 @@ function tmux-silent {
 function nightcrawler2 {
 	tmux-silent
 }
-function wolverine-wsl {
+function wolverine-void {
 	tmux-silent
 }
 function mimic4 {
