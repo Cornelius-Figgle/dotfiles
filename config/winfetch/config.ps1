@@ -51,15 +51,15 @@ $ShowDisks = @("C:", "D:", "T:", "V:")
 $ShowPkgs = @("winget", "scoop")
 
 # Use the following option to specify custom package managers
-$CustomPkgs = @("cargo", "pip")
+#$CustomPkgs = @("cargo", "pip")
 # Create a function with that name as suffix, and which returns the number
 # of packages
 # function info_pkg_cargo {
 #      return (cargo install --list | Where-Object {$_ -like "*:" }).Length
 # }
-function info_pkg_pip {
-     return (pip freeze).Length
-}
+#function info_pkg_pip {
+#     return (pip freeze).Length
+#}
 
 # Configure how to show info for levels
 # 'text' is for 'text' only

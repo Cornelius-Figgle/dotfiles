@@ -10,19 +10,19 @@ bar:
   # enabled: false  # this doesn't work - https://github.com/lars-berger/GlazeWM/issues/330
   height: "30px"  # 0
   position: "top"
-  opacity: 1.0
-  background: "#20242cc4"
-  foreground: "#ffffff"
-  font_family: "Segoe UI"
-  font_size: "13px"
+  opacity: 0.5
+  background: "#000000"
+  foreground: "#f8f8f8"
+  font_family: "Cascadia Code"
+  font_size: "14px"
   padding: "4px 6px"
   offset_x: "0"
   offset_y: "0"
   border_radius: "0"
   components_left:
     - type: "workspaces"
-      focused_workspace_background: "#ffffff33"
-      displayed_workspace_background: "#00000033"
+      focused_workspace_background: "#80808088"
+      displayed_workspace_background: "#60606088"
       default_workspace_background: "transparent"
   components_center:
     - type: "window title"
@@ -32,16 +32,13 @@ bar:
     - type: "tiling direction"
       label_horizontal: "⮂"
       label_vertical: "⮁"
-      background: "#ffffff33"
+      background: "#80808088"
       margin: "0 4px"
       padding: "0 8px"
     - type: "binding mode"
-      background: "#ffffff33"
+      background: "#80808088"
       margin: "0 4px 0 0"
       padding: "0 8px"
-   # - type: "clock"
-   #   time_formatting: "yyyy-MM-dd"
-   #   margin: "0 0 0 10px"
     - type: "clock"
       # Documentation on formatting date/time string:
       # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
@@ -213,7 +210,7 @@ keybindings:
     binding: "Alt+Shift+Q"
 
   # laucnh chrome
-  - command: "exec brave"
+  - command: "exec 'C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe'"
     binding: "Alt+B"
 
   # Focus the workspace that last had focus.

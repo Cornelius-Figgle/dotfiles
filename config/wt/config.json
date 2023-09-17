@@ -67,8 +67,12 @@
     {
         "defaults": 
         {
-            "colorScheme": "One Half Dark",
+            "colorScheme": "doom one (black bg)",
             "cursorShape": "vintage",
+            "font": 
+            {
+                "face": "Cascadia Code"
+            },
             "opacity": 50,
             "useAtlasEngine": true
         },
@@ -314,6 +318,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
+        },
+        {
+            "background": "#000000",
+            "black": "#2A2E38",
+            "blue": "#51AFEF",
+            "brightBlack": "#3F444A",
+            "brightBlue": "#51AFEF",
+            "brightCyan": "#46D9FF",
+            "brightGreen": "#99BB66",
+            "brightPurple": "#C678DD",
+            "brightRed": "#FF6C6B",
+            "brightWhite": "#BBC2CF",
+            "brightYellow": "#ECBE7B",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#46D9FF",
+            "foreground": "#BBC2CF",
+            "green": "#98BE65",
+            "name": "doom one (black bg)",
+            "purple": "#C678DD",
+            "red": "#FF6C6B",
+            "selectionBackground": "#FFFFFF",
+            "white": "#DFDFDF",
+            "yellow": "#ECBE7B"
         }
     ],
     "themes": 

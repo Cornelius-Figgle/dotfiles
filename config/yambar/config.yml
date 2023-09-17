@@ -7,7 +7,7 @@ bar:
   foreground: f8f8f8ff
   background: 00000080
 
-  font: DejaVu Sans Mono:pixelsize=14
+  font: Monospace:pixelsize=14
 
   left:
     - river:
