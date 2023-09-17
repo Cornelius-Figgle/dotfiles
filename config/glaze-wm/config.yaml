@@ -196,8 +196,8 @@ keybindings:
   - command: "exec explorer"
     binding: "Alt+E"
 
-  - command: "exec run"
-    binding: "Alt+Shift+Run"
+#  - command: "exec run"
+#    binding: "Alt+Shift+Run"
   
   # overwrite Windows hotkeys? (when `explorer` has been killed)
   - command: "exec explorer %userprofile%"
