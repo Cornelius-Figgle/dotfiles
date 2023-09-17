@@ -1,6 +1,6 @@
 gaps:
-  inner_gap: 20
-  outer_gap: 20
+  inner_gap: 15
+  outer_gap: 15
 
 general:
   show_floating_on_top: true

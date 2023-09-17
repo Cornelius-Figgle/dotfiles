@@ -18,15 +18,17 @@ function tmux-silent {
 
 function nightcrawler2 {
 	tmux-silent
+	qh
 }
 function wolverine-void {
 	tmux-silent
+	qh
 }
 function mimic4 {
 	echo
+	qh
+	echo
 	tmux ls
- 	# python3 -c "import psutil ; print(f'CPU: {psutil.cpu_percent(interval=2)}%')"
-	# python3 -c "import psutil ; print(f'Memory: {psutil.virtual_memory().percent}%')"
  	echo
 }
 
