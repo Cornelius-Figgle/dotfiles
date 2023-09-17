@@ -29,6 +29,12 @@ bar:
    # - type: "text"
    #   text: " • hi??"  # future: make this show music info? can I run cmds from the toml def?
   components_right:
+    - type: "battery"
+      label_draining: "\\/ {battery_level}%"
+      label_power_saver: "\\/ {battery_level}% PS"
+      label_charging: "/\\ {battery_level}%"
+      margin: "0 4px"
+      padding: "0 8px"
     - type: "tiling direction"
       label_horizontal: "⮂"
       label_vertical: "⮁"
