@@ -8,7 +8,7 @@ autocrlf = "true"
 gh_path = "'C:\\Users\\Max.Harrison\\scoop\\apps\\gh\\current\\bin\\gh.exe'"
 
 [helix.files]
-"config/helix/config.toml" = "~/appdata/roaming/helix/config.toml"
+"config/helix/config.toml" = "~/scoop/persist/helix/config.toml"
 "config/helix/themes" = {target="~/appdata/roaming/helix/themes", type="symbolic", recurse=false}
 [helix.variables]
 sh_cmd = "['pwsh', '-c']"
