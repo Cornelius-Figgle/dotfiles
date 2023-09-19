@@ -50,3 +50,9 @@ Function prompt {
 $ProgressPreference='SilentlyContinue'
 
 $env:WSL_UTF8=1
+
+# ====================
+# Autostart
+# ====================
+
+qh
