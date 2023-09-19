@@ -1,3 +1,6 @@
+Invoke-WebRequest -Uri 'https://aka.ms/vs/17/release/vs_BuildTools.exe' -OutFile "$env:TEMP\vs_BuildTools.exe"
+& "$env:TEMP\vs_BuildTools.exe" --passive --wait --add Microsoft.VisualStudio.Workload.VCTools --includeRecommended --remove Microsoft.VisualStudio.Component.VC.CMake.Project	
+
 scoop install git gh
 scoop bucket add extras
 scoop install pwsh brave windows-terminal winfetch glazewm powertoys autohotkey helix rufus vcredist2022 dotter python
