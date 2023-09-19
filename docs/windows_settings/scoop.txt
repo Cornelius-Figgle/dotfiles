@@ -1,0 +1,9 @@
+scoop install git gh
+scoop bucket add extras
+scoop install pwsh brave windows-terminal winfetch glazewm powertoys autohotkey helix rufus vcredist2022 dotter python
+
+C:\Users\max\scoop\apps\7zip\current\install-context.reg
+C:\Users\max\scoop\apps\git\current\install-file-associations.reg
+C:\Users\max\scoop\apps\pwsh\current\install-explorer-context.reg
+C:\Users\max\scoop\apps\pwsh\current\install-file-context.reg
+reg import "C:\Users\max\scoop\apps\windows-terminal\current\install-context.reg"
