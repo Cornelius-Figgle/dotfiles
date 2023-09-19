@@ -4,16 +4,16 @@
     "actions": 
     [
         {
+            "command": "openNewTabDropdown",
+            "keys": "ctrl+shift+t"
+        },
+        {
             "command": 
             {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
-        },
-        {
-            "command": "openNewTabDropdown",
-            "keys": "ctrl+shift+t"
         },
         {
             "command": "paste",
@@ -24,6 +24,10 @@
             "keys": "ctrl+shift+f"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+shift+space"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -31,10 +35,6 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+space"
         },
         {
             "command": 
@@ -109,6 +109,18 @@
                 "hidden": false,
                 "name": "wolverine-void",
                 "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{9991115b-4fca-53f4-8bc8-06de00337279}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{32f4c50e-bbb3-54bf-a96a-0978cc47f70c}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
