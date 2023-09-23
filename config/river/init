@@ -88,6 +88,7 @@ done
 riverctl float-filter-add app-id 'launcher'
 riverctl float-filter-add app-id 'floating'
 riverctl float-filter-add app-id "org.gnome.Nautilus"
+riverctl float-filter-add app-title '*:*:Picture-in-picture'
 
 # cleanup
 riverctl spawn "notify-send 'River Init Loaded'"
