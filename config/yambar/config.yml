@@ -24,7 +24,7 @@ bar:
                 id == 7: {string: {text: " 7 "}}  
                 id == 8: {string: {text: " 8 "}}  
                 id == 9: {string: {text: " 9 "}}  
-
+                id == 10: {string: {text: " ~ "}}  
         content:
           map:
             on-click: 
