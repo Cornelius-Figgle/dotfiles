@@ -33,10 +33,10 @@ riverctl map normal $mod Z spawn "swaylock"
 riverctl map normal $mod V spawn "cliphist list | tofi | cliphist decode | wl-copy && wl-paste"
 
 for mode in normal locked; do
-  riverctl map $mode $mod S spawn "~/source/dotfiles/scripts/screenshot_delta.sh select"
-  riverctl map $mode $mod+Shift S spawn "~/source/dotfiles/scripts/screenshot_delta.sh full"
+  riverctl map $mode $mod S spawn 'riverctl spawn "grim -g \"$(slurp)\" $XDG_SCREENSHOTS_DIR/$(date +\"%s_grim.png\")"'
+  riverctl map $mode $mod+Shift S spawn 'riverctl spawn "grim $XDG_SCREENSHOTS_DIR/$(date +\"%s_grim.png\")"'
 done
-
+  
 # controls
 riverctl map normal $mod Space toggle-float
 riverctl map normal None F11 toggle-fullscreen
