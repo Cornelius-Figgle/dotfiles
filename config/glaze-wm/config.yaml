@@ -194,9 +194,6 @@ keybindings:
     binding: "Alt+Shift+P"
 
   - command: "exec explorer"
-    binding: "LWin+Shift+P"
-
-  - command: "exec explorer"
     binding: "Alt+E"
 
 #  - command: "exec run"
