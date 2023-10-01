@@ -25,11 +25,12 @@ dotter & helix
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
-mkdir source
-cd source
+mkdir source && cd source
 
-gh release download -R SuperCuber/dotter --archive=tar.gz
-gzip -d ./dotter-*.tar.gz
-tar -xvf ./dotter-*.tar
-cd ./dotter-*
+cargo fetch --locked --target "aarch64-unknown-linux-gnu"
+cargo build --release --frozen
+mv ./target/release/dotter /usr/local/bin/
+
+sudo add-apt-repository ppa:maveonair/helix-editor
+sudo apt update && sudo apt install -y helix
 ```
