@@ -1,26 +1,51 @@
 # dotfiles
 
-# Usage
+## Usage
 
-Install [`dotter`](https://github.com/SuperCuber/dotter):
+### Install [`dotter`](https://github.com/SuperCuber/dotter):
 
-| Void | Arch | Windows | other |
-|---|---|---|---|
-| # cd ~/source/void-packages<br># git checkout add_dotter<br>./xbps-src pkg dotter<br>xi dotter | yay -S dotter-rs-bin | scoop install dotter | wget https://github.com/SuperCuber/dotter/releases/latest/download/dotter<br>sudo mv ./dotter /usr/local/bin/<br>sudo chmod 755 /usr/local/bin/dotter |
+#### Void
 
-Create host-specific config:
+```bash
+# cd ~/source/void-packages
+# git checkout add_dotter
+./xbps-src pkg dotter
+xi -y dotter
+```
+
+#### Arch
+
+```bash
+yay -S dotter-rs-bin
+```
+
+#### Windows
+
+```pwsh
+scoop install dotter
+```
+
+#### other
+
+```shell
+wget https://github.com/SuperCuber/dotter/releases/latest/download/dotter
+sudo mv ./dotter /usr/local/bin/
+sudo chmod 755 /usr/local/bin/dotter
+```
+
+### Create host-specific config:
 
 ```shell
 cp ./.dotter/default.toml ./.dotter/$(HOSTNAME).toml
 ```
 
-Deploy configs:
+### Deploy configs:
 
 ```shell
 dotter deploy --force
 ```
 
-# Layout
+## Layout
 
 ```
 dotfiles/
