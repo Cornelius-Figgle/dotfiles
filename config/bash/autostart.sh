@@ -16,6 +16,7 @@ function tmux-silent {
 	fi
 }
 
+
 function nightcrawler2 {
 	tmux-silent
 	qh
@@ -25,18 +26,18 @@ function wolverine-void {
 	qh
 }
 function mimic4 {
-	echo
-	qh
-	echo
-	tmux ls
- 	echo
+	tmux-silent
+ 	qh
 }
+function rosa {
+	tmux-silent
+ 	qh
+  }
 
 
 if ! [ $1 ]; then
-	# allows us to pass a hostname through the cli args
 	$HOSTNAME
 else
-	$1
+	$1  # allows us to pass a hostname through the cli args
 fi
 
