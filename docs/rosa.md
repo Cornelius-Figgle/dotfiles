@@ -1,12 +1,12 @@
 # rosa
 
-apt init
+apt init & neofetch (apt)
 
 ```bash
 sudo apt update && sudo apt upgrade -y && sudo apt install -y neofetch
 ```
 
-git & gh
+git (apt) & gh (apt-ish, from gh docs)
 
 ```bash
 type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
@@ -20,7 +20,7 @@ gh auth login
 gh auth setup-git
 ```
 
-dotter & helix
+dotter (manual build bc arm), helix (ppa), tmux (apt)
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
@@ -33,4 +33,12 @@ mv ./target/release/dotter /usr/local/bin/
 
 sudo add-apt-repository ppa:maveonair/helix-editor
 sudo apt update && sudo apt install -y helix
+```
+
+dotfiles
+
+```bash
+cd ~/source
+git clone https://github.com/Cornelius-Figgle/dotfiles && cd ./dotfiles
+dotter deploy --force
 ```
