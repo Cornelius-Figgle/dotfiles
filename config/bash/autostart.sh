@@ -1,5 +1,5 @@
 #!/bin/bash
-# a collection of functions that run startup routines per `$HOSTNAME`
+# a collection of functions that run startup routines per `$(hostname)`
 
 function tmux-silent {
 	# automatically attaches to any unattached tmux sessions, or creates a new one
@@ -36,7 +36,7 @@ function rosa {
 
 
 if ! [ $1 ]; then
-	$HOSTNAME
+	hostname
 else
 	$1  # allows us to pass a hostname through the cli args
 fi
