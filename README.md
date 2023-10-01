@@ -2,7 +2,19 @@
 
 # Usage
 
-Make sure you have [`dotter`](https://github.com/SuperCuber/dotter) installed and have created `.dotter/$(HOSTNAME).toml`, then:
+Install [`dotter`](https://github.com/SuperCuber/dotter):
+
+| Void | Arch | Windows | other |
+|---|---|---|---|
+| # cd ~/source/void-packages<br># git checkout add_dotter<br>./xbps-src pkg dotter<br>xi dotter | yay -S dotter-rs | scoop install dotter | wget https://github.com/SuperCuber/dotter/releases/latest/download/dotter<br>mv ./dotter /usr/local/bin/ |
+
+Create host-specific config:
+
+```shell
+cp ./.dotter/default.toml ./.dotter/$(HOSTNAME).toml
+```
+
+Deploy configs:
 
 ```shell
 dotter deploy --force
@@ -17,12 +29,14 @@ dotfiles/
 │   │   └── windows.toml
 │   ├── scripts/
 │   │   └── pwsh_deploy.ps1
-│   ├── NightCrawler.toml
-│   ├── Quandale-Butterson.toml
-│   ├── arnold-krimmler.toml
+│   ├── default.toml
 │   ├── global.toml
+│   ├── irc1.toml
 │   ├── mimic4.toml
-│   └── rosa.toml
+│   ├── nightcrawler2.toml
+│   ├── rosa.toml
+│   ├── wolverine-void.toml
+│   └── wolverine.toml
 ├── config/
 │   └── ...
 ├── docs/
@@ -33,5 +47,6 @@ dotfiles/
 │   └── ...
 ├── .gitignore
 ├── LICENSE
-└── README.md
+├── README.md
+└── pfp.png
 ```
