@@ -29,7 +29,7 @@ Function cddir {
 }
 
 Function qh {
-	echo "$($(whoami).split('\')[0]) @ $(hostname) on $((Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias WiFi).IPAddress)"
+	echo "$($(whoami).split('\')[1]) @ $(hostname) on $((Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias WiFi).IPAddress)"
 }
 
 Function prompt {
