@@ -23,7 +23,7 @@ gh auth setup-git
 dotter & helix
 
 ```bash
-sudo apt install -y rustc
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 mkdir source
 cd source
