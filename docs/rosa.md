@@ -25,6 +25,7 @@ tmux (apt), ~~dotter (manual arm build),~~ helix (ppa)
 ```bash
 sudo apt install -y tmux
 
+sudo apt install -y software-properties-common
 sudo add-apt-repository ppa:maveonair/helix-editor
 sudo apt update && sudo apt install -y helix
 ```
