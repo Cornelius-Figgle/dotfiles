@@ -9,7 +9,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y neofetch
 git (apt) & gh (apt-ish, from gh docs)
 
 ```bash
-type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
+type -p curl >/dev/null || (sudo apt update && sudo apt install -y curl)
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
 && sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
 && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
@@ -49,4 +49,6 @@ cp ./config/git/config.ini ~/.gitconfig
 hx ~/.gitconfig  # L2,7,10 replace template values
 mkdir ~/.config/neofetch && cp ./config/neofetch/config.conf ~/.config/neofetch/config.conf
 hx ~/.config/neofetch/config.conf  # L345 replace template values
+
+logout  # reconnect ssh
 ```
