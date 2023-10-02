@@ -38,6 +38,7 @@ dotfiles
 ```bash
 cd ~/source
 git clone https://github.com/Cornelius-Figgle/dotfiles && cd ./dotfiles
+
 # copy files manually (uurgh)
 cp -r ./config/helix/* ~/.config/helix/
 hx ~/.config/helix/config.toml  # L8 replace template values
@@ -45,4 +46,6 @@ cp ./config/tmux/config.tmux ~/.tmux.conf
 cp ./config/bash/config.sh ~/.bashrc
 cp ./config/git/config.ini ~/.gitconfig
 hx ~/.gitconfig  # L2,7,10 replace template values
+mkdir ~/.config/neofetch && cp ./config/neofetch/config.conf ~/.config/neofetch/config.conf
+hx ~/.config/neofetch/config.conf  # L345 replace template values
 ```
