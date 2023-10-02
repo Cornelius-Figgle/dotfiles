@@ -43,6 +43,7 @@ git clone https://github.com/Cornelius-Figgle/dotfiles && cd ./dotfiles
 cp -r ./config/helix/* ~/.config/helix/
 hx ~/.config/helix/config.toml  # L8 replace template values
 cp ./config/tmux/config.tmux ~/.tmux.conf
+cp ./config/tmux/silent-tmux.tmux ~/.silent-tmux.conf
 cp ./config/bash/config.sh ~/.bashrc
 cp ./config/git/config.ini ~/.gitconfig
 hx ~/.gitconfig  # L2,7,10 replace template values
