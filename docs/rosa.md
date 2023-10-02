@@ -20,7 +20,9 @@ gh auth login
 gh auth setup-git
 ```
 
-```tmux
+tmux (apt)
+
+```bash
 sudo apt install -y tmux
 ```
 
