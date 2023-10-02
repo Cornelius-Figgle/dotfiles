@@ -23,21 +23,13 @@ gh auth setup-git
 tmux (apt)
 
 ```bash
-sudo apt install -y tmux
+
 ```
 
-dotter (manual build bc arm), helix (ppa), tmux (apt)
+tmux (apt), ~~dotter (manual arm build),~~ helix (ppa)
 
 ```bash
-tmux  # open `top` or similar in a seperate pane
-export RUSTUP_UNPACK_RAM=134217728  # 128M ram
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-
-mkdir source && cd source
-
-cargo fetch --locked --target "aarch64-unknown-linux-gnu"
-cargo build --release --frozen
-mv ./target/release/dotter /usr/local/bin/
+sudo apt install -y tmux
 
 sudo add-apt-repository ppa:maveonair/helix-editor
 sudo apt update && sudo apt install -y helix
@@ -48,5 +40,5 @@ dotfiles
 ```bash
 cd ~/source
 git clone https://github.com/Cornelius-Figgle/dotfiles && cd ./dotfiles
-dotter deploy --force
+# copy files manually (uurgh)
 ```
