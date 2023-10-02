@@ -20,14 +20,15 @@ gh auth login
 gh auth setup-git
 ```
 
-tmux (apt), ~~dotter (manual arm build),~~ helix (ppa)
+tmux (apt), ~~dotter (manual arm build),~~ helix (gh releases)
 
 ```bash
 sudo apt install -y tmux
 
-sudo apt install -y software-properties-common
-sudo add-apt-repository -y ppa:maveonair/helix-editor
-sudo apt update && sudo apt install -y helix
+gh release -R https://github.com/helix-editor/helix download -p helix-*-aarch64-linux.tar.xz
+xz -d helix-*-aarch64-linux.tar.xz -T$(nproc) -v
+tar -xvf helix-*-aarch64-linux.tar
+sudo cp ./helix-*-aarch64-linux/hx /usr/local/bin/
 ```
 
 dotfiles
