@@ -20,9 +20,15 @@ gh auth login
 gh auth setup-git
 ```
 
+```tmux
+sudo apt install -y tmux
+```
+
 dotter (manual build bc arm), helix (ppa), tmux (apt)
 
 ```bash
+tmux  # open `top` or similar in a seperate pane
+export RUSTUP_UNPACK_RAM=134217728  # 128M ram
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 mkdir source && cd source
