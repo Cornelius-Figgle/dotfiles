@@ -25,9 +25,11 @@ tmux (apt), ~~dotter (manual arm build),~~ helix (gh releases)
 ```bash
 sudo apt install -y tmux
 
+mkdir ~/source && cd ~/source
+
 gh release -R https://github.com/helix-editor/helix download -p helix-*-aarch64-linux.tar.xz
-xz -d helix-*-aarch64-linux.tar.xz -T$(nproc) -v
-tar -xvf helix-*-aarch64-linux.tar
+xz -d ./helix-*-aarch64-linux.tar.xz -T$(nproc) -v
+tar -xvf ./helix-*-aarch64-linux.tar
 sudo cp ./helix-*-aarch64-linux/hx /usr/local/bin/
 ```
 
