@@ -43,4 +43,6 @@ cp -r ./config/helix/* ~/.config/helix/
 hx ~/.config/helix/config.toml  # L8 replace template values
 cp ./config/tmux/config.tmux ~/.tmux.conf
 cp ./config/bash/config.sh ~/.bashrc
+cp ./config/git/config.ini ~/.gitconfig
+hx ~/.gitconfig  # L2,7,10 replace template values
 ```
