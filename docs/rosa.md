@@ -20,12 +20,6 @@ gh auth login
 gh auth setup-git
 ```
 
-tmux (apt)
-
-```bash
-
-```
-
 tmux (apt), ~~dotter (manual arm build),~~ helix (ppa)
 
 ```bash
