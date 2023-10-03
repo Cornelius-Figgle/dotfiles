@@ -52,8 +52,6 @@ dotfiles/
 ├── .dotter/
 │   ├── include/
 │   │   └── windows.toml
-│   ├── scripts/
-│   │   └── pwsh_deploy.ps1
 │   ├── default.toml
 │   ├── global.toml
 │   ├── irc1.toml
