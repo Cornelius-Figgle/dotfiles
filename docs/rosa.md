@@ -52,3 +52,10 @@ hx ~/.config/neofetch/config.conf  # L345 replace template values
 
 logout  # reconnect ssh
 ```
+
+python & poetry (install script)
+
+```bash
+sudo apt install -y python3.9-full
+curl -sSL https://install.python-poetry.org | python3 -
+```
