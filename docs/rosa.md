@@ -49,6 +49,7 @@ cp ./config/git/config.ini ~/.gitconfig
 hx ~/.gitconfig  # L2,7,10 replace template values
 mkdir ~/.config/neofetch && cp ./config/neofetch/config.conf ~/.config/neofetch/config.conf
 hx ~/.config/neofetch/config.conf  # L345 replace template values
+mkdir ~/.config/pypoetry && cp ./config/pypoetry/config.toml ~/config/pypoetry/
 
 logout  # reconnect ssh
 ```
@@ -56,6 +57,8 @@ logout  # reconnect ssh
 python & poetry (install script)
 
 ```bash
+python3 --version
 sudo apt install -y python3.9-full
 curl -sSL https://install.python-poetry.org | python3 -
+poetry --version
 ```
