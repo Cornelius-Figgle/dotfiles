@@ -15,7 +15,7 @@ start()   { ( ps -C $1 || riverctl spawn $@ )>/dev/null 2>&1 & }
 start "udiskie"
 start "kanshi"
 restart "yambar" && sleep 0.1 && riverctl focus-output next  && riverctl spawn "yambar"
-restart "~/source/dotfiles/scripts/2_FHD_swaybg.sh"
+restart "~/.config/river/scripts/2_FHD_swaybg.sh"
 start "pipewire"
 start "wireplumber"
 start "wl-paste --type text --watch cliphist store"
@@ -30,6 +30,7 @@ riverctl map normal $mod R spawn "tofi-drun | xargs riverctl spawn"
 riverctl map normal $mod+Shift R spawn "tofi-run | xargs riverctl spawn"
 riverctl map normal $mod A spawn "hyprpicker -anr"
 riverctl map normal $mod Z spawn "swaylock"
+riverctl map normal $mod+Shift Z spawn "~/.config/tofi/scripts/powermenu.sh"
 riverctl map normal $mod V spawn "cliphist list | tofi | cliphist decode | wl-copy && wl-paste"
 
 for mode in normal locked; do

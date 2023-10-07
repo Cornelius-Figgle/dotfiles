@@ -17,7 +17,8 @@
 depends = ["git", "helix", "pwsh", "winfetch", "wt"]
 [glaze-wm.files]
 "config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
-"scripts/autostart_wrapper.vbs" = "~/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/autostart_wrapper.vbs"
+"config/glaze-wm/scripts" = {target="~/.glaze-wm/scripts", type="symbolic", recurse=false}
+"config/glaze-wm/autostart_wrapper.vbs" = "~/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/autostart_wrapper.vbs"
 [glaze-wm.variables]
 primary_monitor = 1
 
@@ -41,6 +42,7 @@ depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "
 [hypr.files]
 "config/hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
 "config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
+"config/hypr/scripts" = {target="~/.config/hypr/scripts", type="symbolic", recurse=false}
 
 [kanshi.files]
 "config/kanshi/config" = "~/.config/kanshi/config"
@@ -57,7 +59,7 @@ depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "
 disks = "'/boot/EFI' '/' '/home'"
 
 [pwsh.files]
-"config/pwsh/config.ps1" = "~/Documents/Powershell/Microsoft.Powershell_profile.ps1"
+"config/pwsh/config.ps1" = "~/Documents/Powershell/Microsoft.Powershell_profile.ps1"  # doesn't work for roaming profiles
 
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
@@ -66,9 +68,10 @@ disks = "'/boot/EFI' '/' '/home'"
 depends = ["bash", "dunst", "foot", "git", "helix", "neofetch", "swaylock", "tofi", "tmux", "yambar"]
 [river.files]
 "config/river/init" = "~/.config/river/init"
+"config/river/scripts" = {target="~/.config/river/scripts", type="symbolic", recurse=false}
 
 [rofi.files]
-"config/rofi/" = {target="~/.config/rofi", type="symbolic", recurse=false} 
+"config/rofi/" = {target="~/.config/rofi", type="symbolic", recurse=false}
 
 [spicetify.files]
 "config/spicetify/config.ini" = "~/.config/spicetify/config-xpui.ini"
@@ -83,6 +86,7 @@ prefs_path = "~/.config/spotify/prefs"
 
 [tofi.files]
 "config/tofi/config.cfg" = "~/.config/tofi/config"
+"config/tofi/scripts" = {target="~/.config/tofi/scripts", type="symbolic", recurse=false}
 
 [tmux]
 depends = ["bash", "git", "helix", "neofetch"]
