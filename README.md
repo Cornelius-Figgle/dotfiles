@@ -42,7 +42,7 @@ cp ./.dotter/default.toml ./.dotter/$(HOSTNAME).toml
 ### Deploy configs:
 
 ```shell
-dotter deploy --force
+dotter deploy --force --verbose
 ```
 
 ## Layout

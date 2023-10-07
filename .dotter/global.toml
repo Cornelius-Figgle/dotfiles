@@ -27,6 +27,9 @@ primary_monitor = 1
 autocrlf = "input"
 gh_path = "/usr/bin/gh"
 
+[grub.files]
+"config/grub/grub" = "/etc/default/grub"
+
 [helix.files]
 "config/helix/config.toml" = "~/.config/helix/config.toml"
 "config/helix/themes" = {target="~/.config/helix/themes", type="symbolic", recurse=false}
