@@ -27,16 +27,16 @@ function wolverine-void {
 }
 function mimic4 {
 	tmux-silent
- 	qh
+	qh
 }
 function rosa {
 	tmux-silent
- 	qh
-  }
+	qh
+}
 
 
 if ! [ $1 ]; then
-	hostname
+	$(hostname)
 else
 	$1  # allows us to pass a hostname through the cli args
 fi
