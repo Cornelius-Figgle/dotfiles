@@ -1,30 +1,30 @@
 #!/bin/bash
 
 function shoose {
-  op=$(echo "shutdown
-reboot
-suspend
-hibernate
-lock
-exit" | tofi)
+  op=$(echo "Shutdown
+Reboot
+Suspend
+Hibernate
+Lock
+Exit" | tofi)
 
   case $op in
-    shutdown)
+    Shutdown)
       sudo -A shutdown -h now
       ;;
-    reboot)
+    Reboot)
       sudo -A reboot -h now
       ;;
-    suspend)
+    Suspend)
       sudo -A zzz && swaylock
       ;;
-    hibernate)
+    Hibernate)
       sudo -A ZZZ && swaylock
       ;;
-    lock)
+    Lock)
       swaylock
       ;;
-    exit)
+    Exit)
       riverctl exit
       ;;
   esac
