@@ -4,4 +4,4 @@ gpedit
 "Administrative Templates"
 "Control Panel"
 "Personalisation"
-"Do not display the lockscreen" > "Enabled" > "OK"
+"Do not display the lockscreen" > *double-click > "Enabled" > "Apply" > "OK"
