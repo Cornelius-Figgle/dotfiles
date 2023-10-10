@@ -1,0 +1,6 @@
+includes = [".dotter/include/windows.toml"]
+packages = ["git", "helix", "pwsh", "winfetch", "wt"]
+
+[files]
+
+[variables]
