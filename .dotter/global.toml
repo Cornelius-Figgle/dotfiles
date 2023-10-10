@@ -19,8 +19,6 @@ depends = ["git", "helix", "pwsh", "winfetch", "wt"]
 "config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
 "config/glaze-wm/scripts" = {target="~/.glaze-wm/scripts", type="symbolic", recurse=false}
 "config/glaze-wm/autostart_wrapper.vbs" = "~/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/autostart_wrapper.vbs"
-[glaze-wm.variables]
-primary_monitor = 1
 
 [git.files]
 "config/git/config.ini" = "~/.gitconfig"

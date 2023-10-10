@@ -4,4 +4,4 @@ packages = ["git", "helix", "pwsh", "winfetch", "wt"]
 [files]
 
 [variables]
-net_adapater = "Ethernet Interface 0"
+net_adapter = "Ethernet Interface 0"
