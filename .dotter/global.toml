@@ -60,6 +60,8 @@ disks = "'/boot/EFI' '/' '/home'"
 
 [pwsh.files]
 "config/pwsh/config.ps1" = "~/Documents/Powershell/Microsoft.Powershell_profile.ps1"  # doesn't work for roaming profiles
+[pwsh.variables]
+net_adapter = "WiFi"
 
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
