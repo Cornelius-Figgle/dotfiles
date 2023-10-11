@@ -1,6 +1,4 @@
 profile {
-	output DVI-D-1 position 0,0
-	output DVI-D-1 scale 1
-	output HDMI-A-1 position 1920,0
-	output HDMI-A-1 scale 1
+	output DP-1 position 0,0
+	output DP-2 position 1920,0
 }
