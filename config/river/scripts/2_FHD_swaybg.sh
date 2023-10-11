@@ -3,8 +3,8 @@
 
 #orig_image=~/source/dotfiles/wallpapers/wallhaven-0q1q8r.png
 orig_image=~/source/dotfiles/wallpapers/wallhaven-0q1q8r.jpg
-output_1=DVI-D-1
-output_2=HDMI-A-1
+output_1=DP-1
+output_2=DP-2
 
 # convert <input file> -crop WxH+L+T <output file>
 convert $orig_image -crop 1920x1080+0+0 /tmp/2_FHD_A
