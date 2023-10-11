@@ -23,3 +23,6 @@ sh_cmd = "['pwsh', '-c']"
 [spicetify.variables]
 spotify_path = "C:\\Users\\Max.Harrison\\scoop\\apps\\spotify\\current"
 prefs_path = "C:\\Users\\Max.Harrison\\AppData\\Roaming\\Spotify\\prefs"
+
+[winfetch.variables]
+disks = "'C:'"

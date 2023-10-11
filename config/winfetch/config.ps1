@@ -44,7 +44,7 @@
 # }
 
 # Configure which disks are shown
-$ShowDisks = @("C:", "D:", "T:", "V:")
+$ShowDisks = @( {{ disks }} )
 # $ShowDisks = @("*")
 
 # Configure which package managers are shown

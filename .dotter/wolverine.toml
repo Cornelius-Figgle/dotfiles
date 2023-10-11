@@ -4,3 +4,4 @@ packages = ["glaze-wm"]
 [files]
 
 [variables]
+disks = "'C:' 'D:'"
