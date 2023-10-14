@@ -16,16 +16,19 @@
             "keys": "ctrl+c"
         },
         {
+            "command": 
+            {
+                "action": "newTab"
+            },
+            "keys": "ctrl+t"
+        },
+        {
             "command": "paste",
             "keys": "ctrl+v"
         },
         {
             "command": "find",
             "keys": "ctrl+shift+f"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+space"
         },
         {
             "command": 
@@ -37,20 +40,18 @@
             "keys": "alt+shift+d"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+shift+space"
+        },
+        {
             "command": 
             {
                 "action": "closeTab"
             },
             "keys": "ctrl+w"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab"
-            },
-            "keys": "ctrl+t"
         }
     ],
+    "alwaysShowTabs": true,
     "centerOnLaunch": true,
     "confirmCloseAllTabs": false,
     "copyFormatting": "none",
@@ -103,24 +104,6 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{cfda4042-508e-5f22-8ea0-79ccb85adc7f}",
-                "hidden": false,
-                "name": "wolverine-void",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{9991115b-4fca-53f4-8bc8-06de00337279}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{32f4c50e-bbb3-54bf-a96a-0978cc47f70c}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
@@ -357,49 +340,6 @@
             "yellow": "#ECBE7B"
         }
     ],
-    "themes": 
-    [
-        {
-            "name": "legacyDark",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "dark",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacyLight",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "light",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacySystem",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "system",
-                "useMica": false
-            }
-        }
-    ]
+    "showTabsInTitlebar": true,
+    "themes": []
 }
