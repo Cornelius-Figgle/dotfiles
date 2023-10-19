@@ -4,4 +4,4 @@ packages = ["cava", "river", "pypoetry"]
 [files]
 
 [variables]
-disks = "'/boot/EFI' '/' '/home' '/vm' '/dump'"
+disks = "'/boot/efi' '/' '/home' '/vm' '/dump'"
