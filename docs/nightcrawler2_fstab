@@ -34,4 +34,4 @@ tmpfs /tmp tmpfs defaults,nosuid,nodev 0 0
 #//192.168.0.15/Public /mnt/p cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_node=0755 0 0
 
 # cifs M
-#//192.168.0.10/Media /mnt/m cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_node=0755 0 0/dev/nvme0n1p3: UUID="7d07cc92-87c9-4865-a911-7ccf7d5227c9" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="6a51ccff-a8e7-d64b-a884-a3c3033ab19b"
+#//192.168.0.10/Media /mnt/m cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_node=0755 0 0
