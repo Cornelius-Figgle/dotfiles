@@ -99,7 +99,8 @@ su max  # change user
 cd  # change to home dir
 
 sudo pacman -S git github-cli neofetch helix tmux steam  # install programs
-mkdir source && cd source
+mkdir source
+cd source
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
 sudo pacman -S --needed base-devel  # fix missing packages
