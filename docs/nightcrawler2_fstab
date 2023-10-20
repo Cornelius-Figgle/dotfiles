@@ -1,0 +1,37 @@
+# nvme0n1p1 /boot/efi
+UUID=225F-03D2 /boot/efi vfat defaults 0 2
+
+# nvme0n1p2 /
+UUID=574b0a8e-45da-45f3-820e-72486d62ec30 / ext4 defaults 0 1
+
+# nvme0n1p3 /home
+UUID=7d07cc92-87c9-4865-a911-7ccf7d5227c9 /home ext4 defaults 0 2
+
+#nvme0n1p4 /swap
+UUID=8cd8c417-d550-4bcd-af28-fca0a21172fb none swap defaults 0 0
+
+# ============================================================================
+
+# nvme1n1p1 <lxd>
+# n/a
+
+# nvme1n1p2 /vm
+UUID=281aa0bd-e901-4336-a38f-3ce4a277cce1 /vm ext4 defaults 0 2
+
+# ============================================================================
+
+# sda1 /dump
+UUID=5426932026930262 /dump ntfs uid=max,gid=max 0 0
+
+# ============================================================================
+
+# ram tmp
+tmpfs /tmp tmpfs defaults,nosuid,nodev 0 0
+
+# ============================================================================
+
+# cifs P
+#//192.168.0.15/Public /mnt/p cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_node=0755 0 0
+
+# cifs M
+#//192.168.0.10/Media /mnt/m cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_node=0755 0 0/dev/nvme0n1p3: UUID="7d07cc92-87c9-4865-a911-7ccf7d5227c9" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="6a51ccff-a8e7-d64b-a884-a3c3033ab19b"
