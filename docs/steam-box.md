@@ -38,7 +38,7 @@ pacman -Syu
 exit
 ```
 
-install programs
+install programs (pacman & yay)
 
 ```shell
 lxc shell steam-box  # will login as root
@@ -55,7 +55,7 @@ yay -Syu
 yay -S cpu-x dotter-rs-bin  # install aur programs
 ```
 
-
+# dotfiles
 
 ```shell
 gh auth login  # use token
