@@ -33,7 +33,10 @@ function rosa {
 	tmux-silent
 	qh
 }
-
+function steam-box-1 {
+	tmux-silent
+	qh
+}
 
 if ! [ $1 ]; then
 	$(hostname)
