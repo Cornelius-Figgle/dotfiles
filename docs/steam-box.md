@@ -99,7 +99,7 @@ sudo pacman -S --needed base-devel  # fix missing packages
 makepkg -si
 cd
 yay -Syu
-yay -S cpu-x dotter-rs-bin  # install aur programs
+yay -S cpu-x dotter-rs-bin proton-ge-custom  # install aur programs
 ```
 
 dotfiles
