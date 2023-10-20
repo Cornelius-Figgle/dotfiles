@@ -33,7 +33,7 @@ passwd max  # set user password
 visudo  # allow members of %wheel to run any command
 
 pacman -S helix
-hx /etc/pacman.conf  # enable multilib repo
+hx /etc/pacman.conf  # enable 32-bit repo
 pacman -Syu
 
 mkdir /mnt/wayland1  # setup socket dir
