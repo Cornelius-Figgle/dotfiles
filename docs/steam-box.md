@@ -12,7 +12,9 @@ logout  # needed to apply group changes
 setup lxd
 
 ```shell
-lxd init  # use defaults mostly
+lxd init  # use defaults mostly, DO NOT create storage pool if using secondary partition
+sudo mkdir /var/lib/lxd/storage-pools/default
+sudo mount /dev/nvme1n1p1 /var/lib/lxd/storage-pools/default
 ```
 
 create container
