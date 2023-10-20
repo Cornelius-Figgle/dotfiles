@@ -129,6 +129,10 @@ sudo systemctl stop lxc_gpu_socket_linker
 
 exit  # drops to root
 exit  # drops to host
+
 lxc stop steam-box
 lxc start steam-box
+lxc shell steam box
+su max
+cd
 ```
