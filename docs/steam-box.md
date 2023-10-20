@@ -12,9 +12,8 @@ logout  # needed to apply group changes
 setup lxd
 
 ```shell
-lxd init  # use defaults mostly, DO NOT create storage pool if using secondary partition
-sudo mkdir /var/lib/lxd/storage-pools/default
-sudo mount /dev/nvme1n1p1 /var/lib/lxd/storage-pools/default
+sudo dd if=/dev/zero of=/dev/nvme1n1p1 bs=4M count=10  # wipes filesystems on device
+lxd init  # use defaults mostly, but add /dev/nvme1n1p1 as the backend for the device
 ```
 
 create container
