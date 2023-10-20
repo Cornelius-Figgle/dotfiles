@@ -46,7 +46,11 @@ lxc profiles for gpu & compositor passthrough (wayland & xwayland)
 ```shell
 lxc stop steam-box
 lxc profile create wayland-gpu
-lxc profile edit wayland-gpu < """config: {}
+lxc profile edit wayland-gpu  # use below config
+```
+
+```text
+config: {}
 description: config for gpu passthrough
 devices:
   Waylandsocket:
@@ -80,7 +84,9 @@ devices:
     type: disk
 name: wayland-gpu
 used_by:
-"""
+```
+
+```shell
 lxc profile add steam-box wayland-gpu  # add profile for compositor passthrough
 lxc start steam-box
 ```
