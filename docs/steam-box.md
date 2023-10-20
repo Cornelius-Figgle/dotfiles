@@ -55,7 +55,7 @@ yay -Syu
 yay -S cpu-x dotter-rs-bin  # install aur programs
 ```
 
-# dotfiles
+dotfiles
 
 ```shell
 gh auth login  # use token
