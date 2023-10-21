@@ -12,13 +12,13 @@ bind C-a send-prefix
 # mouse?
 set -g mouse on
 
-# scroll history
-set-option -g history-limit 5000
-
 # index 1
 set -g base-index 1
 setw -g pane-base-index 1
 set -g renumber-windows on
+
+# scroll history
+set-option -g history-limit 5000
 
 # better splits
 unbind %
@@ -85,7 +85,6 @@ unbind -n Tab
 
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'noscript/tmux-mighty-scroll'
 set -g @plugin 'ofirgall/tmux-window-name'
 set -g @plugin 'tmux-plugins/tmux-yank'
 set -g @plugin 'tmux-plugins/tmux-online-status'

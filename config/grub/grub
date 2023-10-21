@@ -6,7 +6,7 @@ GRUB_HIDDEN_TIMEOUT=0
 GRUB_HIDDEN_TIMEOUT_QUIET=true
 GRUB_TIMEOUT=0
 GRUB_DISTRIBUTOR="Void"
-GRUB_CMDLINE_LINUX_DEFAULT="resume=/dev/nvme1n1p1 loglevel=4"
+GRUB_CMDLINE_LINUX_DEFAULT="resume=/dev/nvme0n1p4 loglevel=4"
 # Uncomment to use basic console
 GRUB_TERMINAL_INPUT=console
 # Uncomment to disable graphical terminal

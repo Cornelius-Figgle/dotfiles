@@ -1,31 +1,92 @@
 #!/bin/bash
 
-function one_win_h_split {
+# =================
+# Helper functions
+# =================
+
+function spawn_term_win {
+  # edit to work with your WM/TERM
+  riverctl spawn "foot $1"
+}
+
+function display {
+  if [ "$SPAWN_NEW_WINDOW" = true ]; then
+    spawn_term_win "tmux attach -t $1"
+  else  # reuse current window
+    if [ "$TMUX" ]; then  # if already inside of TMUX
+      tmux switch -t $1  # display in current terminal
+    else
+      tmux attach -t $1
+    fi
+  fi
+}
+
+# =================
+# Main functions
+# =================
+
+function horizontal {
   tmux new-session -s cava_split -d
   
-  tmux split-pane -t cava_split:1.1  # vertical split
+  tmux split-pane -v -t cava_split  # vertical split
+  
+  tmux send-keys -t cava_split:1.1 "cava -p ~/.config/cava/left" ENTER
+  tmux send-keys -t cava_split:1.2 "cava -p ~/.config/cava/right" ENTER
+
+  display "cava_split"
+}
+
+function vertical {
+  tmux new-session -s cava_split -d
+  
+  tmux split-pane -h -t cava_split  # vertical split
   
   tmux send-keys -t cava_split:1.1 "cava -p ~/.config/cava/left" ENTER
   tmux send-keys -t cava_split:1.2 "cava -p ~/.config/cava/right" ENTER
   
-  if [ "$TMUX" ]; then
-    tmux switch -t cava_split  # display in current terminal
-  else
-    tmux attach -t cava_split
-  fi
+  display "cava_split"
 }
 
-function two_win_no_split {
+
+function multi_window {
+  # https://unix.stackexchange.com/questions/24274/attach-to-different-windows-in-session
   tmux new-session -s cava_split -d
+  tmux new-session -t cava_split -s cava_split_2 -d  # second session
   
   tmux new-window -t cava_split  # two tmux windows
   
   tmux send-keys -t cava_split:1 "cava -p ~/.config/cava/left" ENTER
-  tmux send-keys -t cava_split:2 "cava -p ~/.config/cava/right" ENTER
+  tmux send-keys -t cava_split_2:2 "cava -p ~/.config/cava/right" ENTER
 
-  riverctl spawn "foot 'tmux switch -t cava_split:1'"
-  #riverctl spawn "foot 'tmux attach -t cava_split:2'"  # display in new terminal
-  #tmux switch -t cava_split:1  # display in current terminal
+  if [ "$LEFT_IS_SECOND" = true ]; then
+    spawn_term_win "tmux attach -t cava_split_2:2"
+    spawn_term_win "tmux attach -t cava_split:1"
+  else
+    spawn_term_win "tmux attach -t cava_split:1"
+    spawn_term_win "tmux attach -t cava_split_2:2"
+  fi
 }
 
-$1
+# =================
+# Variables
+# =================
+
+# whether to create a new terminal instance for the visualiser
+SPAWN_NEW_WINDOW=true
+
+# whether the "left channel" window is spawned second
+# only applicable for `multi_window`
+LEFT_IS_SECOND=true
+
+# mode to use if not specified on the cli
+DEFAULT_MODE='horizontal'
+
+# =================
+# Exec
+# =================
+
+if ! [ $1 ]; then
+  $DEFAULT_MODE
+else
+  $1
+fi
