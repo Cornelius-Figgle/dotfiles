@@ -19,13 +19,13 @@ lxd init  # use defaults mostly, but add /dev/nvme1n1p1 as the backend for the d
 create container
 
 ```shell
-lxc launch images:archlinux/current/amd64 steam-box
+lxc launch images:archlinux/current/amd64 steam-box-1
 ```
 
 setup container
 
 ```shell
-lxc shell steam-box  # root
+lxc shell steam-box-1  # root
 
 passwd  # set root password
 useradd -G wheel -m -s /bin/bash max  # create our user
@@ -44,7 +44,7 @@ exit
 lxc profiles for gpu & compositor passthrough (wayland & xwayland)
 
 ```shell
-lxc stop steam-box
+lxc stop steam-box-1
 lxc profile create wayland-gpu
 lxc profile edit wayland-gpu  # use below config
 ```
@@ -87,26 +87,27 @@ used_by:
 ```
 
 ```shell
-lxc profile add steam-box wayland-gpu  # add profile for compositor passthrough
-lxc start steam-box
+lxc profile add steam-box-1 wayland-gpu  # add profile for compositor passthrough
+lxc start steam-box-1
 ```
 
 install programs (pacman & yay)
 
 ```shell
-lxc shell steam-box  # will login as root
+lxc shell steam-box-1  # will login as root
 su max  # change user
 cd  # change to home dir
 
 sudo pacman -S git github-cli neofetch helix tmux steam  # install programs
-mkdir source && cd source
+mkdir source
+cd source
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
 sudo pacman -S --needed base-devel  # fix missing packages
 makepkg -si
 cd
 yay -Syu
-yay -S cpu-x dotter-rs-bin proton-ge-custom-bin  # install aur programs
+yay -S cpu-x dotter-rs-bin proton-ge-custom-bin protontricks # install aur programs
 ```
 
 dotfiles
@@ -137,9 +138,9 @@ sudo systemctl stop lxc_gpu_socket_linker
 exit  # drops to root
 exit  # drops to host
 
-lxc stop steam-box
-lxc start steam-box
-lxc shell steam box
+lxc stop steam-box-1
+lxc start steam-box-1
+lxc shell steam-box-1
 su max
 cd
 ```
