@@ -92,7 +92,7 @@ function multi_window {
 
 if [ -z ${SPAWN_NEW_WINDOW+x} ]; then
   # whether to create a new terminal instance for the visualiser
-  SPAWN_NEW_WINDOW=false
+  SPAWN_NEW_WINDOW=true
 fi
 
 if [ -z ${LEFT_IS_SECOND+x} ]; then

@@ -28,6 +28,7 @@ riverctl map normal $mod B spawn "brave-browser-stable"
 riverctl map normal $mod E spawn "nautilus"
 riverctl map normal $mod R spawn "tofi-drun | xargs riverctl spawn"
 riverctl map normal $mod+Shift R spawn "tofi-run | xargs riverctl spawn"
+riverctl map normal $mod D spawn "~/.config/tofi/scripts/desktop_scripts.sh"
 riverctl map normal $mod A spawn "hyprpicker -anr"
 riverctl map normal $mod Z spawn "swaylock"
 riverctl map normal $mod+Shift Z spawn "~/.config/tofi/scripts/powermenu.sh"
@@ -47,7 +48,9 @@ riverctl map normal $mod+Shift E exit
 
 # media keys
 for mode in normal locked; do
-  :
+  riverctl map normal None KP_Home spawn "pamixer -d 5"
+  riverctl map normal None KP_Up spawn "pamixer --toggle-mute"
+  riverctl map normal None KP_Prior spawn "pamixer -i 5"
 done
 
 # move focus
