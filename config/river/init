@@ -14,7 +14,7 @@ start()   { ( ps -C $1 || riverctl spawn $@ )>/dev/null 2>&1 & }
 # auto exec
 start "udiskie"
 restart "kanshi"
-restart "yambar" && sleep 0.1 && riverctl focus-output next  && riverctl spawn "yambar"
+restart "waybar"  # restart "yambar" && sleep 0.1 && riverctl focus-output next  && riverctl spawn "yambar"
 restart "~/.config/river/scripts/2_FHD_swaybg.sh"
 start "pipewire"
 start "wireplumber"

@@ -74,7 +74,7 @@ net_adapter = "WiFi"
 "config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
 
 [river]
-depends = ["bash", "dunst", "foot", "git", "gtk", "helix", "kanshi", "neofetch", "swaylock", "tofi", "tmux", "yambar"]
+depends = ["bash", "dunst", "foot", "git", "gtk", "helix", "kanshi", "neofetch", "swaylock", "tofi", "tmux", "waybar"]
 [river.files]
 "config/river/init" = "~/.config/river/init"
 "config/river/scripts" = {target="~/.config/river/scripts", type="symbolic", recurse=false}

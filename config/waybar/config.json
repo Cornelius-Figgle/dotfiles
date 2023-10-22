@@ -1,57 +1,50 @@
 {
-	"position": "left",
-	// "height": 0,  // auto height
-	"width": 60, // auto width
-	"margin": "10 0 10 10",
-	// "spacing": 5,
-
-	"modules-left": [
-		"wlr/workspaces",
-	],
-	"modules-right": [
-		"pulseaudio",
-		"backlight",
-		"network",
-		"battery",
-		"clock",
-		"custom/power-menu",
-	],
+  "layer": "top",
+  "position": "top",
+  "height": 20,
+  //"width": ,  // auto width
+  "margin": "0 0 0 0",
 
 
-	"wlr/workspaces" : {
-		"format": "{icon}",
-		"on-click": "activate",
-	},
 
-	"pulseaudio": {
-		"format": "AUD\n{volume}%",
-		"format-bluetooth": "BTAUD\n{volume}%",
-		"format-bluetooth-muted": "BT MU\n{volume}%",
-		"format-muted": "MUTE\n{volume}%",
-		"on-click": "bluetoothctl connect B2:52:23:15:1A:1C",  // my headphones
-	},
-	"backlight": {
-		"format": "DISP\n{percent}%",
-		"on-click": "~/source/personal/src/deltas/media_delta.sh bright down 100",
-		"on-scroll-down": "~/source/personal/src/deltas/media_delta.sh bright down 5",
-		"on-scroll-up": "~/source/personal/src/deltas/media_delta.sh bright up 5",
-	},
-	"network": {
-    "format-wifi": "WIFI\n{signalStrength}%",
-    "format-ethernet": "ETH",
-    "format-linked": "LOAD\nING",
-    "format-disconnected": "NO\nCONN",
-    "tooltip-format": "{ipaddr}/{cidr} via {ifname}",
-	},
-	"battery": {
-		"format": "BAT\n{capacity}%",
-		"on-click": "~/source/personal/src/deltas/power-profiles",
-	},
-	"clock": {
-		"format": "{:%H\n%M}",
-	},
-	"custom/power-menu": {
-		"format": "⏻",
-		"on-click": "~/source/personal/src/deltas/powermenu.sh",
-	},
+  "modules-left": [
+    "river/tags"
+  ],
+  "modules-center": [
+    "river/window"
+  ],
+  "modules-right": [
+    "wireplumber",
+    "network",
+    "clock"
+  ],
+
+
+
+  "river/tags": {
+    "num-tags": 10
+  },
+  "river/window": {
+    "format": "{}"
+  },
+  "wireplumber": {
+    "format": "{volume}%",
+    "format-muted": "",
+    "max-volume": 100,
+    "scroll-step": 5,
+    "on-click": ""
+  },
+  "network": {
+    "interval": 3,
+    "interface": "eno1",
+    "format": "{ipaddr}",
+    "format-alt": "{bandwidthUpBits}, {bandwidthDownBits}",
+    "tooltip-format": "{ifname}"
+  },
+  "clock": {
+    "interval": 1,
+		"format": "{:%H:%M:%S}",
+    "format-alt": "{:%Y-%m-%d}",
+    "tooltip-format": "{:%A}"
+	}
 }
