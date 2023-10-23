@@ -3,8 +3,10 @@
 function shoose {
   op=$(echo "cava horizontal
 cava vertical
+cava averaged
 cava stereo
-cava multi_window" | tofi)
+cava multi_window
+restart pipewire" | tofi)
 
   case $op in
     "cava horizontal")
@@ -13,11 +15,17 @@ cava multi_window" | tofi)
     "cava vertical")
       bash ~/.config/cava/scripts/split_delta.sh vertical
       ;;
+    "cava averaged")
+      bash ~/.config/cava/scripts/split_delta.sh averaged
+      ;;
     "cava stereo")
       bash ~/.config/cava/scripts/split_delta.sh stereo
       ;;
     "cava multi_window")
       bash ~/.config/cava/scripts/split_delta.sh multi_window
+      ;;
+    "restart pipewire")
+      bash ~/.config/river/scripts/restart_pipewire.sh
       ;;
   esac
 }

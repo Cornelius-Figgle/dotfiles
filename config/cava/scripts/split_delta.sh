@@ -54,10 +54,18 @@ function vertical {
   display "cava_split"
 }
 
-function stereo {
+function averaged {
   tmux new-session -s cava_split -d
 
   tmux send-keys -t cava_split "cava -p ~/.config/cava/config" ENTER
+
+  display "cava_split"
+}
+
+function stereo {
+  tmux new-session -s cava_split -d
+
+  tmux send-keys -t cava_split "cava -p ~/.config/cava/stereo" ENTER
 
   display "cava_split"
 }

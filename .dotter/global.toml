@@ -7,7 +7,8 @@
 [cava]
 depends = ["tmux"]
 [cava.files]
-"config/cava/stereo.ini" = "~/.config/cava/config"
+"config/cava/averaged.ini" = "~/.config/cava/config"
+"config/cava/stereo.ini" = "~/.config/cava/stereo"
 "config/cava/left.ini" = "~/.config/cava/left"
 "config/cava/right.ini" = "~/.config/cava/right"
 "config/cava/scripts" = {target="~/.config/cava/scripts", type="symbolic", recurse=false}
