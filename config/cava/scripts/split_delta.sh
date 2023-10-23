@@ -87,30 +87,19 @@ function multi_window {
 # Variables
 # =================
 
-# we only set these if they aren't already defined, to allow them to be set
-# by the environment
+# whether to create a new terminal instance for the visualiser
+SPAWN_NEW_WINDOW=true
 
-if [ -z ${SPAWN_NEW_WINDOW+x} ]; then
-  # whether to create a new terminal instance for the visualiser
-  SPAWN_NEW_WINDOW=true
-fi
+# whether the "left channel" window is spawned second
+# only applicable for `multi_window`
+LEFT_IS_SECOND=true
 
-if [ -z ${LEFT_IS_SECOND+x} ]; then
-  # whether the "left channel" window is spawned second
-  # only applicable for `multi_window`
-  LEFT_IS_SECOND=true
-fi
+# whether to attempt to arrange windows across 2 outputs
+# only applicable for `multi_window`
+MOVE_TO_OUTPUT=true
 
-if [ -z ${MOVE_TO_OUTPUT+x} ]; then
-  # whether to attempt to arrange windows across 2 outputs
-  # only applicable for `multi_window`
-  MOVE_TO_OUTPUT=true
-fi
-
-if [ -z ${DEFAULT_MODE+x} ]; then
-  # mode to use if not specified on the cli
-  DEFAULT_MODE='horizontal'
-fi
+# mode to use if not specified on the cli
+DEFAULT_MODE='horizontal'
 
 # =================
 # Exec
