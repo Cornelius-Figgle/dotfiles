@@ -33,6 +33,10 @@ function rosa {
 	tmux-silent
 	qh
 }
+function irc2 {
+	tmux-silent
+	qh
+}
 function steam-box-1 {
 	tmux-silent
 	qh
