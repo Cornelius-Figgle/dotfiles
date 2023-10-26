@@ -4,3 +4,4 @@ packages = ["tmux"]
 [files]
 
 [variables]
+disks = "'/'"
