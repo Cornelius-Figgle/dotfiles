@@ -81,6 +81,9 @@ set -g default-terminal xterm
 # https://www.reddit.com/r/tmux/comments/ma26ej/tab_button_not_working_in_tmux/gs39i4z/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
 unbind -n Tab
 
+# https://superuser.com/a/1330842
+set -g default-command "${SHELL}"
+
 # ---------------------------------------------------------------------
 
 # List of plugins
