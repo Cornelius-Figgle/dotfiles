@@ -58,6 +58,9 @@ depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "
 [kitty.files]
 "config/kitty/config.conf" = "~/.config/kitty/kitty.conf"
 
+[irssi.files]
+"config/irssi" = {target="~/.irssi", type="symbolic", recurse=false}
+
 [ly.files]
 "config/ly/config.ini" = "/etc/ly/config.ini"
 
