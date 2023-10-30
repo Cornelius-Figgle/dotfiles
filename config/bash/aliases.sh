@@ -3,10 +3,10 @@ alias winfetch='pwsh -c winfetch'  # pwsh has weird module loading bars so we ca
 alias lxappearance='GDK_BACKEND=x11 lxappearance'
 
 alias glances='glances --percpu --disable-irix --separator --programs'
+
 alias rdp='xfreerdp -v 192.168.0.8 -d FULLIMAGE -u max.harrison --sec tls \
 	--disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims \
-	-f'  # future: add menu script for this
-
+	-f'  # future: add menu script for these
 alias pc='ssh -t max@192.168.0.8 tmux attach'
 alias pve='ssh root@192.168.0.19'
 alias mimic='ssh -t max@192.168.0.12 tmux attach'
