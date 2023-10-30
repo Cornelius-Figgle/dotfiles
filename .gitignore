@@ -3,4 +3,6 @@
 .dotter/cache.toml
 .dotter/cache
 
+config/irssi/certs/*
+
 *.swp

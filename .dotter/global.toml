@@ -59,7 +59,11 @@ depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "
 "config/kitty/config.conf" = "~/.config/kitty/kitty.conf"
 
 [irssi.files]
-"config/irssi" = {target="~/.irssi", type="symbolic", recurse=false}
+"config/irssi/config" = "~/.irssi/config"
+"config/irssi/default.theme" = "~/.irssi/default.theme"
+"config/irssi/scripts" = {target="~/.irssi/scripts", type="symbolic", recurse=false}
+"config/irssi/startup" = "~/.irssi/startup"
+"config/irssi/weed.theme" = "~/.irssi/weed.theme"
 
 [ly.files]
 "config/ly/config.ini" = "/etc/ly/config.ini"
