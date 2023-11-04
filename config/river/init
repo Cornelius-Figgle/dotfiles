@@ -48,9 +48,9 @@ riverctl map normal $mod+Shift E exit
 
 # media keys
 for mode in normal locked; do
-  riverctl map normal None KP_Home spawn "pamixer -d 5"
-  riverctl map normal None KP_Up spawn "pamixer --toggle-mute"
-  riverctl map normal None KP_Prior spawn "pamixer -i 5"
+  riverctl map -repeat normal None KP_Home spawn "pamixer -d 5"
+  riverctl map -repeat normal None KP_Up spawn "pamixer --toggle-mute"
+  riverctl map -repeat normal None KP_Prior spawn "pamixer -i 5"
 done
 
 # move focus
@@ -91,10 +91,12 @@ riverctl map-pointer normal $mod BTN_RIGHT resize-view
 for i in $(seq 1 9); do
   tags=$((1 << ($i -1)))
 
-  # focus tags [0-8] with 1-9
+  # focus tags [0-8]
+  # ie, 'switch to workspace 1-9'
   riverctl map normal $mod $i set-focused-tags $tags
 
   # tag focused view with tag [0-8]
+  # ie, 'move window to workspace 1-9'
   riverctl map normal $mod+Shift $i set-view-tags $tags
 done
 
