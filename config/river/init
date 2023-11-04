@@ -34,7 +34,7 @@ riverctl map normal $mod Z spawn "swaylock"
 riverctl map normal $mod+Shift Z spawn "~/.config/tofi/scripts/powermenu.sh"
 riverctl map normal $mod V spawn "cliphist list | tofi | cliphist decode | wl-copy && wl-paste"
 
-for mode in normal locked; do
+for mode in normal locked; do  # allows screenshots on lockscreen
   riverctl map $mode $mod S spawn 'riverctl spawn "grim -g \"$(slurp)\" $XDG_SCREENSHOTS_DIR/$(date +\"%s_grim.png\")"'
   riverctl map $mode $mod+Shift S spawn 'riverctl spawn "grim $XDG_SCREENSHOTS_DIR/$(date +\"%s_grim.png\")"'
 done
@@ -75,6 +75,11 @@ riverctl map normal $mod+Shift bracketleft spawn "riverctl send-to-output previo
 riverctl map normal $mod+Shift bracketright spawn "riverctl send-to-output next && riverctl focus-output next"
 
 # resize windows
+riverctl map normal $mod U resize horizontal -10
+riverctl map normal $mod I resize vertical -10
+riverctl map normal $mod O resize vertical 10
+riverctl map normal $mod P resize horizontal 10
+
 riverctl map-pointer normal $mod BTN_RIGHT resize-view
 
 # tags / workspaces
