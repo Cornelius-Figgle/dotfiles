@@ -37,7 +37,10 @@ gh_path = "/usr/bin/gh"
 
 [gtk.files]
 "config/gtk-3.0/config.ini" = "~/.config/gtk-3.0/settings.ini"
+"config/gtk-3.0/gtk.css" = "~/.config/gtk-3.0/gtk.css"
+
 "config/gtk-4.0/config.ini" = "~/.config/gtk-4.0/settings.ini"
+"config/gtk-4.0/gtk.css" = "~/.config/gtk-4.0/gtk.css"
 
 [helix.files]
 "config/helix/config.toml" = "~/.config/helix/config.toml"
