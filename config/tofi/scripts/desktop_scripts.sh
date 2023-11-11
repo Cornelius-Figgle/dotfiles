@@ -1,28 +1,42 @@
 #!/bin/bash
 
+function cava {
+  op=$(echo "horizontal
+vertical
+averaged
+stereo
+multi_window" | tofi)
+
+  case $op in
+    "horizontal")
+      bash ~/.config/cava/scripts/split_delta.sh horizontal
+      ;;
+    "vertical")
+      bash ~/.config/cava/scripts/split_delta.sh vertical
+      ;;
+    "averaged")
+      bash ~/.config/cava/scripts/split_delta.sh averaged
+      ;;
+    "stereo")
+      bash ~/.config/cava/scripts/split_delta.sh stereo
+      ;;
+    "multi_window")
+      bash ~/.config/cava/scripts/split_delta.sh multi_window
+      ;;
+  esac
+}
+
 function shoose {
-  op=$(echo "cava horizontal
-cava vertical
-cava averaged
-cava stereo
-cava multi_window
+  op=$(echo "cava
+remote
 restart pipewire" | tofi)
 
   case $op in
-    "cava horizontal")
-      bash ~/.config/cava/scripts/split_delta.sh horizontal
+    "cava")
+      cava
       ;;
-    "cava vertical")
-      bash ~/.config/cava/scripts/split_delta.sh vertical
-      ;;
-    "cava averaged")
-      bash ~/.config/cava/scripts/split_delta.sh averaged
-      ;;
-    "cava stereo")
-      bash ~/.config/cava/scripts/split_delta.sh stereo
-      ;;
-    "cava multi_window")
-      bash ~/.config/cava/scripts/split_delta.sh multi_window
+    "remote")
+      bash ~/.config/tofi/scripts/remote.sh
       ;;
     "restart pipewire")
       bash ~/.config/river/scripts/restart_pipewire.sh

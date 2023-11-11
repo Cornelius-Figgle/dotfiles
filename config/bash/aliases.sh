@@ -4,13 +4,10 @@ alias lxappearance='GDK_BACKEND=x11 lxappearance'
 
 alias glances='glances --percpu --disable-irix --separator --programs'
 
-alias rdp='xfreerdp -v 192.168.0.8 -d FULLIMAGE -u max.harrison --sec tls \
-	--disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims \
-	-f'  # future: add menu script for these
-alias pc='ssh -t max@192.168.0.8 tmux attach'
-alias pve='ssh root@192.168.0.19'
-alias mimic='ssh -t max@192.168.0.12 tmux attach'
-alias irc='ssh -t root@192.168.0.21 tmux attach'
+alias nightcrawler2='ssh -t max@192.168.0.8 tmux attach'
+alias pve1='ssh root@192.168.0.19'
+alias mimic4='ssh -t max@192.168.0.12 tmux attach'
+alias irc2='ssh -t root@192.168.0.21 tmux attach'
 
 alias dot='dotter deploy --force --verbose'
 
