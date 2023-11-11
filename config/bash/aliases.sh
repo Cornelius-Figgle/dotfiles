@@ -12,6 +12,8 @@ alias pve='ssh root@192.168.0.19'
 alias mimic='ssh -t max@192.168.0.12 tmux attach'
 alias irc='ssh -t root@192.168.0.21 tmux attach'
 
+alias dot#'dotter deploy --force --verbose'
+
 alias pacman-backup='pacman -Qqe | grep -v "$(pacman -Qqm)"'
 alias aur-backup='pacman -Qqm'
 alias pacman-restore='xargs pacman -S --needed --noconfirm'
