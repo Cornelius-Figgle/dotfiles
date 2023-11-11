@@ -37,9 +37,9 @@ function rdp {
 }
 
 function shoose {
-  op=$(echo "ssh
-rdp
-vnc" | tofi)
+  op=$(echo "ssh/
+rdp/
+vnc/" | tofi)
 
   case $op in
     ssh)
