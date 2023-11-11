@@ -42,13 +42,13 @@ rdp/
 vnc/" | tofi)
 
   case $op in
-    ssh)
+    "ssh/")
       ssh
       ;;
-    rdp)
+    "rdp/")
       rdp
       ;;
-    vnc)
+    "vnc/")
     
       ;;
   esac
