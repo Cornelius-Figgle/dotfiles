@@ -1,5 +1,9 @@
 includes = [".dotter/include/windows.toml"]
-packages = ["glaze-wm"]
+packages = [
+  "glaze-wm", "wt",
+  "pwsh", "winfetch",
+  "helix", "git"
+]
 
 [files]
 

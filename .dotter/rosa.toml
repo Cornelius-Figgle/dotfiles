@@ -1,5 +1,8 @@
 includes = []
-packages = ["pypoetry", "tmux"]
+packages = [
+  "bash", "neofetch", "tmux",
+  "helix", "git", "pypoetry"
+]
 
 [files]
 

@@ -1,5 +1,9 @@
 includes = []
-packages = ["cava", "river", "pypoetry"]
+packages = [
+  "river", "foot", "waybar", "dunst", "swaylock", "kanshi", "tofi",
+  "bash", "tmux", "neofetch", "gtk",
+  "helix", "pypoetry", "git"
+]
 
 [files]
 

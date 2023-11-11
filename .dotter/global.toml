@@ -19,8 +19,6 @@ depends = ["tmux"]
 [foot.files]
 "config/foot/config.ini" = "~/.config/foot/foot.ini"
 
-[glaze-wm]
-depends = ["git", "helix", "pwsh", "winfetch", "wt"]
 [glaze-wm.files]
 "config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
 "config/glaze-wm/scripts" = {target="~/.glaze-wm/scripts", type="symbolic", recurse=false}
@@ -48,8 +46,6 @@ gh_path = "/usr/bin/gh"
 [helix.variables]
 sh_cmd = "['bash']"
 
-[hypr]
-depends = ["bash", "dunst", "git", "helix", "kitty", "ly", "neofetch", "rofi", "swaylock", "tmux", "waybar"]
 [hypr.files]
 "config/hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
 "config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
@@ -84,8 +80,6 @@ net_adapter = "WiFi"
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/.config/pypoetry/config.toml"
 
-[river]
-depends = ["bash", "dunst", "foot", "git", "gtk", "helix", "kanshi", "neofetch", "swaylock", "tofi", "tmux", "waybar"]
 [river.files]
 "config/river/init" = "~/.config/river/init"
 "config/river/scripts" = {target="~/.config/river/scripts", type="symbolic", recurse=false}
@@ -108,8 +102,6 @@ prefs_path = "~/.config/spotify/prefs"
 "config/tofi/config.cfg" = "~/.config/tofi/config"
 "config/tofi/scripts" = {target="~/.config/tofi/scripts", type="symbolic", recurse=false}
 
-[tmux]
-depends = ["bash", "git", "helix", "neofetch"]
 [tmux.files]
 "config/tmux/config.tmux" = "~/.tmux.conf"
 "config/tmux/silent-tmux.tmux" = "~/.silent-tmux.conf"
