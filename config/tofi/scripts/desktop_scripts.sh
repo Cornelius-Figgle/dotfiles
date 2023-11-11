@@ -27,15 +27,15 @@ multi_window" | tofi)
 }
 
 function shoose {
-  op=$(echo "cava
-remote
+  op=$(echo "cava/
+remote/
 restart pipewire" | tofi)
 
   case $op in
-    "cava")
+    "cava/")
       cava
       ;;
-    "remote")
+    "remote/")
       bash ~/.config/tofi/scripts/remote.sh
       ;;
     "restart pipewire")
