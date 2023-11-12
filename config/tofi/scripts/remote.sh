@@ -5,33 +5,39 @@ function spawn_term_win {
 }
 
 function ssh {
-  op=$(echo "nightcrawler2
-pve1
-mimic4
-irc2" | tofi)
+  op=$(echo "nightcrawler2      (max)
+pve1               (root)
+mimic4             (max)
+irc2               (root)
+other*" | tofi)
 
   case $op in
-    nightcrawler2)
+    "nightcrawler2      (max)")
       spawn_term_win "ssh -t max@192.168.0.8 'TERM=xterm && tmux attach'"
       ;;
-    pve1)
+    "pve1               (root)")
       spawn_term_win "ssh root@192.168.0.19"
       ;;
-    mimic4)
+    "mimic4             (max)")
       spawn_term_win "ssh -t max@192.168.0.12 'TERM=xterm && tmux attach'"
       ;;
-    irc2)
+    "irc2               (root)")
       spawn_term_win "ssh -t root@192.168.0.21 'TERM=xterm && tmux attach'"
       ;;
   esac
 }
 
 function rdp {
-  op=$(echo "win11-1" | tofi)
+  op=$(echo "win11-1            (max)
+quicksilver        (paul.harrison)
+other*" | tofi)
 
   case $op in
-    win11-1)
+    "win11-1            (max)")
       xfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
+      ;;
+    "quicksilver        (paul.harrison)")
+      xfreerdp -v 192.168.0.11 -d FULLIMAGE -u paul.harrison --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
       ;;
   esac
 }

@@ -9,6 +9,10 @@ alias pve1='ssh root@192.168.0.19'
 alias mimic4='ssh -t max@192.168.0.12 tmux attach'
 alias irc2='ssh -t root@192.168.0.21 tmux attach'
 
+alias mnt-public='sudo mount -t cifs -o credentials=/etc/cifs-credentials //192.168.0.15/Public /mnt/shares/Public'
+alias mnt-media='sudo mount -t cifs -o credentials=/etc/cifs-credentials //192.168.0.10/Media /mnt/shares/Media'
+alias mnt-technical='sudo mount -t cifs -o credentials=/etc/cifs-credentials //192.168.0.15/Technical /mnt/shares/Technical'
+
 alias dot='dotter deploy --force --verbose'
 
 alias pacman-backup='pacman -Qqe | grep -v "$(pacman -Qqm)"'
