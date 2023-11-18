@@ -52,4 +52,5 @@ dotter deploy --force --verbose
 - mimic4 (minecraft BDS ct)
 - irc2 (irssi ct)
 - win11-1 (vm @desktop)
+- steam-box-1 (ct @desktop)
 - rosa (rpi for the [ROSA](https://github.com/Cornelius-Figgle/ROSA) project)
