@@ -14,34 +14,38 @@
 
 ### Install [`dotter`](https://github.com/SuperCuber/dotter):
 
-#### Void
-
-```bash
+<details>
+<summary><h4>Void</h4></summary>
+<pre>
 # cd ~/source/void-packages
 # git checkout add_dotter
 ./xbps-src pkg dotter
 xi -y dotter
-```
+</pre>
+</details>
 
-#### Arch
-
-```bash
+<details>
+<summary><h4>Arch</h4></summary>
+<pre>
 yay -S dotter-rs-bin
-```
+</pre>
+</details>
 
-#### Windows
-
-```pwsh
+<details>
+<summary><h4>Windows</h4></summary>
+<pre>
 scoop install dotter
-```
+</pre>
+</details>
 
-#### other
-
-```shell
+<details>
+<summary><h4>other</h4></summary>
+<pre>
 wget https://github.com/SuperCuber/dotter/releases/latest/download/dotter
 sudo mv ./dotter /usr/local/bin/
 sudo chmod 755 /usr/local/bin/dotter
-```
+</pre>
+</details>
 
 ### Create host-specific config:
 
