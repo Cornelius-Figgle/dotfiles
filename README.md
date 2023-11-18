@@ -57,11 +57,11 @@ dotter deploy --force --verbose
 
 ## Hosts
 
-- nightcrawler2 (pc)
+- nightcrawler2 (desktop)
 - wolverine (laptop)
 - wolverine-void (wsl @laptop)
 - pve1 (home server host)
 - mimic4 (minecraft BDS ct)
 - irc2 (irssi ct)
-- win11-1 (vm @pc)
+- win11-1 (vm @desktop)
 - rosa (rpi for the [ROSA](https://github.com/Cornelius-Figgle/ROSA) project)
