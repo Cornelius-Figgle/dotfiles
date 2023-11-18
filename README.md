@@ -1,5 +1,15 @@
 # dotfiles
 
+## Images
+
+### nightcrawler2
+
+![nightcrawler2](./images/nightcrawler2.jpg)
+
+### wolverine
+
+![wolverine](./images/wolverine.jpg)
+
 ## Usage
 
 ### Install [`dotter`](https://github.com/SuperCuber/dotter):
@@ -45,32 +55,13 @@ cp ./.dotter/default.toml ./.dotter/$(HOSTNAME).toml
 dotter deploy --force --verbose
 ```
 
-## Layout
+## Hosts
 
-```
-dotfiles/
-├── .dotter/
-│   ├── include/
-│   │   └── windows.toml
-│   ├── default.toml
-│   ├── global.toml
-│   ├── irc1.toml
-│   ├── mimic4.toml
-│   ├── nightcrawler2.toml
-│   ├── rosa.toml
-│   ├── wolverine-void.toml
-│   └── wolverine.toml
-├── config/
-│   └── ...
-│       ├── ...
-│       └── scripts
-│           └── ...
-├── docs/
-│   └── ...
-├── wallpapers/
-│   └── ...
-├── .gitignore
-├── LICENSE
-├── README.md
-└── pfp.png
-```
+- nightcrawler2 (pc)
+- wolverine (laptop)
+- wolverine-void (wsl @laptop)
+- pve1 (home server host)
+- mimic4 (minecraft BDS ct)
+- irc2 (irssi ct)
+- win11-1 (vm @pc)
+- rosa (rpi for the [ROSA](https://github.com/Cornelius-Figgle/ROSA) project)
