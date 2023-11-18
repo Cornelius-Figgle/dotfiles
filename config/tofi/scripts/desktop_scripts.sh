@@ -29,7 +29,8 @@ multi_window" | tofi)
 function shoose {
   op=$(echo "cava/
 remote/
-restart pipewire" | tofi)
+restart pipewire
+emoji" | tofi)
 
   case $op in
     "cava/")
@@ -40,6 +41,9 @@ restart pipewire" | tofi)
       ;;
     "restart pipewire")
       bash ~/.config/river/scripts/restart_pipewire.sh
+      ;;
+    "emoji")
+      bash ~/.config/tofi/scripts/emoji.sh
       ;;
   esac
 }
