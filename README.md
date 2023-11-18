@@ -14,38 +14,22 @@
 
 ### Install [`dotter`](https://github.com/SuperCuber/dotter):
 
-<details>
-<summary><h4>Void</h4></summary>
-<pre>
-# cd ~/source/void-packages
-# git checkout add_dotter
-./xbps-src pkg dotter
-xi -y dotter
-</pre>
-</details>
-
-<details>
-<summary><h4>Arch</h4></summary>
-<pre>
-yay -S dotter-rs-bin
-</pre>
-</details>
-
-<details>
-<summary><h4>Windows</h4></summary>
-<pre>
-scoop install dotter
-</pre>
-</details>
-
-<details>
-<summary><h4>other</h4></summary>
-<pre>
-wget https://github.com/SuperCuber/dotter/releases/latest/download/dotter
-sudo mv ./dotter /usr/local/bin/
-sudo chmod 755 /usr/local/bin/dotter
-</pre>
-</details>
+<table>
+  <tr>
+    <td>
+      <details><summary><h4>Void</h4></summary><pre># cd ~/source/void-packages<br># git checkout add_dotter<br>./xbps-src pkg dotter<br>xi -y dotter</pre></details>
+    </td>
+    <td>
+      <details><summary><h4>Arch</h4></summary><pre>yay -S dotter-rs-bin</pre></details>
+    </td>
+    <td>
+      <details><summary><h4>Windows</h4></summary><pre>scoop install dotter</pre></details>
+    </td>
+    <td>
+      <details><summary><h4>other</h4></summary><pre>wget https://github.com/SuperCuber/dotter/releases/latest/download/dotter<br>sudo mv ./dotter /usr/local/bin/<br>sudo chmod 755 /usr/local/bin/dotter</pre></details>
+    </td>
+  </tr>
+</table>
 
 ### Create host-specific config:
 
