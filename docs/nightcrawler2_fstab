@@ -20,8 +20,18 @@ UUID=281aa0bd-e901-4336-a38f-3ce4a277cce1 /vm ext4 defaults 0 2
 
 # ============================================================================
 
-# sda1 /dump
+# sda1 /dumpster
+UUID=f1ece455-6633-40cd-857b-4f38ea6104a4 /dumpster ext4 defaults 0 0
+
+# ============================================================================
+
+# sdb1 /dump
 UUID=5426932026930262 /dump ntfs uid=max,gid=max 0 0
+
+# ============================================================================
+
+# sdc1 /music
+UUID=FFDC-F149 /music exfat defaults 0 0
 
 # ============================================================================
 
@@ -30,8 +40,11 @@ tmpfs /tmp tmpfs defaults,nosuid,nodev 0 0
 
 # ============================================================================
 
-# cifs P
-#//192.168.0.15/Public /mnt/p cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_node=0755 0 0
+# dc1 Public
+#//192.168.0.15/Public /mnt/shares/Public cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_mode=0755 0 0
 
-# cifs M
-#//192.168.0.10/Media /mnt/m cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_node=0755 0 0
+# svr1 Media 
+#//192.168.0.10/Media /mnt/shares/Media cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_mode=0755 0 0
+
+# dc1 Technical
+#//192.168.0.15/Technical /mnt/shares/Technical cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_mode=0755 0 0
