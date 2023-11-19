@@ -8,4 +8,4 @@ packages = [
 [files]
 
 [variables]
-disks = "'/boot/efi' '/' '/home' '/var/lib/lxd/storage-pools/default' '/vm' '/dump'"
+disks = "'/boot/efi' '/' '/home' '/var/lib/lxd/storage-pools/default' '/vm' '/music' '/dump' '/dumpster'"
