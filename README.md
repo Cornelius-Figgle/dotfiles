@@ -49,7 +49,7 @@ dotter deploy --force --verbose
 - wolverine (laptop)
 - wolverine-void (wsl @laptop)
 - pve1 (home server host)
-- mimic4 (minecraft BDS ct)
+- mimic5 (minecraft BDS ct)
 - irc2 (irssi ct)
 - win11-1 (vm @desktop)
 - steam-box-1 (ct @desktop)
