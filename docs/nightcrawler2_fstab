@@ -26,7 +26,7 @@ UUID=f1ece455-6633-40cd-857b-4f38ea6104a4 /dumpster ext4 defaults 0 0
 # ============================================================================
 
 # sdb1 /dump
-UUID=5426932026930262 /dump ntfs uid=max,gid=max 0 0
+UUID=5426932026930262 /dump ntfs-3g rw,uid=max,gid=max,big_writes,windows_names 0 0
 
 # ============================================================================
 
