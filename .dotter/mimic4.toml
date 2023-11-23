@@ -1,9 +1,0 @@
-includes = []
-packages = [
-  "bash", "neofetch", "tmux",
-  "helix", "git"
-]
-
-[files]
-
-[variables]
