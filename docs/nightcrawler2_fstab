@@ -20,13 +20,13 @@ UUID=281aa0bd-e901-4336-a38f-3ce4a277cce1 /vm ext4 defaults 0 2
 
 # ============================================================================
 
-# sda1 /dumpster
-UUID=f1ece455-6633-40cd-857b-4f38ea6104a4 /dumpster ext4 defaults 0 0
+# sda1 /backup
+UUID=b75db2e5-f70a-4106-8839-4ae4928ef061 /backup ext4 defaults 0 0
 
 # ============================================================================
 
 # sdb1 /dump
-UUID=5426932026930262 /dump ntfs-3g rw,uid=max,gid=max,big_writes,windows_names 0 0
+UUID=f1ece455-6633-40cd-857b-4f38ea6104a4 /dump ext4 defaults 0 0
 
 # ============================================================================
 
