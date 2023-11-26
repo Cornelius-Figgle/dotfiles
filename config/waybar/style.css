@@ -11,6 +11,7 @@ window#waybar {  /* bg of the bar */
 
 #wireplumber,
 #network,
+#network.net2,
 #clock {
   color: #f8f8f8;
   padding: 0px 20px;
