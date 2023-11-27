@@ -8,8 +8,8 @@ riverctl keyboard-layout gb
 riverctl spawn rivertile
 riverctl default-layout rivertile
 
-restart() { ( pkill $1; riverctl spawn $@ )>/dev/null 2>&1 & }
-start()   { ( ps -C $1 || riverctl spawn $@ )>/dev/null 2>&1 & }
+restart() { ( pkill $1; riverctl spawn $@ ) & }
+start()   { ( ps -C $1 || riverctl spawn $@ ) & }
 
 # auto exec
 start "udiskie"
@@ -18,7 +18,7 @@ restart "waybar"  # restart "yambar" && sleep 0.1 && riverctl focus-output next 
 restart "~/.config/river/scripts/2_FHD_swaybg.sh"
 start "pipewire"
 start "wireplumber"
-start "mpd --no-daemon"
+riverctl spawn "mpd --no-daemon"
 start "wl-paste --type text --watch cliphist store"
 start "wl-paste --type image --watch cliphist store"
 
