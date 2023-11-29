@@ -2,7 +2,7 @@ includes = []
 packages = [
   "river", "foot", "waybar", "dunst", "swaylock", "kanshi", "tofi",
   "bash", "tmux", "neofetch", "gtk",
-  "helix", "pypoetry", "git", "cava"
+  "helix", "pypoetry", "git", "cava", "mpd", "ncmpcpp"
 ]
 
 [files]

@@ -16,7 +16,6 @@
   "modules-right": [
     "wireplumber",
     "network",
-    "network#net2",
     "clock"
   ],
 
@@ -38,13 +37,6 @@
   "network": {
     "interval": 3,
     "interface": "eno1",
-    "format": "{ipaddr}",
-    "format-alt": "{bandwidthUpBits}, {bandwidthDownBits}",
-    "tooltip-format": "{ifname}"
-  },
-  "network#net2": {
-    "interval": 3,
-    "interface": "enp3s0",
     "format": "{ipaddr}",
     "format-alt": "{bandwidthUpBits}, {bandwidthDownBits}",
     "tooltip-format": "{ifname}"

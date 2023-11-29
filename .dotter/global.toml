@@ -67,6 +67,12 @@ sh_cmd = "['bash']"
 [ly.files]
 "config/ly/config.ini" = "/etc/ly/config.ini"
 
+[mpd.files]
+"config/mpd/config.conf" = "~/.config/mpd/mpd.conf"
+
+[ncmpcpp.files]
+"config/ncmpcpp/config.conf" = "~/.config/ncmpcpp/config"
+
 [neofetch.files]
 "config/neofetch/config.conf" = "~/.config/neofetch/config.conf"
 [neofetch.variables]
