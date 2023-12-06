@@ -48,12 +48,12 @@ dotter deploy --force --verbose
 
 ## Hosts
 
-- nightcrawler2 (desktop)
-- wolverine (laptop)
-- wolverine-void (wsl @laptop)
-- pve1 (home server host)
-- mimic5 (minecraft BDS ct)
-- irc2 (irssi ct)
-- win11-1 (vm @desktop)
-- steam-box-1 (ct @desktop)
-- rosa (rpi for the [ROSA](https://github.com/Cornelius-Figgle/ROSA) project)
+- nightcrawler2 (Void - desktop)
+- wolverine (Win10 - laptop)
+- wolverine-void (Void - wsl @laptop)
+- pve1 (Proxmox - home server host)
+- mimic5 (Debian - minecraft BDS ct)
+- irc2 (Alpine - irssi ct)
+- win11-1 (Win11 - vm @desktop)
+- steam-box-1 (Arch - ct @desktop)
+- rosa (Raspbian - rpi for the [ROSA](https://github.com/Cornelius-Figgle/ROSA) project)
