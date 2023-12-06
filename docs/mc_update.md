@@ -9,7 +9,7 @@ Connect to server & tmux session
 
 ```bash
 # bash
-ssh -t max@192.168.0.12 "tmux a -t MainMc"
+ssh -t root@192.168.0.12 "tmux a -t MainMc"
 ```
 
 Tell ppl to get off and close the server
@@ -29,7 +29,7 @@ Copy the latest Ubuntu url from Minecraft's website
 Cd into Minecraft folder and download the zip from the url from above
 
 ```bash
-cd ~/mc
+cd /data
 wget https://minecraft.azureedge.net/bin-linux/bedrock-server-1.19.63.01.zip
 # url from above, or edit version in url
 ```
@@ -80,7 +80,7 @@ nano +116,24 ./behavior_packs/vanilla_1.19.50/entities/player.json
 Cd back to minecraft folder
 
 ```bash
-cd ~/mc
+cd /data
 ```
 
 Remove the previous symlink
@@ -93,7 +93,7 @@ Add new symlink
 
 ```bash
 # ln -sd <target> <link>
-ln -sd /home/max/mc/1196301/ /home/max/mc/current
+ln -sd /data/1196301/ /data/current
 ```
 
 ## Restarting Server
@@ -101,7 +101,7 @@ ln -sd /home/max/mc/1196301/ /home/max/mc/current
 Restart the server
 
 ```bash
-cd ~/mc/current
+cd /data/current
 ./bedrock_server
 ```
 
