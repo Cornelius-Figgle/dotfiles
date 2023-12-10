@@ -70,6 +70,8 @@ sh_cmd = "['bash']"
 [mpd.files]
 "config/mpd/config.conf" = "~/.config/mpd/mpd.conf"
 
+[ncmpcpp.variables]
+mpd_host = "127.0.0.1"
 [ncmpcpp.files]
 "config/ncmpcpp/config.conf" = "~/.config/ncmpcpp/config"
 
