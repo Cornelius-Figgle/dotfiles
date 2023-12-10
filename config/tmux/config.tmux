@@ -82,7 +82,7 @@ set -g default-terminal xterm
 unbind -n Tab
 
 # https://superuser.com/a/1330842
-set -g default-command "${SHELL}"
+#set -g default-command "${SHELL}"
 
 # ---------------------------------------------------------------------
 

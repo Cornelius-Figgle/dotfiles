@@ -1,6 +1,9 @@
 # global config location for `dotter`
 # maps the files in the git repo to where the system expects them to be
 
+[ash.files]
+"config/ash/config.sh" = "~/.profile"
+
 [bash.files]
 "config/bash/config.sh" = "~/.bashrc"
 
