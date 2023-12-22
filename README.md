@@ -56,6 +56,7 @@ dotter deploy --force --verbose
 | **pve1** | home server host | Proxmox VE 8.0.3 | HP EliteDesk 800 G2 DM 65W |
 | **mimic5** | minecraft BDS ct | Debian GNU/Linux 12 (bookworm) | *Proxmox VE 8.0.3* |
 | **irc2** | [irssi](https://irssi.org/) ct | Alpine Linux edge | *Proxmox VE 8.0.3* |
+| **polaris** | Samba ct | Alpine Linux edge | *Proxmox VE 8.0.3* |
 | **win11-1** | vm @desktop | Windows 11 Pro | *QEMU emulator version 8.1.0* |
 | **steam-box-1** | ct @desktop | Arch Linux | *LXD 5.9* |
 | **rosa** | rpi for the [ROSA](https://github.com/Cornelius-Figgle/ROSA) project | Raspberry Pi OS Lite / Debian GNU/Linux 11 (bullseye) | Raspberry Pi Zero 2 W |
