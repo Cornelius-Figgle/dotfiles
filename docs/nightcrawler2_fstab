@@ -40,11 +40,25 @@ tmpfs /tmp tmpfs defaults,nosuid,nodev 0 0
 
 # ============================================================================
 
+# polaris auth
+//192.168.0.25/auth /mnt/shares/auth cifs credentials=/polaris_cred,uid=1000,gid=1000 0 0
+
+# polaris public
+//192.168.0.25/public /mnt/shares/public cifs credentials=/polaris_cred,uid=1000,gid=1000 0 0
+
+# polaris setup
+//192.168.0.25/setup /mnt/shares/setup cifs credentials=/polaris_cred,uid=1000,gid=1000 0 0
+
+# polaris source
+//192.168.0.25/source /home/max/source cifs credentials=/polaris_cred,uid=1000,gid=1000 0 0
+
+# ============================================================================
+
 # dc1 Public
-#//192.168.0.15/Public /mnt/shares/Public cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_mode=0755 0 0
+#//192.168.0.15/Public /mnt/shares/Public cifs credentials=/fullimage_cred,file_mode=0755,dir_mode=0755 0 0
 
 # svr1 Media 
-#//192.168.0.10/Media /mnt/shares/Media cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_mode=0755 0 0
+#//192.168.0.10/Media /mnt/shares/Media cifs credentials=/fullimage_cred,file_mode=0755,dir_mode=0755 0 0
 
 # dc1 Technical
-#//192.168.0.15/Technical /mnt/shares/Technical cifs credentials=/etc/cifs-credentials,file_mode=0755,dir_mode=0755 0 0
+#//192.168.0.15/Technical /mnt/shares/Technical cifs credentials=/fullimage_cred,file_mode=0755,dir_mode=0755 0 0
