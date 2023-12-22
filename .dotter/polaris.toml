@@ -1,0 +1,10 @@
+includes = [".dotter/include/lxc.toml"]
+packages = [
+  "ash", "neofetch", "tmux",
+  "helix", "git"
+]
+
+[files]
+
+[variables]
+disks = "'/' '/data'"
