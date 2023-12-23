@@ -9,6 +9,7 @@ function ssh {
 pve1               (root)
 mimic5             (root)
 irc2               (root)
+polaris            (max)
 other*" | tofi)
 
   case $op in
@@ -23,6 +24,9 @@ other*" | tofi)
       ;;
     "irc2               (root)")
       spawn_term_win "ssh -t root@192.168.0.21 'TERM=xterm && tmux attach'"
+      ;;
+    "polaris            (max)")
+      spawn_term_win "ssh -t max@192.168.0.25 'TERM=xterm && tmux attach'"
       ;;
   esac
 }
