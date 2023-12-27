@@ -53,6 +53,9 @@ for mode in normal locked; do
   riverctl map -repeat normal None KP_Home spawn "pamixer -d 5"
   riverctl map -repeat normal None KP_Up spawn "pamixer --toggle-mute"
   riverctl map -repeat normal None KP_Prior spawn "pamixer -i 5"
+  riverctl map normal None KP_Left spawn "mpc prev"
+  riverctl map normal None KP_Begin spawn "mpc toggle"
+  riverctl map normal None KP_Right spawn "mpc next"
 done
 
 # move focus
