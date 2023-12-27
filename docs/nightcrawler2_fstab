@@ -49,9 +49,6 @@ tmpfs /tmp tmpfs defaults,nosuid,nodev 0 0
 # polaris setup
 //192.168.0.25/setup /mnt/shares/setup cifs credentials=/polaris_cred,uid=1000,gid=1000 0 0
 
-# polaris source
-//192.168.0.25/source /home/max/source cifs credentials=/polaris_cred,uid=1000,gid=1000 0 0
-
 # ============================================================================
 
 # dc1 Public
