@@ -25,7 +25,7 @@ function wolverine-void {
 	tmux-silent
 	qh
 }
-function mimic4 {
+function mimic5 {
 	tmux-silent
 	qh
 }
