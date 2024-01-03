@@ -1,4 +1,4 @@
-alias cls='clear'
+alias cls='clear && qh'
 alias winfetch='pwsh -c winfetch'  # pwsh has weird module loading bars so we call it into pwsh where these are disabled (I couldn't work out how to do it in git-bash)
 alias lxappearance='GDK_BACKEND=x11 lxappearance'
 
