@@ -8,4 +8,4 @@ packages = [
 [files]
 
 [variables]
-disks = "'C:', 'D:'"
+disks = "'C:'"
