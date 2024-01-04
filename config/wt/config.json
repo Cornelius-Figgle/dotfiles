@@ -22,7 +22,19 @@
             "keys": "ctrl+q"
         },
         {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "ctrl+o"
+        },
+        {
             "command": "paste"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -31,10 +43,6 @@
                 "direction": "left"
             },
             "keys": "ctrl+u"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -90,11 +98,27 @@
             "keys": "alt+shift+left"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+numpad_minus"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+numpad_plus"
+        },
+        {
             "command": 
             {
                 "action": "closeTab"
             },
             "keys": "ctrl+c"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "right"
+            },
+            "keys": "ctrl+p"
         },
         {
             "command": "closePane",
@@ -111,18 +135,34 @@
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "up"
+                "action": "splitPane",
+                "split": "right"
             },
-            "keys": "ctrl+o"
+            "keys": "ctrl+plus"
         },
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "right"
+                "action": "adjustFontSize",
+                "delta": -1.0
             },
-            "keys": "ctrl+p"
+            "keys": "ctrl+shift+minus"
+        },
+        {
+            "command": 
+            {
+                "action": "adjustFontSize",
+                "delta": 1.0
+            },
+            "keys": "ctrl+shift+plus"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down"
+            },
+            "keys": "ctrl+minus"
         }
     ],
     "alwaysShowTabs": true,
