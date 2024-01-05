@@ -1,0 +1,11 @@
+includes = [".dotter/include/windows.toml"]
+packages = [
+  "glaze-wm", "wt",
+  "pwsh", "winfetch",
+  "helix", "git"
+]
+
+[files]
+
+[variables]
+disks = "'C:'"
