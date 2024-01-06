@@ -1,0 +1,16 @@
+includes = [".dotter/include/windows.toml"]
+packages = []
+
+[files]
+"config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
+"config/git/config.ini" = "~/.gitconfig"
+"config/helix/config.toml" = "~/.config/helix/config.toml"
+"config/helix/themes" = {target="~/.config/helix/themes", type="symbolic", recurse=false}
+"config/winfetch/config.ps1" = "~/.config/winfetch/config.ps1"
+"config/wt/config.json" = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
+
+[variables]
+autocrlf = "input"
+gh_path = "/usr/bin/gh"
+sh_cmd = "['bash']"
+disks = "'C:'"
