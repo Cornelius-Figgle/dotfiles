@@ -4,6 +4,13 @@
     "actions": 
     [
         {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            }
+        },
+        {
             "command": "openNewTabDropdown",
             "keys": "ctrl+shift+q"
         },
@@ -17,20 +24,25 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
-            }
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "ctrl+o"
         },
         {
             "command": "paste"
         },
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": 
             {
                 "action": "resizePane",
-                "direction": "up"
+                "direction": "left"
             },
-            "keys": "ctrl+o"
+            "keys": "ctrl+u"
         },
         {
             "command": 
@@ -42,28 +54,12 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "left"
-            },
-            "keys": "ctrl+u"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
             "command": "unbound",
             "keys": "ctrl+shift+space"
         },
         {
             "command": "unbound",
             "keys": "ctrl+shift+w"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+w"
         },
         {
             "command": "unbound",
@@ -106,6 +102,10 @@
             "keys": "ctrl+numpad_plus"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+c"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -118,7 +118,7 @@
             {
                 "action": "closeTab"
             },
-            "keys": "ctrl+c"
+            "keys": "ctrl+w"
         },
         {
             "command": 
