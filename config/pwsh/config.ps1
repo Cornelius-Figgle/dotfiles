@@ -4,7 +4,7 @@
 
 New-Alias -Name ahk -Value autohotkey
 
-Function glances-alias-fn { (glances --percpu --disable-irix --separator --programs @args) }
+Function glances-alias-fn { glances --percpu --disable-irix --separator --programs @args }
 # New-Alias -Name glances -Value glances-alias-fn  # disabled bc pwsh is bloody slow
 
 Function nightcrawler2 { ssh max@192.168.0.8 }
