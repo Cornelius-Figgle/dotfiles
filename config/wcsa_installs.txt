@@ -1,6 +1,0 @@
-winget install --id Microsoft.WindowsTerminal -e
-winget install GlazeWM
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-irm get.scoop.sh | iex
-scoop install winfetch pwsh gh dotter helix
-echo "INSTALL GIT FROM WEB INSTALLER"
