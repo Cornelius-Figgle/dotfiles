@@ -2,7 +2,7 @@ includes = [".dotter/include/wsl.toml"]
 packages = [
   "bash", "neofetch", "tmux",
   "helix", "git",
-  "mpd", "ncmpcpp", "cava"
+  "ncmpcpp"
 ]
 
 [files]
