@@ -9,4 +9,5 @@ packages = [
 
 [variables]
 disks = "'C:'"
+mpd_host = "192.168.0.171"
 music_path = "N:"
