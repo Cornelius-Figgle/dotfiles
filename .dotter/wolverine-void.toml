@@ -8,3 +8,4 @@ packages = [
 [files]
 
 [variables]
+music_path = "/mnt/n"

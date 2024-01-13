@@ -72,6 +72,7 @@ sh_cmd = "['bash']"
 
 [mpd.variables]
 mpd_host = "127.0.0.1"
+music_path = "/mnt/shares/music"
 [mpd.files]
 "config/mpd/config.conf" = "~/.config/mpd/mpd.conf"
 
