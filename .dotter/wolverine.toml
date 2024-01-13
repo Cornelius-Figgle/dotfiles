@@ -2,10 +2,11 @@ includes = [".dotter/include/windows.toml"]
 packages = [
   "glaze-wm", "wt",
   "pwsh", "winfetch",
-  "helix", "git"
+  "helix", "git", "mpd"
 ]
 
 [files]
 
 [variables]
 disks = "'C:'"
+music_path = "N:"

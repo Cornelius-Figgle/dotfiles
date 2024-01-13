@@ -49,11 +49,6 @@ gh_path = "/usr/bin/gh"
 [helix.variables]
 sh_cmd = "['bash']"
 
-[hypr.files]
-"config/hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
-"config/hypr/hyprempty.toml" = "~/.config/hypr-empty/config.toml"
-"config/hypr/scripts" = {target="~/.config/hypr/scripts", type="symbolic", recurse=false}
-
 [kanshi.files]
 "config/kanshi/config" = "~/.config/kanshi/config"
 
@@ -67,12 +62,15 @@ sh_cmd = "['bash']"
 "config/irssi/startup" = "~/.irssi/startup"
 "config/irssi/weed.theme" = "~/.irssi/weed.theme"
 
-[ly.files]
-"config/ly/config.ini" = "/etc/ly/config.ini"
-
 [mpd.variables]
 mpd_host = "127.0.0.1"
 music_path = "/mnt/shares/music"
+mpd_output = """
+audio_output {
+  type "pipewire"
+  name ""
+}
+"""
 [mpd.files]
 "config/mpd/config.conf" = "~/.config/mpd/mpd.conf"
 
@@ -96,19 +94,8 @@ net_adapter = "WiFi"
 "config/river/init" = "~/.config/river/init"
 "config/river/scripts" = {target="~/.config/river/scripts", type="symbolic", recurse=false}
 
-[rofi.files]
-"config/rofi/" = {target="~/.config/rofi", type="symbolic", recurse=false}
-
 [samba.files]
 "config/samba/config.conf" = "/etc/samba/smb.conf"
-
-[spicetify.files]
-"config/spicetify/config.ini" = "~/.config/spicetify/config-xpui.ini"
-"config/spicetify/Themes" = {target="~/.config/spicetify/Themes", type="symbolic", recurse=false}
-"config/spicetify/Extensions" = {target="~/.config/spicetify/Extensions", type="symbolic", recurse=false}
-[spicetify.variables]
-spotify_path = "/opt/spotify"
-prefs_path = "~/.config/spotify/prefs"
 
 [swaylock.files]
 "config/swaylock/config" = "~/.config/swaylock/config"
@@ -130,6 +117,3 @@ prefs_path = "~/.config/spotify/prefs"
 
 [wt.files]
 "config/wt/config.json" = "~/scoop/persist/windows-terminal/settings/settings.json"
-
-[yambar.files]
-"config/yambar/config.yml" = "~/.config/yambar/config.yml"
