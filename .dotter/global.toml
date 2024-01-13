@@ -70,11 +70,11 @@ sh_cmd = "['bash']"
 [ly.files]
 "config/ly/config.ini" = "/etc/ly/config.ini"
 
+[mpd.variables]
+mpd_host = "127.0.0.1"
 [mpd.files]
 "config/mpd/config.conf" = "~/.config/mpd/mpd.conf"
 
-[ncmpcpp.variables]
-mpd_host = "192.168.0.8"
 [ncmpcpp.files]
 "config/ncmpcpp/config.conf" = "~/.config/ncmpcpp/config"
 

@@ -2,10 +2,9 @@ includes = [".dotter/include/wsl.toml"]
 packages = [
   "bash", "neofetch", "tmux",
   "helix", "git",
-  "ncmpcpp"
+  "mpd", "ncmpcpp", "cava"
 ]
 
 [files]
 
 [variables]
-mpd_host = "192.168.0.8"
