@@ -9,12 +9,5 @@ packages = [
 
 [variables]
 disks = "'/boot/efi' '/' '/home' '/var/lib/lxd/storage-pools/default' '/vm' '/music' '/backup' '/dump'"
-
 mpd_host = "192.168.0.8"
 music_path = "/mnt/shares/music"
-mpd_output = """
-audio_output {
-  type "pipewire"
-  name ""
-}
-"""

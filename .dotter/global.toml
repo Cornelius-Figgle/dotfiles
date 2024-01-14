@@ -64,13 +64,8 @@ sh_cmd = "['bash']"
 
 [mpd.variables]
 mpd_host = "127.0.0.1"
-music_path = "/mnt/shares/music"
-mpd_output = """
-audio_output {
-  type "pipewire"
-  name ""
-}
-"""
+music_path = "/music"
+user_home = "~"
 [mpd.files]
 "config/mpd/config.conf" = "~/.config/mpd/mpd.conf"
 

@@ -13,14 +13,6 @@ gh_path = "'C:\\\\Users\\\\Max.Harrison\\\\scoop\\\\apps\\\\gh\\\\current\\\\bin
 [helix.variables]
 sh_cmd = "['pwsh', '-c']"
 
-[mpd.variables]
-mpd_output = """
-audio_output {
-  type "winmm"
-  name "My Winmm Output"
-}
-"""
-
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/AppData/Roaming/pypoetry/config.toml"
 
