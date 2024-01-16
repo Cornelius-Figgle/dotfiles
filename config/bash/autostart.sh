@@ -21,8 +21,14 @@ function nightcrawler2 {
 	tmux-silent
 	qh
 }
+function wolverine {
+	qh
+}
 function wolverine-void {
 	tmux-silent
+	qh
+}
+function pve2 {
 	qh
 }
 function mimic5 {
@@ -34,6 +40,10 @@ function rosa {
 	qh
 }
 function irc2 {
+	tmux-silent
+	qh
+}
+function polaris {
 	tmux-silent
 	qh
 }

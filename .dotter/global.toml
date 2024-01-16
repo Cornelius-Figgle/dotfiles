@@ -6,6 +6,9 @@
 
 [bash.files]
 "config/bash/config.sh" = "~/.bashrc"
+"config/bash/aliases.sh" = "~/.bash/aliases.sh"
+"config/bash/autostart.sh" = "~/.bash/autostart.sh"
+"config/bash/variables.sh" = "~/.bash/variables.sh"
 
 [cava]
 depends = ["tmux"]

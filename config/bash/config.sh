@@ -72,12 +72,12 @@ SCRIPT_PATH="$( pwd; )";
 popd  > '/dev/null';
 
 # other imports
-if [ -f ~/source/dotfiles/config/bash/aliases.sh ]; then
-    . ~/source/dotfiles/config/bash/aliases.sh
+if [ -f ~/.bash/aliases.sh ]; then
+    . ~/.bash/aliases.sh
 fi
-if [ -f ~/source/dotfiles/config/bash/variables.sh ]; then
-    . ~/source/dotfiles/config/bash/variables.sh
+if [ -f ~/.bash/variables.sh ]; then
+    . ~/.bash/variables.sh
 fi
-if [ -f ~/source/dotfiles/config/bash/autostart.sh ]; then
-	. ~/source/dotfiles/config/bash/autostart.sh
+if [ -f ~/.bash/autostart.sh ]; then
+	. ~/.bash/autostart.sh
 fi
