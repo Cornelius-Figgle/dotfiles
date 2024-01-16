@@ -60,4 +60,4 @@ $env:WSL_UTF8=1
 # Autostart
 # ====================
 
-qh
+# qh

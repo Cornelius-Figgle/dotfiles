@@ -33,5 +33,11 @@ function cddir() {
 }
 
 function qh() {
-	echo $(whoami) @ $(hostname) on $(ip -o route get to 8.8.8.8 | sed -n 's/.*src \([0-9.]\+\).*/\1/p')
+	{{#if (eq dotter.os "unix")}}
+		echo $(whoami) @ $(hostname) on $(ip -o route get to 8.8.8.8 | sed -n 's/.*src \([0-9.]\+\).*/\1/p')
+	{{/if}}
+
+	{{#if (eq dotter.os "windows")}}
+		echo $(whoami) @ $(hostname) on $(pwsh -c '(Get-NetIPAddress -AddressFamily IPv4 -InterfaceAlias {{ net_adapter }}).IPAddress')
+	{{/if}}
 }
