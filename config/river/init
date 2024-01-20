@@ -11,6 +11,8 @@ riverctl default-layout rivertile
 restart() { ( pkill $1; riverctl spawn $@ ) & }
 start()   { ( ps -C $1 || riverctl spawn $@ ) & }
 
+export SUDO_ASKPASS="/home/max/.config/tofi/scripts/askpass.sh"
+
 # auto exec
 start "udiskie"
 restart "kanshi"
@@ -21,6 +23,16 @@ start "wireplumber"
 riverctl spawn "mpd --no-daemon"
 start "wl-paste --type text --watch cliphist store"
 start "wl-paste --type image --watch cliphist store"
+
+# network mounts
+sudo -A mount -t cifs -o credentials=/fullimage_cred //192.168.0.15/Public /mnt/shares/Public
+sudo -A mount -t cifs -o credentials=/fullimage_cred //192.168.0.10/Media /mnt/shares/Media
+sudo -A mount -t cifs -o credentials=/fullimage_cred //192.168.0.15/Technical /mnt/shares/Technical
+
+sudo -A mount -t cifs -o credentials=/polaris_cred //192.168.0.25/auth /mnt/shares/auth
+sudo -A mount -t cifs -o credentials=/polaris_cred //192.168.0.25/music /mnt/shares/music
+sudo -A mount -t cifs -o credentials=/polaris_cred //192.168.0.25/public /mnt/shares/public
+sudo -A mount -t cifs -o credentials=/polaris_cred //192.168.0.25/setup /mnt/shares/setup
 
 # spawners
 riverctl map normal $mod Q spawn "foot"
