@@ -8,6 +8,6 @@ packages = [
 [files]
 
 [variables]
-disks = "'/boot/efi' '/' '/home' '/var/lib/lxd/storage-pools/default' '/vm' '/music' '/backup' '/dump'"
+disks = "'/dev/nvme0n1p1' '/dev/nvme0n1p2' '/dev/nvme0n1p3' '/dev/nvme1n1p1' '/dev/nvme1n1p2' '/dev/sda1' '/dev/sdb1'"
 mpd_host = "192.168.0.8"
 music_path = "/mnt/shares/music"
