@@ -7,3 +7,4 @@ packages = [
 [files]
 
 [variables]
+disks = "'/dev/nvme0n1' '/dev/sda'"
