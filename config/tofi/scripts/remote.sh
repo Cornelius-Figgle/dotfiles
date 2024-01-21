@@ -32,7 +32,7 @@ paul.harrison@quicksilver         [rdp]" | tofi)
       spawn_term_win "ssh -t root@192.168.0.21 'TERM=xterm && tmux attach'"
       ;;
     "root@homepage                     [ssh]")
-      spawn_term_win "ssh -t max@192.168.0.25 'TERM=xterm && tmux attach'"
+      spawn_term_win "ssh -t root@192.168.0.27 'TERM=xterm && tmux attach'"
       ;;
     "max@win11-1                       [rdp]")
       wlfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
