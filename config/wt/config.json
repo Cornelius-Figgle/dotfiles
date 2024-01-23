@@ -4,8 +4,11 @@
     "actions": 
     [
         {
-            "command": "openNewTabDropdown",
-            "keys": "ctrl+shift+q"
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            }
         },
         {
             "command": 
@@ -15,14 +18,8 @@
             "keys": "ctrl+q"
         },
         {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            }
-        },
-        {
-            "command": "paste"
+            "command": "openNewTabDropdown",
+            "keys": "ctrl+shift+q"
         },
         {
             "command": 
@@ -31,6 +28,21 @@
                 "direction": "up"
             },
             "keys": "ctrl+o"
+        },
+        {
+            "command": "paste"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "left"
+            },
+            "keys": "ctrl+u"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -44,14 +56,10 @@
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "left"
+                "action": "splitPane",
+                "split": "down"
             },
-            "keys": "ctrl+u"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "keys": "ctrl+minus"
         },
         {
             "command": "unbound",
@@ -108,14 +116,6 @@
         {
             "command": "unbound",
             "keys": "ctrl+x"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "down"
-            },
-            "keys": "ctrl+minus"
         },
         {
             "command": 
@@ -238,6 +238,12 @@
                 "hidden": false,
                 "icon": "C:\\Users\\max\\scoop\\apps\\git\\current\\mingw64\\share\\git\\git-for-windows.ico",
                 "name": "Git Bash"
+            },
+            {
+                "guid": "{067d207f-155f-5dc7-99bf-6593d3b6b6b9}",
+                "hidden": false,
+                "name": "testbox-deb",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
