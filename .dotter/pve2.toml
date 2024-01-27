@@ -1,0 +1,10 @@
+includes = []
+packages = [
+  "bash", "neofetch",
+  "git"
+]
+
+[files]
+
+[variables]
+disks = "'/dev/nvme0n1p2' '/dev/nvme0n1p3' '/dev/sda1' '/dev/sdb1'"

@@ -1,7 +1,0 @@
-https://www.howtogeek.com/270493/how-to-disable-the-lock-screen-in-windows-10/#remove-the-lock-screen-on-windows-10-professional
-
-gpedit
-"Administrative Templates"
-"Control Panel"
-"Personalisation"
-"Do not display the lockscreen" > *double-click > "Enabled" > "Apply" > "OK"

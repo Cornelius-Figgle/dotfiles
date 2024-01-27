@@ -16,13 +16,5 @@ sh_cmd = "['pwsh', '-c']"
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/AppData/Roaming/pypoetry/config.toml"
 
-[spicetify.files]
-"config/spicetify/config.ini" = "~/appdata/roaming/spicetify/config-xpui.ini"
-"config/spicetify/Themes" = {target="~/appdata/roaming/spicetify/themes", type="symbolic", recurse=false}
-"config/spicetify/Extensions" = {target="~/appdata/roaming/spicetify/Extensions", type="symbolic", recurse=false}
-[spicetify.variables]
-spotify_path = "C:\\Users\\Max.Harrison\\scoop\\apps\\spotify\\current"
-prefs_path = "C:\\Users\\Max.Harrison\\AppData\\Roaming\\Spotify\\prefs"
-
 [winfetch.variables]
 disks = "'C:'"

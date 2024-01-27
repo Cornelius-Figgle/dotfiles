@@ -4,13 +4,17 @@
 
 New-Alias -Name ahk -Value autohotkey
 
-Function glances-alias-fn { (glances --percpu --disable-irix --separator --programs @args) }
+# Function mpd { mpd --no-daemon c:\users\max\.config\mpd\mpd.conf }
+
+Function glances-alias-fn { glances --percpu --disable-irix --separator --programs @args }
 # New-Alias -Name glances -Value glances-alias-fn  # disabled bc pwsh is bloody slow
 
-Function nightcrawler2 { ssh -t max@192.168.0.8 tmux attach }
-Function pve1 { ssh root@192.168.0.19 }
+Function nightcrawler2 { ssh max@192.168.0.8 }
+Function pve2 { ssh root@192.168.0.19 }
 Function mimic5 { ssh -t root@192.168.0.12 tmux attach }
 Function irc2 { ssh -t root@192.168.0.21 tmux attach }
+Function polaris { ssh -t max@192.168.0.25 tmux attach }
+Function homepage { ssh -t root@192.168.0.27 tmux attach }
 
 # ====================
 # Functions

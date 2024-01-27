@@ -2,7 +2,7 @@
 # Aliases
 # ====================
 
-alias cls='clear'
+alias cls='clear && qh'
 
 alias glances='glances --percpu --disable-irix --separator --programs'
 

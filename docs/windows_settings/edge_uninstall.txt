@@ -1,8 +1,0 @@
-https://www.ifixit.com/Guide/How+to+delete+Edge+in+Windows+10+(Updated)/152429
-
-cmd (Admin)
-`taskkill /IM msedge.exe /F`
-`regedit`
-delete the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Edge` folder
-`explorer %PROGRAMFILES (x86)%\Microsoft\`
-delete all edge related folders

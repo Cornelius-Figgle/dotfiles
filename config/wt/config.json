@@ -4,27 +4,41 @@
     "actions": 
     [
         {
-            "command": "openNewTabDropdown",
-            "keys": "ctrl+shift+t"
-        },
-        {
             "command": 
             {
                 "action": "copy",
                 "singleLine": false
-            },
-            "keys": "ctrl+c"
+            }
         },
         {
             "command": 
             {
                 "action": "newTab"
             },
-            "keys": "ctrl+t"
+            "keys": "ctrl+q"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
+            "command": "openNewTabDropdown",
+            "keys": "ctrl+shift+q"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "ctrl+o"
+        },
+        {
+            "command": "paste"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "left"
+            },
+            "keys": "ctrl+u"
         },
         {
             "command": "find",
@@ -40,8 +54,68 @@
             "keys": "alt+shift+d"
         },
         {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down"
+            },
+            "keys": "ctrl+minus"
+        },
+        {
             "command": "unbound",
             "keys": "ctrl+shift+space"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "command": "unbound",
+            "keys": "enter"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+t"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+t"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+down"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+up"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+right"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+left"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+numpad_minus"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+numpad_plus"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+x"
         },
         {
             "command": 
@@ -49,6 +123,50 @@
                 "action": "closeTab"
             },
             "keys": "ctrl+w"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "right"
+            },
+            "keys": "ctrl+p"
+        },
+        {
+            "command": "closePane",
+            "keys": "ctrl+shift+x"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "keys": "ctrl+i"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right"
+            },
+            "keys": "ctrl+plus"
+        },
+        {
+            "command": 
+            {
+                "action": "adjustFontSize",
+                "delta": -1.0
+            },
+            "keys": "ctrl+shift+minus"
+        },
+        {
+            "command": 
+            {
+                "action": "adjustFontSize",
+                "delta": 1.0
+            },
+            "keys": "ctrl+shift+plus"
         }
     ],
     "alwaysShowTabs": true,
@@ -57,7 +175,7 @@
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "launchMode": "focus",
+    "launchMode": "default",
     "newTabMenu": 
     [
         {
@@ -94,6 +212,7 @@
                 "name": "Command Prompt"
             },
             {
+                "commandline": "\"C:\\Users\\max\\scoop\\shims\\pwsh.exe\" -NoLogo",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
@@ -104,6 +223,27 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "commandline": "C:\\Windows\\system32\\wsl.exe -d wolverine-void",
+                "guid": "{e7b6a082-d714-4c9b-a819-8c823f936c98}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "name": "wolverine-void",
+                "startingDirectory": "~"
+            },
+            {
+                "commandline": "C:\\Users\\max\\scoop\\shims\\bash.exe",
+                "guid": "{79863bf7-367f-4ff8-b02d-66074f12229b}",
+                "hidden": false,
+                "icon": "C:\\Users\\max\\scoop\\apps\\git\\current\\mingw64\\share\\git\\git-for-windows.ico",
+                "name": "Git Bash"
+            },
+            {
+                "guid": "{067d207f-155f-5dc7-99bf-6593d3b6b6b9}",
+                "hidden": false,
+                "name": "testbox-deb",
+                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
@@ -341,5 +481,6 @@
         }
     ],
     "showTabsInTitlebar": true,
-    "themes": []
+    "themes": [],
+    "useAcrylicInTabRow": false
 }
