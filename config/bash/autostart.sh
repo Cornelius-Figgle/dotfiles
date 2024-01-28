@@ -19,6 +19,7 @@ function tmux-silent {
 
 function nightcrawler2 {
 	tmux-silent
+	eval "$(thefuck --alias)"
 	qh
 }
 function wolverine {
