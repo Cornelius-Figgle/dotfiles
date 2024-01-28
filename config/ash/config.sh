@@ -41,7 +41,7 @@ function tmux_silent() {
 			if [ "$session" ]; then  # attach to last
 				exec tmux attach -t "$(echo "$session" | tail -n1 | cut -d'|' -f1)"
 			else
-				exec tmux -f ~/.silent-tmux.conf  # no status bar
+				exec tmux -f ~/.tmux.conf  # no status bar
 			fi
 		fi
 	fi
