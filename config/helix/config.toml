@@ -48,7 +48,7 @@ insert = "bar"
 select = "block"
 
 [editor.file-picker]
-hidden = false
+hidden = true
 follow-symlinks = true
 deduplicate-links = false
 parents = true

@@ -17,22 +17,22 @@ paul.harrison@quicksilver         [rdp]" | tofi)
 
   case $op in
     "max@nightcrawler2                 [ssh]")
-      spawn_term_win "ssh -t max@192.168.0.8 'TERM=xterm && tmux attach'"
+      spawn_term_win "ssh max@192.168.0.8"
       ;;
     "root@pve2                         [ssh]")
       spawn_term_win "ssh root@192.168.0.19"
       ;;
     "root@mimic5                       [ssh]")
-      spawn_term_win "ssh -t root@192.168.0.12 'TERM=xterm && tmux attach'"
+      spawn_term_win "ssh root@192.168.0.12"
       ;;
     "max@polaris                       [ssh]")
-      spawn_term_win "ssh -t max@192.168.0.25 'TERM=xterm && tmux attach'"
+      spawn_term_win "ssh max@192.168.0.25"
       ;;
     "root@irc2                         [ssh]")
-      spawn_term_win "ssh -t root@192.168.0.21 'TERM=xterm && tmux attach'"
+      spawn_term_win "ssh root@192.168.0.21"
       ;;
     "root@homepage                     [ssh]")
-      spawn_term_win "ssh -t root@192.168.0.27 'TERM=xterm && tmux attach'"
+      spawn_term_win "ssh root@192.168.0.27"
       ;;
     "max@win11-1                       [rdp]")
       wlfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
