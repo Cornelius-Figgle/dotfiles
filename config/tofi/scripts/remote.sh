@@ -6,35 +6,35 @@ function spawn_term_win {
 
 function shoose {
   op=$(echo "
-max@poseidon                 [ssh]
+max@poseidon                      [ssh]
 root@zeus                         [ssh]
-root@dionysus                       [ssh]
-max@athena                       [ssh]
+root@dionysus                     [ssh]
+max@athena                        [ssh]
 root@iris                         [ssh]
-root@hectia                     [ssh]
-max@apollo                       [rdp]
+root@hectia                       [ssh]
+max@apollo                        [rdp]
 paul.harrison@quicksilver         [rdp]" | tofi)
 
   case $op in
-    "max@poseidon                 [ssh]")
+    "max@poseidon                      [ssh]")
       spawn_term_win "ssh max@192.168.0.8"
       ;;
     "root@zeus                         [ssh]")
       spawn_term_win "ssh root@192.168.0.19"
       ;;
-    "root@dionysus                       [ssh]")
+    "root@dionysus                     [ssh]")
       spawn_term_win "ssh root@192.168.0.12"
       ;;
-    "max@athena                       [ssh]")
+    "max@athena                        [ssh]")
       spawn_term_win "ssh max@192.168.0.25"
       ;;
     "root@iris                         [ssh]")
       spawn_term_win "ssh root@192.168.0.21"
       ;;
-    "root@hectia                     [ssh]")
+    "root@hectia                       [ssh]")
       spawn_term_win "ssh root@192.168.0.27"
       ;;
-    "max@apollo                       [rdp]")
+    "max@apollo                        [rdp]")
       wlfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
       ;;
     "paul.harrison@quicksilver         [rdp]")
