@@ -4,11 +4,8 @@
     "actions": 
     [
         {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            }
+            "command": "openNewTabDropdown",
+            "keys": "ctrl+shift+q"
         },
         {
             "command": 
@@ -18,16 +15,11 @@
             "keys": "ctrl+q"
         },
         {
-            "command": "openNewTabDropdown",
-            "keys": "ctrl+shift+q"
-        },
-        {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "up"
-            },
-            "keys": "ctrl+o"
+                "action": "copy",
+                "singleLine": false
+            }
         },
         {
             "command": "paste"
@@ -36,13 +28,9 @@
             "command": 
             {
                 "action": "resizePane",
-                "direction": "left"
+                "direction": "up"
             },
-            "keys": "ctrl+u"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "keys": "ctrl+o"
         },
         {
             "command": 
@@ -56,10 +44,14 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "down"
+                "action": "resizePane",
+                "direction": "left"
             },
-            "keys": "ctrl+minus"
+            "keys": "ctrl+u"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": "unbound",
@@ -116,6 +108,14 @@
         {
             "command": "unbound",
             "keys": "ctrl+x"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down"
+            },
+            "keys": "ctrl+minus"
         },
         {
             "command": 
@@ -240,9 +240,9 @@
                 "name": "Git Bash"
             },
             {
-                "guid": "{067d207f-155f-5dc7-99bf-6593d3b6b6b9}",
+                "guid": "{2595493a-5822-5e06-bfca-cc5f3b0a6815}",
                 "hidden": false,
-                "name": "testbox-deb",
+                "name": "persephone",
                 "source": "Windows.Terminal.Wsl"
             }
         ]

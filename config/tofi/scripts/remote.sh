@@ -6,35 +6,35 @@ function spawn_term_win {
 
 function shoose {
   op=$(echo "
-max@nightcrawler2                 [ssh]
-root@pve2                         [ssh]
-root@mimic5                       [ssh]
-max@polaris                       [ssh]
-root@irc2                         [ssh]
-root@homepage                     [ssh]
-max@win11-1                       [rdp]
+max@poseidon                 [ssh]
+root@zeus                         [ssh]
+root@dionysus                       [ssh]
+max@athena                       [ssh]
+root@iris                         [ssh]
+root@hectia                     [ssh]
+max@apollo                       [rdp]
 paul.harrison@quicksilver         [rdp]" | tofi)
 
   case $op in
-    "max@nightcrawler2                 [ssh]")
+    "max@poseidon                 [ssh]")
       spawn_term_win "ssh max@192.168.0.8"
       ;;
-    "root@pve2                         [ssh]")
+    "root@zeus                         [ssh]")
       spawn_term_win "ssh root@192.168.0.19"
       ;;
-    "root@mimic5                       [ssh]")
+    "root@dionysus                       [ssh]")
       spawn_term_win "ssh root@192.168.0.12"
       ;;
-    "max@polaris                       [ssh]")
+    "max@athena                       [ssh]")
       spawn_term_win "ssh max@192.168.0.25"
       ;;
-    "root@irc2                         [ssh]")
+    "root@iris                         [ssh]")
       spawn_term_win "ssh root@192.168.0.21"
       ;;
-    "root@homepage                     [ssh]")
+    "root@hectia                     [ssh]")
       spawn_term_win "ssh root@192.168.0.27"
       ;;
-    "max@win11-1                       [rdp]")
+    "max@apollo                       [rdp]")
       wlfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
       ;;
     "paul.harrison@quicksilver         [rdp]")

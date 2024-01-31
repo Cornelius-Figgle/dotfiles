@@ -9,12 +9,12 @@ New-Alias -Name ahk -Value autohotkey
 Function glances-alias-fn { glances --percpu --disable-irix --separator --programs @args }
 # New-Alias -Name glances -Value glances-alias-fn  # disabled bc pwsh is bloody slow
 
-Function nightcrawler2 { ssh max@192.168.0.8 }
-Function pve2 { ssh root@192.168.0.19 }
-Function mimic5 { ssh root@192.168.0.12 }
-Function irc2 { ssh root@192.168.0.21 }
-Function polaris { ssh max@192.168.0.25 }
-Function homepage { ssh root@192.168.0.27 }
+Function poseidon { ssh max@192.168.0.8 }
+Function zeus { ssh root@192.168.0.19 }
+Function dionysus { ssh root@192.168.0.12 }
+Function iris { ssh root@192.168.0.21 }
+Function athena { ssh max@192.168.0.25 }
+Function hectia { ssh root@192.168.0.27 }
 
 # ====================
 # Functions
