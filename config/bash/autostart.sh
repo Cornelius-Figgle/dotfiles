@@ -17,22 +17,22 @@ function tmux-silent {
 }
 
 
-function nightcrawler2 {
+function poseidon {
 	tmux-silent
 	eval "$(thefuck --alias)"
 	qh
 }
-function wolverine {
+function hades {
 	qh
 }
-function wolverine-void {
+function persephone {
 	tmux-silent
 	qh
 }
-function pve2 {
+function zeus {
 	qh
 }
-function mimic5 {
+function dionysus {
 	tmux-silent
 	qh
 }
@@ -40,15 +40,11 @@ function rosa {
 	tmux-silent
 	qh
 }
-function irc2 {
+function iris {
 	tmux-silent
 	qh
 }
-function polaris {
-	tmux-silent
-	qh
-}
-function steam-box-1 {
+function athena {
 	tmux-silent
 	qh
 }
