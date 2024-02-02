@@ -36,7 +36,7 @@ paul.harrison@quicksilver         [rdp]" | tofi)
       spawn_term_win "ssh root@192.168.0.27"
       ;;
     "max@hephaestus                    [ssh]")
-      spawn_term_win "ssh root@192.168.0.27"
+      spawn_term_win "ssh max@192.168.0.28"
       ;;
     "max@apollo                        [rdp]")
       wlfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
