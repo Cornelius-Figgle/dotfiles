@@ -15,6 +15,7 @@ Function dionysus { ssh root@192.168.0.12 }
 Function iris { ssh root@192.168.0.21 }
 Function athena { ssh max@192.168.0.25 }
 Function hectia { ssh root@192.168.0.27 }
+Function hephaestus { ssh max@192.168.0.28 }
 
 # ====================
 # Functions
