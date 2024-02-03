@@ -8,7 +8,7 @@ packages = [
 [files]
 
 [variables]
-disks = "'C:'"
+disks = "'C:','D:'"
 mpd_host = "192.168.0.171"
 music_path = "N:"
 user_home = "c:/users/max"
