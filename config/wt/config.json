@@ -4,6 +4,13 @@
     "actions": 
     [
         {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            }
+        },
+        {
             "command": "openNewTabDropdown",
             "keys": "ctrl+shift+q"
         },
@@ -17,29 +24,17 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
-            }
-        },
-        {
-            "command": "paste"
-        },
-        {
-            "command": 
-            {
                 "action": "resizePane",
                 "direction": "up"
             },
             "keys": "ctrl+o"
         },
         {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
+            "command": "paste"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -50,8 +45,13 @@
             "keys": "ctrl+u"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+d"
         },
         {
             "command": "unbound",
@@ -223,14 +223,6 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "commandline": "C:\\Windows\\system32\\wsl.exe -d wolverine-void",
-                "guid": "{e7b6a082-d714-4c9b-a819-8c823f936c98}",
-                "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-                "name": "wolverine-void",
-                "startingDirectory": "~"
             },
             {
                 "commandline": "C:\\Users\\max\\scoop\\shims\\bash.exe",
