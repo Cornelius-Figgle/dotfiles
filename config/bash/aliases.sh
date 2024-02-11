@@ -4,15 +4,36 @@ alias lxappearance='GDK_BACKEND=x11 lxappearance'
 
 alias glances='glances --percpu --disable-irix --separator --programs'
 
-alias nightcrawler2='ssh -t max@192.168.0.8 tmux attach'
-alias pve1='ssh root@192.168.0.19'
-alias mimic5='ssh -t root@192.168.0.12 tmux attach'
-alias irc2='ssh -t root@192.168.0.21 tmux attach'
-alias polaris='ssh -t max@192.168.0.25 tmux attach'
+alias poseidon='ssh max@192.168.0.8'
+alias zeus='ssh root@192.168.0.19'
+alias dionysus='ssh root@192.168.0.12'
+alias iris='ssh root@192.168.0.21'
+alias athena='ssh max@192.168.0.25'
+alias hectia='ssh root@192.168.0.27'
+alias hephaestus='ssh max@192.168.0.28'
 
-alias mnt-public='sudo mount -t cifs -o credentials=/fullimage_cred //192.168.0.15/Public /mnt/shares/Public'
-alias mnt-media='sudo mount -t cifs -o credentials=/fullimage_cred //192.168.0.10/Media /mnt/shares/Media'
-alias mnt-technical='sudo mount -t cifs -o credentials=/fullimage_cred //192.168.0.15/Technical /mnt/shares/Technical'
+function mnt() {
+	case $1 in
+		"athena\auth")
+			sudo mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/auth /mnt/smb/athena/auth
+		;;
+		"athena\music")
+			sudo mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/music /mnt/smb/athena/music
+		;;
+		"athena\public")
+			sudo mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/public /mnt/smb/athena/public
+		;;
+		"svr1\Media")
+			sudo mount -t cifs -o credentials=/mnt/.fullimage,file_mode=0755,dir_mode=0755 //192.168.0.10/Media /mnt/smb/svr1/Media
+		;;
+		"dc1\Public")
+			sudo mount -t cifs -o credentials=/mnt/.fullimage,file_mode=0755,dir_mode=0755 //192.168.0.15/Public /mnt/smb/dc1/Public
+		;;
+		"dc1\Techincal")
+			sudo mount -t cifs -o credentials=/mnt/.fullimage,file_mode=0755,dir_mode=0755 //192.168.0.15/Technical /mnt/smb/dc1/Technical
+		;;
+	esac
+}
 
 alias dot='dotter deploy --force --verbose'
 
