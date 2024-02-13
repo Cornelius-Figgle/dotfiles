@@ -145,6 +145,7 @@ channels = (
   { name = "#test"; chatnet = "LiberaChat"; autojoin = "yes"; },
   { name = "#voidlinux"; chatnet = "LiberaChat"; autojoin = "yes"; },
   { name = "#river"; chatnet = "LiberaChat"; autojoin = "yes"; }
+  { name = "#alpine-devel"; chatnet = "LiberaChat"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -381,3 +382,4 @@ settings = {
     awl_sort = "refnum";
   };
 };
+ignores = ( { level = "JOINS PARTS QUITS"; } );
