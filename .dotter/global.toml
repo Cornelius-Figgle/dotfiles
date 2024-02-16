@@ -1,6 +1,13 @@
 # global config location for `dotter`
 # maps the files in the git repo to where the system expects them to be
 
+[alacritty.files]
+"config/alacritty/config.toml" = "~/.config/alacritty/alacritty.toml"
+[alacritty.variables]
+alacritty_sh_cmd = "{ program = 'bash', args = [] }"
+alacritty_font = "{ family = 'Monospace', style = 'Regular' }"
+alacritty_hints_cmd = "'xdg-open'"
+
 [ash.files]
 "config/ash/config.sh" = "~/.profile"
 
@@ -50,13 +57,10 @@ gh_path = "/usr/bin/gh"
 "config/helix/config.toml" = "~/.config/helix/config.toml"
 "config/helix/themes" = {target="~/.config/helix/themes", type="symbolic", recurse=false}
 [helix.variables]
-sh_cmd = "['bash']"
+helix_sh_cmd = "['bash']"
 
 [kanshi.files]
 "config/kanshi/config" = "~/.config/kanshi/config"
-
-[kitty.files]
-"config/kitty/config.conf" = "~/.config/kitty/kitty.conf"
 
 [irssi.files]
 "config/irssi/config" = "~/.irssi/config"

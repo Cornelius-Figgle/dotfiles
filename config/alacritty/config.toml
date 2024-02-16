@@ -1,0 +1,115 @@
+shell = {{ alacritty_sh_cmd }}
+working_directory = "None"
+live_config_reload = true
+# ipc_socket = true
+
+# [env]
+
+[window]
+dimensions = { columns = 0, lines = 0 }
+position = "None"
+padding = { x = 0, y = 0 }
+dynamic_padding = false
+decorations = "Full"  # :/
+opacity = 0.5
+blur = false
+startup_mode = "Windowed"
+title = "Alacritty"
+dynamic_title = false
+class = { instance = "Alacritty", general = "Alacritty" }
+decorations_theme_variant = "None"
+resize_increments = false
+
+[scrolling]
+history = 100000
+multiplier = 3
+
+[font]
+normal = {{ alacritty_font }}
+bold = { style = "bold" }
+italic = { style = "italic" }
+bold_italic = { style = "Bold Italic" }
+size = 12
+offset = { x = 0, y = 0 }
+glyph_offset = { x = 0, y = 0 }
+builtin_box_drawing = true
+
+[colors]
+cursor = { text = "CellBackground", cursor = "CellForeground" }
+vi_mode_cursor = { text = "CellBackground", cursor = "CellForeground" }
+# search = 
+# hints = 
+line_indicator = { foreground = "None", background = "None" }
+# footer_bar = 
+selection = { text = "CellBackground", background = "CellForeground" }
+indexed_colors = []
+transparent_background_colors = false
+draw_bold_text_with_bright_colors = false
+
+[colors.primary]
+foreground = "#bbc2cf"
+background = "#000000"
+# dim_foreground = 
+# bright_background = 
+
+# name: Doom One
+# author: Henrik Lissner <https://github.com/hlissner>
+# license: MIT
+# blurb: Inspired by Atom's One Dark color scheme
+[colors.normal]
+black = "#2a2e38"
+red = "#ff6c6b"
+green = "#98be65"
+yellow = "#ecbe7b"
+blue = "#51afef"
+magenta = "#c678dd"
+cyan = "#46d9ff"
+white = "#dfdfdf"
+
+[colors.bright]
+# they will be calculated automatically based on the `normal` colors
+
+[colors.dim]
+# they will be calculated automatically based on the `normal` colors
+
+[bell]
+animation = "Linear"
+duration = 50
+color = "#ffffff"
+command = "None"
+
+[selection]
+semantic_escape_chars = ",`|:\"' ()[]{}<>\t"
+save_to_clipboard = false
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+vi_mode_style = "None"
+blink_interval = 750
+blink_timeout = 5
+unfocused_hollow = true
+thickness = 0.25
+
+[terminal]
+osc52 = "OnlyCopy"
+
+[mouse]
+hide_when_typing = false
+# bindings = 
+
+[hints]
+alphabet = "vjfkdls;ahgurieowpq"
+
+[[hints.enabled]]
+command = {{ alacritty_hints_cmd }}
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+binding = { key = "U", mods = "Control|Shift" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+
+[keyboard]
+# bindings = 
+
+# [debug]

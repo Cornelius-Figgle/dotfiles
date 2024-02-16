@@ -35,8 +35,8 @@ sudo -A mount -t cifs -o credentials=/mnt/.fullimage,file_mode=0755,dir_mode=075
 sudo -A mount -t cifs -o credentials=/mnt/.fullimage,file_mode=0755,dir_mode=0755 //192.168.0.15/Technical /mnt/smb/dc1/Technical
 
 # spawners
-riverctl map normal $mod Q spawn "foot"
-riverctl map normal $mod+Shift Q spawn "foot --app-id 'floating'"
+riverctl map normal $mod Q spawn "alacritty"
+riverctl map normal $mod+Shift Q spawn "alacritty --class 'floating'"
 riverctl map normal $mod B spawn "brave-browser-stable"
 riverctl map normal $mod E spawn "nautilus"
 riverctl map normal $mod R spawn "tofi-drun | xargs riverctl spawn"

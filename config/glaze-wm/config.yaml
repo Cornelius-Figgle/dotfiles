@@ -208,7 +208,7 @@ keybindings:
 
   # Launch CMD terminal (alternatively `exec wt` or `exec %ProgramFiles%/Git/git-bash.exe`
   # to start Windows Terminal and Git Bash respectively.
-  - command: "exec %userprofile%/scoop/apps/windows-terminal/current/wt.exe"
+  - command: "exec %userprofile%/scoop/apps/alacritty/current/alacritty.exe"
     binding: "Alt+Q"
 
   # python.exe launcher for powershell

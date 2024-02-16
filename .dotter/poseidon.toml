@@ -1,6 +1,6 @@
 includes = []
 packages = [
-  "river", "foot", "waybar", "dunst", "swaylock", "kanshi", "tofi",
+  "river", "alacritty", "waybar", "dunst", "swaylock", "kanshi", "tofi",
   "bash", "tmux", "neofetch", "gtk",
   "helix", "pypoetry", "git", "cava", "mpd", "ncmpcpp"
 ]

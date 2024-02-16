@@ -6,7 +6,7 @@
 
 function spawn_term_win {
   # edit to work with your WM/TERM
-  riverctl spawn "foot $1"
+  riverctl spawn "alacritty $1"
 }
 
 function move_to_right_output {
