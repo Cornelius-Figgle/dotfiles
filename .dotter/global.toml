@@ -31,6 +31,9 @@ depends = ["tmux"]
 [foot.files]
 "config/foot/config.ini" = "~/.config/foot/foot.ini"
 
+[glances.files]
+"config/glances/config.ini" = "~/.config/glances/glances.conf"
+
 [glaze-wm.files]
 "config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
 "config/glaze-wm/scripts" = {target="~/.glaze-wm/scripts", type="symbolic", recurse=false}
