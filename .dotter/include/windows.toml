@@ -5,7 +5,6 @@
 [alacritty.variables]
 alacritty_sh_cmd = "{ program = 'pwsh', args = ['-NoLogo'] }"
 alacritty_font = "{ family = 'Cascadia Code', style = 'Regular' }"
-alacritty_hints_cmd = "{ program = 'cmd', args = [ '/c', 'start', '' ] }"
 
 [bash.files]
 "config/bash/config.sh" = "~/scoop/apps/git/current/etc/bash.bashrc"

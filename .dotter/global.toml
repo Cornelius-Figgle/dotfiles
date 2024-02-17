@@ -6,7 +6,6 @@
 [alacritty.variables]
 alacritty_sh_cmd = "{ program = 'bash', args = [] }"
 alacritty_font = "{ family = 'Monospace', style = 'Regular' }"
-alacritty_hints_cmd = "'xdg-open'"
 
 [ash.files]
 "config/ash/config.sh" = "~/.profile"

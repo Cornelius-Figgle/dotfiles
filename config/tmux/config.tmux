@@ -88,8 +88,8 @@ unbind -n Tab
 
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'ofirgall/tmux-window-name'
-set -g @plugin 'tmux-plugins/tmux-yank'
+# set -g @plugin 'ofirgall/tmux-window-name'
+# set -g @plugin 'tmux-plugins/tmux-yank'
 set -g @plugin 'tmux-plugins/tmux-online-status'
 set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
 

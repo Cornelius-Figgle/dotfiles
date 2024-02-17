@@ -4,11 +4,6 @@
 # Helper functions
 # =================
 
-function spawn_term_win {
-  # edit to work with your WM/TERM
-  riverctl spawn "alacritty $1"
-}
-
 function move_to_right_output {
   # edit to work with your WM/TERM
   sleep 0.5
@@ -18,12 +13,12 @@ function move_to_right_output {
 
 function display {
   if [ "$SPAWN_NEW_WINDOW" = true ]; then
-    spawn_term_win "tmux attach -t $1"
+    riverctl spawn "alacritty -e tmux attach -t cava_split"
   else  # reuse current window
     if [ "$TMUX" ]; then  # if already inside of TMUX
-      tmux switch -t $1  # display in current terminal
+      tmux switch -t cava_split  # display in current terminal
     else
-      tmux attach -t $1
+      tmux attach -t cava_split
     fi
   fi
 }
@@ -40,7 +35,7 @@ function horizontal {
   tmux send-keys -t cava_split:1.1 "cava -p ~/.config/cava/left" ENTER
   tmux send-keys -t cava_split:1.2 "cava -p ~/.config/cava/right" ENTER
 
-  display "cava_split"
+  display
 }
 
 function vertical {
@@ -51,7 +46,7 @@ function vertical {
   tmux send-keys -t cava_split:1.1 "cava -p ~/.config/cava/left" ENTER
   tmux send-keys -t cava_split:1.2 "cava -p ~/.config/cava/right" ENTER
   
-  display "cava_split"
+  display
 }
 
 function averaged {
@@ -59,7 +54,7 @@ function averaged {
 
   tmux send-keys -t cava_split "cava -p ~/.config/cava/config" ENTER
 
-  display "cava_split"
+  display
 }
 
 function stereo {
@@ -67,7 +62,7 @@ function stereo {
 
   tmux send-keys -t cava_split "cava -p ~/.config/cava/stereo" ENTER
 
-  display "cava_split"
+  display
 }
 
 function multi_window {
@@ -81,12 +76,12 @@ function multi_window {
   tmux send-keys -t cava_split_2:2 "cava -p ~/.config/cava/right" ENTER
 
   if [ "$LEFT_IS_SECOND" = true ]; then
-    spawn_term_win "tmux attach -t cava_split_2:2"
-    spawn_term_win "tmux attach -t cava_split:1"
+    riverctl spawn "alacritty -e tmux attach -t cava_split_2:2"
+    riverctl spawn "alacritty -e tmux attach -t cava_split:1"
     move_to_right_output
   else
-    spawn_term_win "tmux attach -t cava_split:1"
-    spawn_term_win "tmux attach -t cava_split_2:2"
+    riverctl spawn "alacritty -e tmux attach -t cava_split_1"
+    riverctl spawn "alacritty -e tmux attach -t cava_split:2:2"
     move_to_right_output
   fi
 }

@@ -2,6 +2,7 @@ shell = {{ alacritty_sh_cmd }}
 working_directory = "None"
 live_config_reload = true
 # ipc_socket = true
+hints.enabled = []
 
 # [env]
 
@@ -29,7 +30,7 @@ normal = {{ alacritty_font }}
 bold = { style = "bold" }
 italic = { style = "italic" }
 bold_italic = { style = "Bold Italic" }
-size = 12
+size = 10
 offset = { x = 0, y = 0 }
 glyph_offset = { x = 0, y = 0 }
 builtin_box_drawing = true
@@ -74,7 +75,7 @@ white = "#dfdfdf"
 
 [bell]
 animation = "Linear"
-duration = 50
+duration = 0
 color = "#ffffff"
 command = "None"
 
@@ -96,18 +97,6 @@ osc52 = "OnlyCopy"
 [mouse]
 hide_when_typing = false
 # bindings = 
-
-[hints]
-alphabet = "vjfkdls;ahgurieowpq"
-
-[[hints.enabled]]
-command = {{ alacritty_hints_cmd }}
-hyperlinks = true
-post_processing = true
-persist = false
-mouse.enabled = true
-binding = { key = "U", mods = "Control|Shift" }
-regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
 
 [keyboard]
 # bindings = 
