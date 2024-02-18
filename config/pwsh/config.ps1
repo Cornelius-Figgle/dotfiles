@@ -58,13 +58,12 @@ $ProgressPreference='SilentlyContinue'
 
 $env:WSL_UTF8=1
 
-$Path = [Environment]::GetEnvironmentVariable("PATH", "Machine") + [IO.Path]::PathSeparator + "C:\Users\max\AppData\Roaming\Python\Python312\Scripts"
-[Environment]::SetEnvironmentVariable( "Path", $Path, "Machine" )
+$env:PATH += ";C:\Users\max\AppData\Roaming\Python\Python312\Scripts"
 	
 # ====================
 # Autostart
 # ====================
 
 qh
-iex "$(thefuck --alias)"
+$env:PYTHONIOENCODING="utf-8" && iex "$(thefuck --alias)"
 iex (& { (zoxide init --cmd cd powershell | Out-String) })
