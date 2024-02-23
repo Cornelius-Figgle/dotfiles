@@ -30,7 +30,7 @@ normal = {{ alacritty_font }}
 bold = { style = "bold" }
 italic = { style = "italic" }
 bold_italic = { style = "Bold Italic" }
-size = 12
+size = {{ alacritty_font_size }}
 offset = { x = 0, y = 0 }
 glyph_offset = { x = 0, y = 0 }
 builtin_box_drawing = true

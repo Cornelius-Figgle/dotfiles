@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function spawn_term_win {
-  riverctl spawn "foot $1"
+  riverctl spawn "alacritty -e $1"
 }
 
 function shoose {
