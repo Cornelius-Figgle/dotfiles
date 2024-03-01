@@ -1,8 +1,8 @@
 #!/bin/bash
 # requires ImageMagick & swaybg
 
-#orig_image=~/source/dotfiles/wallpapers/wallhaven-0q1q8r.png
-orig_image=~/source/dotfiles/wallpapers/wallhaven-0q1q8r.jpg
+# orig_image=~/source/dotfiles/wallpapers/wallhaven-0q1q8r.jpg
+orig_image=~/source/dotfiles/wallpapers/wallhaven-y82kog.png
 output_1=DP-1
 output_2=DP-2
 
