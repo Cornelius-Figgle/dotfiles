@@ -98,6 +98,7 @@ net_adapter = "WiFi"
 [river.files]
 "config/river/init" = "~/.config/river/init"
 "config/river/scripts" = {target="~/.config/river/scripts", type="symbolic", recurse=false}
+"wallpapers" = {target="~/.config/river/wallpapers", type="symbolic", recurse=false}
 
 [samba.files]
 "config/samba/config.conf" = "/etc/samba/smb.conf"
