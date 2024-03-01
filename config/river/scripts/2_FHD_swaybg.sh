@@ -2,7 +2,7 @@
 # requires ImageMagick & swaybg
 
 # orig_image=~/source/dotfiles/wallpapers/wallhaven-0q1q8r.jpg
-orig_image=~/source/dotfiles/wallpapers/wallhaven-y82kog.png
+orig_image=~/source/dotfiles/wallpapers/wallhaven-y82kog-mirrored.png
 output_1=DP-1
 output_2=DP-2
 
