@@ -11,6 +11,7 @@ Function glances-alias-fn { glances --disable-irix --separator --programs @args 
 
 Function poseidon { ssh max@192.168.0.8 }
 Function zeus { ssh root@192.168.0.19 }
+Function mnemosyne { ssh root@192.168.0.26 }
 Function dionysus { ssh root@192.168.0.12 }
 Function iris { ssh root@192.168.0.21 }
 Function athena { ssh max@192.168.0.25 }

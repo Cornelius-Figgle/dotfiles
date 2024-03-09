@@ -8,6 +8,7 @@ function shoose {
   op=$(echo "
 max@poseidon                      [ssh]
 root@zeus                         [ssh]
+root@mnemosyne                    [ssh]
 root@dionysus                     [ssh]
 max@athena                        [ssh]
 root@iris                         [ssh]
@@ -22,6 +23,9 @@ paul.harrison@quicksilver         [rdp]" | tofi)
       ;;
     "root@zeus                         [ssh]")
       spawn_term_win "ssh root@192.168.0.19"
+      ;;
+    "root@mnemosyne                    [ssh]")
+      spawn_term_win "ssh root@192.168.0.26"
       ;;
     "root@dionysus                     [ssh]")
       spawn_term_win "ssh root@192.168.0.12"

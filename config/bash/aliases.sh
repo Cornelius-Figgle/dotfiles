@@ -6,6 +6,7 @@ alias glances='glances --disable-irix --separator --programs'
 
 alias poseidon='ssh max@192.168.0.8'
 alias zeus='ssh root@192.168.0.19'
+alias mnemosyne='ssh root@192.168.0.26'
 alias dionysus='ssh root@192.168.0.12'
 alias iris='ssh root@192.168.0.21'
 alias athena='ssh max@192.168.0.25'
