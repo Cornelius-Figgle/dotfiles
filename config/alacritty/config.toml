@@ -58,7 +58,7 @@ foreground = "#bbc2cf"
 background = "#000000"
 {{/if}}
 {{#if (eq dotter.os "windows")}}
-background = "#0d0f14"
+background = "#202020"
 {{/if}}
 # dim_foreground = 
 # bright_background = 
