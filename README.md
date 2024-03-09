@@ -10,6 +10,10 @@
 
 ![hades](./images/hades.jpg)
 
+### apollo
+
+![apollo](./images/apollo.jpg)
+
 ## Usage
 
 ### Install [`dotter`](https://github.com/SuperCuber/dotter):
