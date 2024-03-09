@@ -1,14 +1,11 @@
 includes = [".dotter/include/windows.toml"]
 packages = [
-  "glaze-wm", "alacritty",
+  "alacritty",
   "pwsh", "winfetch",
-  "helix", "git", "mpd"
+  "helix", "git"
 ]
 
 [files]
 
 [variables]
 disks = "'C:','D:'"
-mpd_host = "192.168.0.171"
-music_path = "N:"
-user_home = "c:/users/max"
