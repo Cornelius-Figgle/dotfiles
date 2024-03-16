@@ -16,38 +16,22 @@
 
 ## Usage
 
-### Install [`dotter`](https://github.com/SuperCuber/dotter):
-
-<table>
-  <tr>
-    <td>
-      <details><summary><h4>Void</h4></summary><pre># cd ~/source/void-packages<br># git checkout add_dotter<br>./xbps-src pkg dotter<br>xi -y dotter</pre></details>
-    </td>
-    <td>
-      <details><summary><h4>Arch</h4></summary><pre>yay -S dotter-rs-bin</pre></details>
-    </td>
-    <td>
-      <details><summary><h4>Windows</h4></summary><pre>scoop install dotter</pre></details>
-    </td>
-    <td>
-      <details><summary><h4>Alpine</h4></summary><pre>apk add wget<br>wget https://github.com/SuperCuber/dotter/releases/latest/download/dotter<br>mv ./dotter /usr/local/bin/<br>chmod 755 /usr/local/bin/dotter</pre></details>
-    </td>
-    <td>
-      <details><summary><h4><i>other</i></h4></summary><pre>wget https://github.com/SuperCuber/dotter/releases/download/v0.13.0/dotter<br>sudo mv ./dotter /usr/local/bin/<br>sudo chmod 755 /usr/local/bin/dotter</pre></details>
-    </td>
-  </tr>
-</table>
-
-### Create host-specific config:
+### *nix
 
 ```shell
-cp ./.dotter/default.toml ./.dotter/$(HOSTNAME).toml
+./bin/dotter deploy --force --verbose
 ```
 
-### Deploy configs:
+### *nix ARM
 
 ```shell
-dotter deploy --force --verbose
+./bin/dotter.arm deploy --force --verbose
+```
+
+### Windows
+
+```shell
+.\bin\dotter.exe deploy --force --verbose
 ```
 
 ## Hosts

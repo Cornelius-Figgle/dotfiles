@@ -36,7 +36,7 @@ function mnt() {
 	esac
 }
 
-alias dot='dotter deploy --force --verbose'
+alias dot='./bin/dotter deploy --force --verbose'
 
 alias pacman-backup='pacman -Qqe | grep -v "$(pacman -Qqm)"'
 alias aur-backup='pacman -Qqm'

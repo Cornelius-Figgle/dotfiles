@@ -44,7 +44,7 @@ Function qh {
 }
 
 Function dot {
-	dotter deploy --force --verbose
+	.\bin\dotter deploy --force --verbose
 }
 
 Function prompt {
