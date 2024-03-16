@@ -33,7 +33,12 @@ function persephone {
 	qh
 }
 function zeus {
+	eval "$(zoxide init --cmd cd bash)"
 	qh
+}
+function mnemosyne {
+        eval "$(zoxide init --cmd cd bash)"
+        qh
 }
 function dionysus {
 	tmux-silent
