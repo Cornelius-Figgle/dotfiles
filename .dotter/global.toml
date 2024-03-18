@@ -24,7 +24,6 @@ depends = ["tmux"]
 "config/cava/stereo.ini" = "~/.config/cava/stereo"
 "config/cava/left.ini" = "~/.config/cava/left"
 "config/cava/right.ini" = "~/.config/cava/right"
-"config/cava/scripts" = {target="~/.config/cava/scripts", type="symbolic", recurse=false}
 
 [dunst.files]
 "config/dunst/config.conf" = "~/.config/dunst/dunstrc"

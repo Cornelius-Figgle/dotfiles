@@ -1,40 +1,14 @@
 #!/bin/bash
 
-function cava {
-  op=$(echo "horizontal
-vertical
-averaged
-stereo
-multi_window" | tofi)
-
-  case $op in
-    "horizontal")
-      bash ~/.config/cava/scripts/split_delta.sh horizontal
-      ;;
-    "vertical")
-      bash ~/.config/cava/scripts/split_delta.sh vertical
-      ;;
-    "averaged")
-      bash ~/.config/cava/scripts/split_delta.sh averaged
-      ;;
-    "stereo")
-      bash ~/.config/cava/scripts/split_delta.sh stereo
-      ;;
-    "multi_window")
-      bash ~/.config/cava/scripts/split_delta.sh multi_window
-      ;;
-  esac
-}
-
 function shoose {
-  op=$(echo "cava/
+  op=$(echo "music
 remote/
 restart pipewire
 emoji" | tofi)
 
   case $op in
-    "cava/")
-      cava
+    "music")
+      bash ~/.config/river/scripts/music_delta.sh
       ;;
     "remote/")
       bash ~/.config/tofi/scripts/remote.sh
