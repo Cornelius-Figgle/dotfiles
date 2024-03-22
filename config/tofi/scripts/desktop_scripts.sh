@@ -1,14 +1,21 @@
 #!/bin/bash
 
+function music_delta {
+  op=$(echo "ncmpcpp
+spotify" | tofi)
+
+  bash ~/.config/river/scripts/music_delta.sh $op
+}
+
 function shoose {
-  op=$(echo "music
+  op=$(echo "music delta/
 remote/
 restart pipewire
 emoji" | tofi)
 
   case $op in
-    "music")
-      bash ~/.config/river/scripts/music_delta.sh
+    "music delta/")
+      music_delta
       ;;
     "remote/")
       bash ~/.config/tofi/scripts/remote.sh
