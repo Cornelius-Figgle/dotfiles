@@ -19,6 +19,8 @@ if [[ "$1" = "ncmpcpp" ]]; then
   tmux send-keys -t music_delta_a:1.3 "ncmpcpp" ENTER
   tmux send-keys -t music_delta_a:1.3 "U#P"
 
+  tmux select-pane -t music_delta_a:1.1
+
   riverctl spawn "alacritty -e tmux attach -t music_delta_a"
 elif [[ "$1" = "spotify" ]]; then
   brave-browser-stable --new-window "https://open.spotify.com/" &
