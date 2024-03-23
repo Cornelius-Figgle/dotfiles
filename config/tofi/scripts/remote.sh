@@ -43,10 +43,10 @@ paul.harrison@quicksilver         [rdp]" | tofi)
       spawn_term_win "ssh max@192.168.0.28"
       ;;
     "max@apollo                        [rdp]")
-      wlfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
+      xfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
       ;;
     "paul.harrison@quicksilver         [rdp]")
-      wlfreerdp -v 192.168.0.11 -d FULLIMAGE -u paul.harrison --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
+      xfreerdp -v 192.168.0.11 -d FULLIMAGE -u paul.harrison --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
       ;;
   esac
 }
