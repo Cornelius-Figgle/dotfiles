@@ -13,11 +13,11 @@ function ncmpcpp {
   tmux split-pane -v -t music_delta_a:1.2
 
   tmux send-keys -t music_delta_a:1.1 "ncmpcpp" ENTER
-  tmux send-keys -t music_delta_a:1.1 "U#LLLLLLLLl"
+  tmux send-keys -t music_delta_a:1.1 "U#"
   tmux send-keys -t music_delta_a:1.2 "peaclock" ENTER
   sleep 0.5 && tmux send-keys -t music_delta_a:1.2 "d" && sleep 0.5 && tmux send-keys -t music_delta_a:1.2 "s" 
   tmux send-keys -t music_delta_a:1.3 "ncmpcpp" ENTER
-  tmux send-keys -t music_delta_a:1.3 "U#"
+  tmux send-keys -t music_delta_a:1.3 "U#3"
 
   tmux select-pane -t music_delta_a:1.1
 
