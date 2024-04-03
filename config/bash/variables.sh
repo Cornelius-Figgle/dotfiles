@@ -7,7 +7,7 @@
 
 export PATH="$PATH:/home/max/.local/bin:/home/max/.cargo/bin"
 export XDG_SCREENSHOTS_DIR="/home/max/Screenshots"
-export EDITOR="hx"
+export EDITOR="/usr/bin/hx"
 
 PS1='\w \$ '
 

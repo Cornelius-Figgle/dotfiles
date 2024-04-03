@@ -21,8 +21,11 @@ function mnt() {
 		"athena\music")
 			sudo mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/music /mnt/smb/athena/music
 		;;
-		"athena\public")
-			sudo mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/public /mnt/smb/athena/public
+		"athena\notes")
+			sudo mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/notes /mnt/smb/athena/notes
+		;;
+		"athena\setup")
+			sudo mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/setup /mnt/smb/athena/setup
 		;;
 		"svr1\Media")
 			sudo mount -t cifs -o credentials=/mnt/.fullimage,file_mode=0755,dir_mode=0755 //192.168.0.10/Media /mnt/smb/svr1/Media
