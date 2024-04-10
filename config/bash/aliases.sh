@@ -1,8 +1,9 @@
 alias cls='clear && qh'
 alias winfetch='pwsh -c winfetch'  # pwsh has weird module loading bars so we call it into pwsh where these are disabled (I couldn't work out how to do it in git-bash)
-alias lxappearance='GDK_BACKEND=x11 lxappearance'
 
 alias glances='glances --disable-irix --separator --programs'
+
+alias river='dbus-launch river'
 
 alias poseidon='ssh max@192.168.0.8'
 alias zeus='ssh root@192.168.0.19'
