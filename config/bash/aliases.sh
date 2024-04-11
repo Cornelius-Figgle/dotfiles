@@ -3,8 +3,6 @@ alias winfetch='pwsh -c winfetch'  # pwsh has weird module loading bars so we ca
 
 alias glances='glances --disable-irix --separator --programs'
 
-alias river='dbus-launch river'
-
 alias poseidon='ssh max@192.168.0.8'
 alias zeus='ssh root@192.168.0.19'
 alias mnemosyne='ssh root@192.168.0.26'
