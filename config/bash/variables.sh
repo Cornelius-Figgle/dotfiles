@@ -9,7 +9,10 @@ export PATH="$PATH:/home/max/.local/bin:/home/max/.cargo/bin"
 export XDG_SCREENSHOTS_DIR="/home/max/Screenshots"
 export EDITOR="/usr/bin/hx"
 
-PS1='\w \$ '
+# https://bash-prompt-generator.org/
+PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null) ; if [[ ! -z "${PS1_CMD1}" ]];then PS1_CMD1=" #$PS1_CMD1";fi'
+PS1='[\u@\h:\W${PS1_CMD1}] \$ '
+
 
 export PYTHONIOENCODING="utf-8"
 # eval "$(thefuck --alias)"

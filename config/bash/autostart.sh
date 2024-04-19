@@ -21,30 +21,26 @@ function poseidon {
 	tmux-silent
 	eval "$(thefuck --alias)"
 	eval "$(zoxide init --cmd cd bash)"
-	qh
 }
 function hades {
-	qh
+	:
 }
 function persephone {
 	tmux-silent
 	eval "$(thefuck --alias)"
 	eval "$(zoxide init --cmd cd bash)"
-	qh
 }
 function zeus {
-	qh
+	:
 }
 function mnemosyne {
-        qh
+	:
 }
 function dionysus {
 	tmux-silent
-	qh
 }
 function rosa {
 	tmux-silent
-	qh
 }
 
 if ! [ $1 ]; then
