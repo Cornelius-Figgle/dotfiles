@@ -6,10 +6,14 @@ alias cls='clear && qh'
 
 alias glances='glances --percpu --disable-irix --separator --programs'
 
-alias nightcrawler2='ssh -t max@192.168.0.8 tmux attach'
-alias pve1='ssh root@192.168.0.19'
-alias mimic5='ssh -t root@192.168.0.12 tmux attach'
-alias irc2='ssh -t root@192.168.0.21 tmux attach'
+alias poseidon='ssh max@192.168.0.8'
+alias zeus='ssh root@192.168.0.19'
+alias mnemosyne='ssh root@192.168.0.26'
+alias dionysus='ssh root@192.168.0.12'
+alias iris='ssh root@192.168.0.21'
+alias athena='ssh max@192.168.0.25'
+alias hectia='ssh root@192.168.0.27'
+alias hephaestus='ssh max@192.168.0.28'
 
 alias dot='dotter deploy --force --verbose'
 
@@ -52,6 +56,7 @@ function tmux_silent() {
 # ====================
 
 PS1='\w \$ '
+export PATH=~/source/XBPS/usr/bin:$PATH
 
 # ====================
 # Autostart
