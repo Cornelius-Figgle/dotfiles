@@ -58,7 +58,9 @@ function tmux_silent() {
 # https://bash-prompt-generator.org/
 PS1='[\[\e[93m\]\u\[\e[0m\]@\[\e[95m\]\h\[\e[0m\]:\[\e[94m\]\w\[\e[0m\]\[\e[92m\]$( if [[ ! -z "$(git branch --show-current 2>/dev/null)" ]]; then echo " #$(git branch --show-current 2>/dev/null)" ; fi )\[\e[0m\]] \[\e[91m\]\$\[\e[0m\] '
 
-export PATH=~/source/XBPS/usr/bin:$PATH
+if [[ "$(hostname)" == "hephaestus" ]]; then
+	export PATH=~/source/XBPS/usr/bin:~/source/xtools:$PATH
+fi
 
 # ====================
 # Autostart
