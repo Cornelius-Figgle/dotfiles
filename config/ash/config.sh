@@ -2,7 +2,7 @@
 # Aliases
 # ====================
 
-alias cls='clear && qh'
+alias cls='clear'
 
 alias glances='glances --percpu --disable-irix --separator --programs'
 
@@ -15,7 +15,7 @@ alias athena='ssh max@192.168.0.25'
 alias hectia='ssh root@192.168.0.27'
 alias hephaestus='ssh max@192.168.0.28'
 
-alias dot='dotter deploy --force --verbose'
+alias dot='./bin/dotter deploy --force --verbose'
 
 # ====================
 # Functions
@@ -55,7 +55,6 @@ function tmux_silent() {
 # Variables
 # ====================
 
-# PS1='\w \$ '
 # https://bash-prompt-generator.org/
 PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null) ; if [[ ! -z "${PS1_CMD1}" ]];then PS1_CMD1=" #$PS1_CMD1";fi'
 # PS1='[\u@\h:\W${PS1_CMD1}] \$ '
@@ -67,4 +66,4 @@ export PATH=~/source/XBPS/usr/bin:$PATH
 # ====================
 
 tmux_silent
-qh
+# qh
