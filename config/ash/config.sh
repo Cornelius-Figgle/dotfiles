@@ -57,8 +57,8 @@ function tmux_silent() {
 
 # https://bash-prompt-generator.org/
 PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null) ; if [[ ! -z "${PS1_CMD1}" ]];then PS1_CMD1=" #$PS1_CMD1";fi'
-# PS1='[\u@\h:\W${PS1_CMD1}] \$ '
 PS1='[\[\e[93m\]\u\[\e[0m\]@\[\e[95m\]\h\[\e[0m\]:\[\e[94m\]\w\[\e[0m\]\[\e[92m\]${PS1_CMD1}\[\e[0m\]] \[\e[91m\]\$\[\e[0m\] '
+
 export PATH=~/source/XBPS/usr/bin:$PATH
 
 # ====================
@@ -66,4 +66,4 @@ export PATH=~/source/XBPS/usr/bin:$PATH
 # ====================
 
 tmux_silent
-# qh
+eval "$(zoxide init --cmd cd posix --hook prompt)"
