@@ -60,6 +60,7 @@ PS1='[\[\e[93m\]\u\[\e[0m\]@\[\e[95m\]\h\[\e[0m\]:\[\e[94m\]\w\[\e[0m\]\[\e[92m\
 
 if [[ "$(hostname)" == "hephaestus" ]]; then
 	export PATH=~/source/XBPS/usr/bin:~/source/xtools:$PATH
+	export XBPS_ARCH=x86_64
 fi
 
 # ====================
