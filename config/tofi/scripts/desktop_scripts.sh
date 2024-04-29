@@ -3,6 +3,7 @@
 function music_delta {
   op=$(echo "ncmpcpp
 spotify
+youtube
 cava" | tofi)
 
   bash ~/.config/river/scripts/music_delta.sh $op

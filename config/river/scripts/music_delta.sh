@@ -63,6 +63,30 @@ function spotify {
   sleep 0.5 && riverctl send-to-output next
 }
 
+function youtube {
+  # ==========
+  # Setup Window 1
+  # ==========
+
+  brave-browser-stable --new-window "https://youtube.com/" &
+  sleep 1
+
+  # ==========
+  # Setup Window 2
+  # ==========
+
+  tmux new-session -f "~/.tmux-silent.conf" -s music_delta_b -d
+
+  tmux split-pane -v -t music_delta_b
+
+  tmux send-keys -t music_delta_b:1.1 "cava -p ~/.config/cava/left" ENTER
+  tmux send-keys -t music_delta_b:1.2 "cava -p ~/.config/cava/right" ENTER
+
+  riverctl spawn "alacritty -e tmux attach -t music_delta_b"
+
+  sleep 0.5 && riverctl send-to-output next
+}
+
 function cava {
   # ==========
   # Setup Window 1
