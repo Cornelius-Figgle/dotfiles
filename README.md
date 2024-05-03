@@ -49,4 +49,3 @@
 | **hectia**           | dashboard ct          | Alpine Linux edge                     | *Proxmox VE 8.0.3*            |
 | **hephaestus**       | build server ct       | Alpine Linux edge                     | *Proxmox VE 8.0.3*            |
 | **apollo**           | vm @desktop           | Windows 11 Pro                        | *QEMU emulator version 8.1.0* |
-| **rosa**             | rpi for ROSA project  | Raspberry Pi OS Lite 12 (bookworm)    | Raspberry Pi Zero 2 W         |
