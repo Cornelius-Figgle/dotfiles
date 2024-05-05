@@ -56,7 +56,7 @@ done
   
 # controls
 riverctl map normal $mod Space toggle-float
-riverctl map normal $mod Return toggle-fullscreen
+riverctl map normal $mod F toggle-fullscreen
 riverctl map normal $mod C close
 riverctl map normal $mod+Shift W spawn "~/.config/river/init"  # sort of reloads, but doesn't unset anything previously declared (just overwrites)
 riverctl map normal $mod+Shift E exit
