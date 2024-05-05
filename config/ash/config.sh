@@ -17,6 +17,10 @@ alias hephaestus='ssh max@192.168.0.28'
 
 alias dot='./bin/dotter deploy --force --verbose'
 
+if [[ "$(hostname)" == "hephaestus" ]]; then
+	alias xbps-build='./xbps-src clean && ./xbps-src -m masterdir-x86_64 -Q pkg'
+fi
+
 # ====================
 # Functions
 # ====================
