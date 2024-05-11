@@ -35,7 +35,7 @@ function mnemosyne {
 	:
 }
 function clio {
-	eval "$(zoxide init --cmd cd bash)"
+	:
 }
 function dionysus {
 	tmux-silent
