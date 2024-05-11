@@ -66,9 +66,9 @@ for mode in normal locked; do
   riverctl map -repeat normal None KP_Home spawn "pamixer -d 5"
   riverctl map -repeat normal None KP_Up spawn "pamixer --toggle-mute"
   riverctl map -repeat normal None KP_Prior spawn "pamixer -i 5"
-  riverctl map normal None KP_Left spawn "mpc prev"
-  riverctl map normal None KP_Begin spawn "mpc toggle"
-  riverctl map normal None KP_Right spawn "mpc next"
+  riverctl map normal None KP_Left spawn "playerctl previous"
+  riverctl map normal None KP_Begin spawn "playerctl play-pause"
+  riverctl map normal None KP_Right spawn "playerctl next"
 done
 
 # move focus
@@ -77,6 +77,9 @@ riverctl map normal $mod Right focus-view next
 
 riverctl map normal $mod bracketleft focus-output previous
 riverctl map normal $mod bracketright focus-output next
+
+riverctl map-pointer normal None BTN_SIDE focus-output previous
+riverctl map-pointer normal None BTN_EXTRA focus-output next
 
 # move windows
 riverctl map normal $mod+Shift Left swap previous
