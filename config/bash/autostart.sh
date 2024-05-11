@@ -19,7 +19,6 @@ function tmux-silent {
 
 function poseidon {
 	tmux-silent
-	eval "$(thefuck --alias)"
 	eval "$(zoxide init --cmd cd bash)"
 }
 function hades {
@@ -27,7 +26,6 @@ function hades {
 }
 function persephone {
 	tmux-silent
-	eval "$(thefuck --alias)"
 	eval "$(zoxide init --cmd cd bash)"
 }
 function zeus {
@@ -35,6 +33,9 @@ function zeus {
 }
 function mnemosyne {
 	:
+}
+function clio {
+	eval "$(zoxide init --cmd cd bash)"
 }
 function dionysus {
 	tmux-silent
