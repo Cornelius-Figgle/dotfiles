@@ -36,8 +36,13 @@ function cddir() {
  	cd $1
 }
 
+function 0x0() {
+	$* > /tmp/bash_0x0.txt
+	curl -F'file=@/tmp/bash_0x0.txt' https://0x0.st/ && rm /tmp/bash_0x0.txt
+}
+
 function qh() {
-	echo $(whoami) @ $(hostname) on $(ip -o route get to 8.8.8.8 | sed -n 's/.*src \([0-9.]\+\).*/\1/p')
+		echo $(whoami) @ $(hostname) on $(ip -o route get to 8.8.8.8 | sed -n 's/.*src \([0-9.]\+\).*/\1/p') for $(uptime | cut -d' ' -f5 | cut -d',' -f1)
 }
 
 function tmux_silent() {
