@@ -3,10 +3,6 @@
 
 [alacritty.files]
 "config/alacritty/config.toml" = "~/.config/alacritty/alacritty.toml"
-[alacritty.variables]
-alacritty_sh_cmd = "{ program = 'bash', args = [] }"
-alacritty_font = "{ family = 'Monospace', style = 'Regular' }"
-alacritty_font_size = 12
 
 [ash.files]
 "config/ash/config.sh" = "~/.profile"
@@ -28,16 +24,8 @@ depends = ["tmux"]
 [dunst.files]
 "config/dunst/config.conf" = "~/.config/dunst/dunstrc"
 
-[foot.files]
-"config/foot/config.ini" = "~/.config/foot/foot.ini"
-
 [glances.files]
 "config/glances/config.ini" = "~/.config/glances/glances.conf"
-
-[glaze-wm.files]
-"config/glaze-wm/config.yaml" = "~/.glaze-wm/config.yaml"
-"config/glaze-wm/scripts" = {target="~/.glaze-wm/scripts", type="symbolic", recurse=false}
-"config/glaze-wm/scripts/autostart_wrapper.vbs" = "~/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup/autostart_wrapper.vbs"
 
 [git.files]
 "config/git/config.ini" = "~/.gitconfig"
@@ -46,14 +34,13 @@ autocrlf = "input"
 gh_path = "/usr/bin/gh"
 
 [grub.files]
-"config/grub/grub" = "/etc/default/grub"
+"config/grub/grub" = {target="/etc/default/grub", type="symbolic", owner="root"}
 
 [gtk.files]
-"config/gtk-3.0/config.ini" = "~/.config/gtk-3.0/settings.ini"
-"config/gtk-3.0/gtk.css" = "~/.config/gtk-3.0/gtk.css"
-
-"config/gtk-4.0/config.ini" = "~/.config/gtk-4.0/settings.ini"
-"config/gtk-4.0/gtk.css" = "~/.config/gtk-4.0/gtk.css"
+"config/gtk/3.0/config.ini" = "~/.config/gtk-3.0/settings.ini"
+"config/gtk/3.0/gtk.css" = "~/.config/gtk-3.0/gtk.css"
+"config/gtk/4.0/config.ini" = "~/.config/gtk-4.0/settings.ini"
+"config/gtk/4.0/gtk.css" = "~/.config/gtk-4.0/gtk.css"
 
 [helix.files]
 "config/helix/config.toml" = "~/.config/helix/config.toml"
@@ -99,9 +86,6 @@ net_adapter = "WiFi"
 "config/river/scripts" = {target="~/.config/river/scripts", type="symbolic", recurse=false}
 "wallpapers" = {target="~/.config/river/wallpapers", type="symbolic", recurse=false}
 
-[samba.files]
-"config/samba/config.conf" = "/etc/samba/smb.conf"
-
 [swaylock.files]
 "config/swaylock/config" = "~/.config/swaylock/config"
 
@@ -119,6 +103,3 @@ net_adapter = "WiFi"
 
 [winfetch.files]
 "config/winfetch/config.ps1" = "~/.config/winfetch/config.ps1"
-
-[wt.files]
-"config/wt/config.json" = "~/scoop/persist/windows-terminal/settings/settings.json"

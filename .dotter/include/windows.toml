@@ -2,9 +2,6 @@
 
 [alacritty.files]
 "config/alacritty/config.toml" = "~/AppData/Roaming/alacritty/alacritty.toml"
-[alacritty.variables]
-alacritty_sh_cmd = "{ program = 'pwsh', args = ['-NoLogo'] }"
-alacritty_font = "{ family = 'Cascadia Code', style = 'Regular' }"
 
 [bash.files]
 "config/bash/config.sh" = "~/scoop/apps/git/current/etc/bash.bashrc"

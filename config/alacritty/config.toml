@@ -1,4 +1,9 @@
-shell = {{ alacritty_sh_cmd }}
+{{#if (eq dotter.os "unix")}}
+shell = "{ program = 'bash', args = [] }"
+{{/if}}
+{{#if (eq dotter.os "windows")}}
+shell = "{ program = 'pwsh', args = ['-NoLogo'] }"
+{{/if}}
 working_directory = "None"
 live_config_reload = true
 # ipc_socket = true
@@ -13,10 +18,10 @@ padding = { x = 0, y = 0 }
 dynamic_padding = false
 decorations = "Full"  # :/
 {{#if (eq dotter.os "unix")}}
-opacity = 0.5
+  opacity = 0.5
 {{/if}}
 {{#if (eq dotter.os "windows")}}
-opacity = 1
+  opacity = 1
 {{/if}}
 blur = false
 startup_mode = "Windowed"
@@ -31,11 +36,21 @@ history = 100000
 multiplier = 3
 
 [font]
-normal = {{ alacritty_font }}
+{{#if (eq dotter.os "unix")}}
+  normal = "{ family = 'Monospace', style = 'Regular' }"
+{{/if}}
+{{#if (eq dotter.os "windows")}}
+  normal = "{ family = 'Cascadia Code', style = 'Regular' }"
+{{/if}}
 bold = { style = "bold" }
 italic = { style = "italic" }
 bold_italic = { style = "Bold Italic" }
-size = {{ alacritty_font_size }}
+{{#if (eq dotter.hostname "poseidon")}}
+  size = 10
+{{else}}
+  size = 12
+{{/if}}
+
 offset = { x = 0, y = 0 }
 glyph_offset = { x = 0, y = 0 }
 builtin_box_drawing = true
@@ -55,10 +70,10 @@ draw_bold_text_with_bright_colors = false
 [colors.primary]
 foreground = "#bbc2cf"
 {{#if (eq dotter.os "unix")}}
-background = "#000000"
+  background = "#000000"
 {{/if}}
 {{#if (eq dotter.os "windows")}}
-background = "#202020"
+  background = "#202020"
 {{/if}}
 # dim_foreground = 
 # bright_background = 
