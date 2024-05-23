@@ -5,7 +5,12 @@ scrolloff = 5
 mouse = true
 middle-click-paste = true
 scroll-lines = 3
-shell = {{ helix_sh_cmd }}
+{{#if (eq dotter.os "unix")}}
+  shell = ["bash"]
+{{/if}}
+{{#if (eq dotter.os "windows")}}
+  shell = ["pwsh", "-c"]
+{{/if}}
 line-number = "absolute"
 cursorline = true
 cursorcolumn = true

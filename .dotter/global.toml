@@ -45,8 +45,6 @@ gh_path = "/usr/bin/gh"
 [helix.files]
 "config/helix/config.toml" = "~/.config/helix/config.toml"
 "config/helix/themes" = {target="~/.config/helix/themes", type="symbolic", recurse=false}
-[helix.variables]
-helix_sh_cmd = "['bash']"
 
 [kanshi.files]
 "config/kanshi/config" = "~/.config/kanshi/config"
