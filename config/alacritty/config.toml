@@ -1,8 +1,8 @@
 {{#if (eq dotter.os "unix")}}
-shell = "{ program = 'bash', args = [] }"
+  shell = { program = 'bash', args = [] }
 {{/if}}
 {{#if (eq dotter.os "windows")}}
-shell = "{ program = 'pwsh', args = ['-NoLogo'] }"
+  shell = { program = 'pwsh', args = ['-NoLogo'] }
 {{/if}}
 working_directory = "None"
 live_config_reload = true
@@ -37,10 +37,10 @@ multiplier = 3
 
 [font]
 {{#if (eq dotter.os "unix")}}
-  normal = "{ family = 'Monospace', style = 'Regular' }"
+  normal = { family = 'Monospace', style = 'Regular' }
 {{/if}}
 {{#if (eq dotter.os "windows")}}
-  normal = "{ family = 'Cascadia Code', style = 'Regular' }"
+  normal = { family = 'Cascadia Code', style = 'Regular' }
 {{/if}}
 bold = { style = "bold" }
 italic = { style = "italic" }
