@@ -4,28 +4,28 @@ alias winfetch='pwsh -c winfetch'  # pwsh has weird module loading bars so we ca
 alias glances='glances --disable-irix --separator --programs'
 
 function poseidon() {
-	"ssh max@192.168.0.8 $*" 
+	"ssh max@192.168.0.8 '$*'" 
 }
 function zeus() {
-	"ssh root@192.168.0.19 $*" 
+	"ssh root@192.168.0.19 '$*'" 
 }
 function mnemosyne() {
-	"ssh root@192.168.0.26 $*" 
+	"ssh root@192.168.0.26 '$*'" 
 }
 function dionysus() {
-	"ssh root@192.168.0.12 $*" 
+	"ssh root@192.168.0.12 '$*'" 
 }
 function iris() {
-	"ssh root@192.168.0.21 $*" 
+	"ssh root@192.168.0.21 '$*'" 
 }
 function athena() {
-	"ssh max@192.168.0.25 $*" 
+	"ssh max@192.168.0.25 '$*'" 
 }
 function hectia() {
-	"ssh root@192.168.0.27 $*" 
+	"ssh root@192.168.0.27 '$*'" 
 }
 function hephaestus() {
-	"ssh max@192.168.0.28 $*" 
+	"ssh max@192.168.0.28 '$*'" 
 }
 
 function mnt() {
