@@ -3,14 +3,14 @@ alias winfetch='pwsh -c winfetch'  # pwsh has weird module loading bars so we ca
 
 alias glances='glances --disable-irix --separator --programs'
 
-alias poseidon='ssh max@192.168.0.8'
-alias zeus='ssh root@192.168.0.19'
-alias mnemosyne='ssh root@192.168.0.26'
-alias dionysus='ssh root@192.168.0.12'
-alias iris='ssh root@192.168.0.21'
-alias athena='ssh max@192.168.0.25'
-alias hectia='ssh root@192.168.0.27'
-alias hephaestus='ssh max@192.168.0.28'
+function poseidon() { "ssh max@192.168.0.8 $*" }
+function zeus() { "ssh root@192.168.0.19 $*" }
+function mnemosyne() { "ssh root@192.168.0.26 $*" }
+function dionysus() { "ssh root@192.168.0.12 $*" }
+function iris() { "ssh root@192.168.0.21 $*" }
+function athena() { "ssh max@192.168.0.25 $*" }
+function hectia() { "ssh root@192.168.0.27 $*" }
+function hephaestus() { "ssh max@192.168.0.28 $*" }
 
 function mnt() {
 	case $1 in
@@ -39,11 +39,6 @@ function mnt() {
 }
 
 alias dot='./bin/dotter deploy --force --verbose'
-
-alias pacman-backup='pacman -Qqe | grep -v "$(pacman -Qqm)"'
-alias aur-backup='pacman -Qqm'
-alias pacman-restore='xargs pacman -S --needed --noconfirm'
-alias aur-restore='echo "NO RESTORE LINE YET"'
 
 function svpush() {
 	git add .
