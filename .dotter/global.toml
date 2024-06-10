@@ -84,6 +84,9 @@ net_adapter = "WiFi"
 "config/river/scripts" = {target="~/.config/river/scripts", type="symbolic", recurse=false}
 "wallpapers" = {target="~/.config/river/wallpapers", type="symbolic", recurse=false}
 
+[swappy.files]
+"config/swappy/config.conf" = "~/.config/swappy/config"
+
 [swaylock.files]
 "config/swaylock/config" = "~/.config/swaylock/config"
 
