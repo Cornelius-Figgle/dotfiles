@@ -28,6 +28,9 @@ function persephone {
 	tmux-silent
 	eval "$(zoxide init --cmd cd bash)"
 }
+function leto {
+	eval "$(zoxide init --cmd cd bash)"
+}
 function zeus {
 	:
 }

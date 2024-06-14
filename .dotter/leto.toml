@@ -1,0 +1,10 @@
+includes = []
+packages = [
+  "alacritty",
+  "bash", "neofetch",
+  "helix", "git"
+]
+
+[files]
+
+[variables]

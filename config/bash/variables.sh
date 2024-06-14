@@ -5,7 +5,7 @@
 # 
 # for more info: https://www.baeldung.com/linux/bash-set-and-export
 
-export PATH="$PATH:/home/max/.local/bin:/home/max/.cargo/bin"
+export PATH="$PATH:/home/max/.local/bin:/home/max/.cargo/bin:/usr/local/bin"
 export XDG_SCREENSHOTS_DIR="/home/max/Screenshots"
 export EDITOR="/usr/bin/hx"
 
