@@ -1,0 +1,4 @@
+# Edits to use `global.toml` on a MacOS system (mostly path changes)
+
+[git.variables]
+gh_path = "/usr/local/bin/gh"
