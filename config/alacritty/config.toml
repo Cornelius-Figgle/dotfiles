@@ -68,10 +68,9 @@ draw_bold_text_with_bright_colors = false
 
 [colors.primary]
 foreground = "#bbc2cf"
-{{#if (eq dotter.os "unix")}}
+{{#if (eq dotter.os "poseidon")}}
   background = "#000000"
-{{/if}}
-{{#if (eq dotter.os "windows")}}
+{{else}}
   background = "#202020"
 {{/if}}
 # dim_foreground = 
