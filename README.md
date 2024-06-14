@@ -54,3 +54,4 @@
 | **hephaestus**       | build server          | Alpine Linux edge                     | *Proxmox VE 8.1.10*           |
 | **clio**             | temp backup server    | Devuan GNU/Linux 4 (chimaera)         | *Proxmox VE 8.1.10*           |
 | **apollo**           | vm @desktop           | Windows 11 Pro                        | *QEMU emulator version 8.1.0* |
+| **leto**             | vm @desktop           | macOS 13.6.7 22G720                   | *QEMU emulator version 8.1.0* |
