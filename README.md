@@ -2,19 +2,19 @@
 
 ## Images
 
-### poseidon
+### Poseidon
 
 ![poseidon](./images/poseidon.jpg)
 
-### hades
+### Hades & Persephone
 
 ![hades](./images/hades.jpg)
 
-### apollo
+### Apollo
 
 ![apollo](./images/apollo.jpg)
 
-### leto
+### Leto
 
 ![leto](./images/leto.jpg)
 
