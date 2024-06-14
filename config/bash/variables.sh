@@ -16,5 +16,6 @@ export PYTHONIOENCODING="utf-8"
 # eval "$(thefuck --alias)"
 
 export ProgressPreference='SilentlyContinue'
+export BAHS_SILENCE_DEPRECATION_WARNING=1
 
 export WSL_UTF8=1
