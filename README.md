@@ -20,13 +20,13 @@
 
 ## Usage
 
-### *nix
+### Unix
 
 ```shell
 ./bin/dotter deploy --force --verbose
 ```
 
-### *nix ARM
+### Unix ARM
 
 ```shell
 ./bin/dotter.arm deploy --force --verbose
