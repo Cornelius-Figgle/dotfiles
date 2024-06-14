@@ -35,11 +35,15 @@ history = 100000
 multiplier = 3
 
 [font]
-{{#if (eq dotter.os "unix")}}
-  normal = { family = 'Monospace', style = 'Regular' }
-{{/if}}
-{{#if (eq dotter.os "windows")}}
-  normal = { family = 'Cascadia Code', style = 'Regular' }
+{{#if (eq dotter.hostname "leto")}}
+  normal = { family = "Menlo", style = "Regular" }
+{{else}}
+  {{#if (eq dotter.os "unix")}}
+    normal = { family = "Monospace", style = "Regular" }
+  {{/if}}
+  {{#if (eq dotter.os "windows")}}
+    normal = { family = "Cascadia Code", style = "Regular" }
+  {{/if}}
 {{/if}}
 bold = { style = "bold" }
 italic = { style = "italic" }
