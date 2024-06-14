@@ -17,10 +17,9 @@ position = "None"
 padding = { x = 0, y = 0 }
 dynamic_padding = false
 decorations = "Full"  # :/
-{{#if (eq dotter.os "unix")}}
+{{#if (eq dotter.hostname "poseidon")}}
   opacity = 0.5
-{{/if}}
-{{#if (eq dotter.os "windows")}}
+{{else}}
   opacity = 1
 {{/if}}
 blur = false
