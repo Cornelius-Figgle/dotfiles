@@ -5,7 +5,6 @@
 ### Poseidon
 
 ![poseidon](./images/poseidon.png)
-![poseidon virtualisation](./images/poseidon_virtualisation.png)
 
 ### Hades & Persephone
 
