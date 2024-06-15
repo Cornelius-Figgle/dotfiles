@@ -4,19 +4,20 @@
 
 ### Poseidon
 
-![poseidon](./images/poseidon.jpg)
+![poseidon](./images/poseidon.png)
+![poseidon virtualisation](./images/poseidon_virtualisation.png)
 
 ### Hades & Persephone
 
-![hades](./images/hades.jpg)
+![hades](./images/hades.png)
 
 ### Apollo
 
-![apollo](./images/apollo.jpg)
+![apollo](./images/apollo.png)
 
 ### Leto
 
-![leto](./images/leto.jpg)
+![leto](./images/leto.png)
 
 ## Usage
 
