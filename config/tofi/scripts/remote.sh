@@ -14,6 +14,7 @@ max@athena                        [ssh]
 root@iris                         [ssh]
 root@hectia                       [ssh]
 max@hephaestus                    [ssh]
+root@clio                         [ssh]
 max@apollo                        [rdp]
 paul.harrison@quicksilver         [rdp]" | tofi)
 
@@ -40,6 +41,9 @@ paul.harrison@quicksilver         [rdp]" | tofi)
       spawn_term_win "ssh root@192.168.0.27"
       ;;
     "max@hephaestus                    [ssh]")
+      spawn_term_win "ssh max@192.168.0.28"
+      ;;
+    "root@clio                         [ssh]")
       spawn_term_win "ssh max@192.168.0.28"
       ;;
     "max@apollo                        [rdp]")
