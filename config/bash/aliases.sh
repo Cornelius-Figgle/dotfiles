@@ -13,7 +13,7 @@ function mnemosyne() {
 	ssh root@192.168.0.26 "$*"
 }
 function dionysus() {
-	ssh root@192.168.0.12 "$*"
+	ssh max@192.168.0.12 "$*"
 }
 function iris() {
 	ssh root@192.168.0.21 "$*"
@@ -29,6 +29,9 @@ function hephaestus() {
 }
 function clio() {
 	ssh root@192.168.0.30 "$*"
+}
+function hera() {
+	ssh max@192.168.0.31 "$*"
 }
 
 function mnt() {

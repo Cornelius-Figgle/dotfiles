@@ -9,6 +9,7 @@ function shoose {
 max@poseidon                      [ssh]
 root@zeus                         [ssh]
 root@mnemosyne                    [ssh]
+max@hera                          [ssh]
 max@dionysus                      [ssh]
 max@athena                        [ssh]
 root@iris                         [ssh]
@@ -27,6 +28,9 @@ paul.harrison@quicksilver         [rdp]" | tofi)
       ;;
     "root@mnemosyne                    [ssh]")
       spawn_term_win "ssh root@192.168.0.26"
+      ;;
+    "max@hera                          [ssh]")
+      spawn_term_win "ssh max@192.168.0.31"
       ;;
     "max@dionysus                     [ssh]")
       spawn_term_win "ssh max@192.168.0.12"
