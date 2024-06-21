@@ -37,6 +37,9 @@ function zeus {
 function mnemosyne {
 	:
 }
+function hera {
+	:
+}
 function clio {
 	:
 }

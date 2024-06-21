@@ -1,0 +1,9 @@
+includes = []
+packages = [
+  "bash", "neofetch",
+  "git"
+]
+
+[files]
+
+[variables]
