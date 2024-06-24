@@ -9,9 +9,9 @@ export PATH="$PATH:/home/max/.local/bin:/home/max/.cargo/bin:/usr/local/bin"
 export XDG_SCREENSHOTS_DIR="/home/max/Screenshots"
 
 if [ -f "/etc/debian_version" ]; then
-	export EDITOR="/usr/bin/hx"
-else
 	export EDITOR="/usr/bin/nano"
+else
+	export EDITOR="/usr/bin/hx"
 fi
 
 # https://bash-prompt-generator.org/
