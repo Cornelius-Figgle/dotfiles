@@ -88,7 +88,7 @@ function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		z "$cwd"
+		cd "$cwd"  # https://github.com/sxyazi/yazi/issues/978
 	fi
 	rm -f -- "$tmp"
 }
