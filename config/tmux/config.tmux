@@ -84,6 +84,11 @@ unbind -n Tab
 # https://superuser.com/a/1330842
 #set -g default-command "${SHELL}"
 
+# https://yazi-rs.github.io/docs/image-preview#tmux
+set -g allow-passthrough on
+set -ga update-environment TERM
+set -ga update-environment TERM_PROGRAM
+
 # ---------------------------------------------------------------------
 
 # List of plugins
