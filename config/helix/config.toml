@@ -100,7 +100,7 @@ wrap-indicator = "↪"
 wrap-at-text-width = false
 
 [keys.normal]
-C-s = ":w"
+# C-s = ":w"
 r = ":config-reload"
 p = ":clipboard-paste-after"
 y = ":clipboard-yank"
