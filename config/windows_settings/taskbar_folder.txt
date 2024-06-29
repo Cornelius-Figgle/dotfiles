@@ -1,0 +1,7 @@
+mkdir "C:\Users\max\AppData\Roaming\Microsoft\Windows\Start Menu\Remote"
+
+
+create shortcuts for:
+	- C:\Users\max\scoop\apps\moonlight\current\Moonlight.exe
+	- C:\Users\max\scoop\apps\virt-viewer\current\bin\remote-viewer.exe
+	- C:\Windows\System32\mstsc.exe
