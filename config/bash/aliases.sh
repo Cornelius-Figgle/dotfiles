@@ -62,6 +62,8 @@ function mnt() {
 
 alias dot='./bin/dotter deploy --force --verbose'
 
+alias wl='dbus-run-session river'
+
 function svpush() {
 	git add .
 	git commit -m "$*"  # https://unix.stackexchange.com/a/197794/551787
