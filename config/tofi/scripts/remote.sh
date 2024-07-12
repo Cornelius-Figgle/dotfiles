@@ -32,7 +32,7 @@ paul.harrison@quicksilver         [rdp]" | tofi)
     "max@hera                          [ssh]")
       spawn_term_win "ssh max@192.168.0.31"
       ;;
-    "max@dionysus                     [ssh]")
+    "max@dionysus                      [ssh]")
       spawn_term_win "ssh max@192.168.0.12"
       ;;
     "max@athena                        [ssh]")
