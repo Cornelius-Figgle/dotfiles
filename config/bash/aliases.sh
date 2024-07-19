@@ -1,7 +1,7 @@
 alias cls='clear'
 alias winfetch='pwsh -c winfetch'  # pwsh has weird module loading bars so we call it into pwsh where these are disabled (I couldn't work out how to do it in git-bash)
 
-alias glances='glances --disable-irix --separator --programs -1'
+alias glances='glances --disable-irix --separator --programs' # -1'
 
 function poseidon() {
 	ssh max@192.168.0.8 "$*"
