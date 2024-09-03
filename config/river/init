@@ -40,7 +40,9 @@ riverctl map normal $mod+Shift Z spawn "~/.config/tofi/scripts/powermenu.sh"
 riverctl map normal $mod V spawn "cliphist list | tofi | cliphist decode | wl-copy && wl-paste"
 
 for mode in normal locked; do  # allows screenshots on lockscreen
-  riverctl map $mode $mod S spawn 'riverctl spawn "grim -g \"$(slurp -w 0)\" - | swappy -f - " && sleep 0.125 && riverctl send-to-output next'
+  riverctl map $mode $mod S spawn 'riverctl spawn "grim -g \"$(slurp -w 0)\" - | swappy -f - " && sleep 0.15 && riverctl send-to-output next'
+  riverctl map $mode $mod+Control S spawn 'riverctl spawn "grim -o DP-1 - | swappy -f -"'
+  riverctl map $mode $mod+Control+Shift S spawn 'riverctl spawn "grim -o DP-2 - | swappy -f -"'
   riverctl map $mode $mod+Shift S spawn 'riverctl spawn "grim - | swappy -f -"'
 done
   
