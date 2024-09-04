@@ -14,6 +14,10 @@ gh_path = "'C:\\\\Users\\\\Max.Harrison\\\\scoop\\\\apps\\\\gh\\\\current\\\\bin
 "config/helix/config.toml" = "~/scoop/persist/helix/config.toml"
 "config/helix/themes" = {target="~/appdata/roaming/helix/themes", type="symbolic", recurse=false}
 
+[ncmpcpp.files]
+"config/ncmpcpp/config.conf" = ""  # replace ncmpcpp with ncmpc on Windows
+"config/ncmpcpp/ncmpc.conf" = "~/.ncmpc/config"
+
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/AppData/Roaming/pypoetry/config.toml"
 
