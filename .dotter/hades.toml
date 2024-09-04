@@ -1,7 +1,7 @@
 includes = [".dotter/include/windows.toml"]
 packages = [
   "alacritty",
-  "pwsh", "winfetch",
+  "pwsh", "winfetch", "ncmpc",
   "helix", "git"
 ]
 

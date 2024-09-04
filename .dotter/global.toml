@@ -64,6 +64,9 @@ user_home = "~"
 "config/mpd/config.conf" = "~/.config/mpd/mpd.conf"
 "config/mpd/mpris.conf" = "~/.config/mpDris2/mpDris2.conf"
 
+[ncmpc.files]
+"config/ncmpc/config.conf" = "~/.ncmpc/config"
+
 [ncmpcpp.files]
 "config/ncmpcpp/config.conf" = "~/.config/ncmpcpp/config"
 
