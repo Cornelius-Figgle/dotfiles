@@ -27,6 +27,7 @@ function hades {
 function persephone {
 	tmux-silent
 	eval "$(zoxide init --cmd cd bash)"
+	mpd --no-daemon &
 }
 function leto {
 	eval "$(zoxide init --cmd cd bash)"
