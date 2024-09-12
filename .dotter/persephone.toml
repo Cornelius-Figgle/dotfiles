@@ -7,4 +7,4 @@ packages = [
 
 [variables]
 mpd_host = "127.0.0.1"
-music_path = "/mnt/n"
+music_path = "/mnt/m"
