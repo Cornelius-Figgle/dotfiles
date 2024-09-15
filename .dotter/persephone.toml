@@ -1,12 +1,10 @@
 includes = [".dotter/include/wsl.toml"]
 packages = [
-  "bash", "neofetch", "tmux",
-  "helix", "git",
-  "ncmpcpp"
+  "bash", "neofetch", "tmux", "helix", "git", "ncmpcpp", "mpd"
 ]
 
 [files]
 
 [variables]
-mpd_host = "192.168.0.171"
-music_path = "/mnt/n"
+mpd_host = "127.0.0.1"
+music_path = "/mnt/m"
