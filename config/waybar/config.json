@@ -14,6 +14,7 @@
     "river/window"
   ],
   "modules-right": [
+    "mpris",
     "wireplumber",
     "network",
     "clock"
@@ -27,12 +28,21 @@
   "river/window": {
     "format": "{}"
   },
+  "mpris": {
+    "format": "{title} {status_icon} [{player}]",
+    "tooltip-format": "{artist} \"{album}\"",
+    "status-icons": {
+      "playing": "▶",
+      "paused": "⏸",
+      "stopped": ""
+    }
+  },
   "wireplumber": {
     "format": "{volume}%",
     "format-muted": "",
     "max-volume": 100,
     "scroll-step": 5,
-    "on-click": ""
+    "on-click": "pamixer --toggle-mute"
   },
   "network": {
     "interval": 3,
