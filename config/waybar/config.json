@@ -35,7 +35,8 @@
       "playing": "▶",
       "paused": "⏸",
       "stopped": ""
-    }
+    },
+    "title-len": 20
   },
   "wireplumber": {
     "format": "{volume}%",
