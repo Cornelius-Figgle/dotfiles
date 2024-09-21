@@ -8,6 +8,8 @@ riverctl keyboard-layout gb
 riverctl spawn rivertile
 riverctl default-layout rivertile
 
+riverctl hide-cursor timeout 10000
+
 restart() { ( pkill $1; riverctl spawn $@ ) & }
 start()   { ( ps -C $1 || riverctl spawn $@ ) & }
 
