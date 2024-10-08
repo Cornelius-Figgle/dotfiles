@@ -119,11 +119,11 @@ done
 # window rules
 riverctl float-filter-add app-id 'launcher'
 riverctl float-filter-add app-id 'floating'
-riverctl float-filter-add app-id "org.gnome.Nautilus"
 riverctl float-filter-add app-id "org.gnome.Calculator"
 
 # network mounts
 sudo -A mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/auth /mnt/smb/athena/auth
+sudo -A mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/docs /mnt/smb/athena/docs
 sudo -A mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/music /mnt/smb/athena/music
 sudo -A mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/notes /mnt/smb/athena/notes
 sudo -A mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/setup /mnt/smb/athena/setup
