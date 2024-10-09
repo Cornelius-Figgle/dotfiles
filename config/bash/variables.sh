@@ -16,7 +16,7 @@ fi
 
 # https://bash-prompt-generator.org/
 # https://github.com/Sonico98/yazi-prompt.sh/blob/master/posix/yazi.sh
-PS1='[\[\e[93m\]\u\[\e[0m\]@\[\e[95m\]\h\[\e[0m\]:\[\e[94m\]\w\[\e[0m\]\[\e[96m\]$(if [ -n "$YAZI_LEVEL" ]; then echo " (yazi)" ; fi)\[\e[92m\]$( if [[ ! -z "$(git branch --show-current 2>/dev/null)" ]]; then echo " #$(git branch --show-current 2>/dev/null)" ; fi )\[\e[0m\]] \[\e[91m\]\$\[\e[0m\] '
+PS1='[\[\e[93m\]\u\[\e[0m\]@\[\e[95m\]\h\[\e[0m\]:\[\e[94m\]\W\[\e[0m\]\[\e[96m\]$(if [ -n "$YAZI_LEVEL" ]; then echo " (yazi)" ; fi)\[\e[92m\]$( if [[ ! -z "$(git branch --show-current 2>/dev/null)" ]]; then echo " #$(git branch --show-current 2>/dev/null)" ; fi )\[\e[0m\]] \[\e[91m\]\$\[\e[0m\] '
 
 export PYTHONIOENCODING="utf-8"
 # eval "$(thefuck --alias)"
