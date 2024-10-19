@@ -9,6 +9,8 @@ window#waybar {  /* bg of the bar */
 	transition-duration: .5s;
 }
 
+#layout,
+#mpris,
 #wireplumber,
 #network,
 #clock {

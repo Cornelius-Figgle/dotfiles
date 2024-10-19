@@ -8,7 +8,8 @@
 
 
   "modules-left": [
-    "river/tags"
+    "river/tags",
+    "river/layout"
   ],
   "modules-center": [
     "river/window"
@@ -24,6 +25,9 @@
 
   "river/tags": {
     "num-tags": 9
+  },
+  "river/layout": {
+    "format": "[{}]"
   },
   "river/window": {
     "format": "{}"
@@ -43,7 +47,8 @@
     "format-muted": "",
     "max-volume": 100,
     "scroll-step": 5,
-    "on-click": "pamixer --toggle-mute"
+    "on-click": "pamixer --toggle-mute",
+    "on-click-right": "pavucontrol"
   },
   "network": {
     "interval": 3,
