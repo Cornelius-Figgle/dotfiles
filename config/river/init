@@ -64,6 +64,8 @@ for mode in normal locked; do
   riverctl map normal None KP_Left spawn "playerctl previous"
   riverctl map normal None KP_Begin spawn "playerctl play-pause"
   riverctl map normal None KP_Right spawn "playerctl next"
+  riverctl map normal None KP_End spawn "kanshictl switch main"
+  riverctl map normal None KP_Down spawn "kanshictl switch projector"
 done
 
 # move focus
