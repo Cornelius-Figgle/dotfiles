@@ -22,6 +22,7 @@ restart "waybar"  # restart "yambar" && sleep 0.1 && riverctl focus-output next 
 restart "~/.config/river/scripts/2_FHD_swaybg.sh"
 start "pipewire"
 start "wireplumber"
+start "dunst"
 riverctl spawn "mpd --no-daemon"
 start "mpDris2"
 start "wl-paste --type text --watch cliphist store"
