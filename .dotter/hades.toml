@@ -2,7 +2,7 @@ includes = [".dotter/include/windows.toml"]
 packages = [
   "alacritty",
   "pwsh", "winfetch", "ncmpcpp",
-  "helix", "git"
+  "helix", "git", "pypoetry"
 ]
 
 [files]
