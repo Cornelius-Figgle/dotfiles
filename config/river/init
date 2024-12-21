@@ -70,6 +70,9 @@ for mode in normal locked; do
   riverctl map normal None KP_Down spawn "kanshictl switch projector"
 done
 
+# remote
+riverctl map normal None KEY_PLAY spawn "playerctl play-pause"
+
 # move focus
 riverctl map normal $mod Left focus-view previous
 riverctl map normal $mod Right focus-view next

@@ -97,7 +97,6 @@ net_adapter = "WiFi"
 
 [tmux.files]
 "config/tmux/config.tmux" = "~/.tmux.conf"
-"config/tmux/silent-tmux.tmux" = "~/.silent-tmux.conf"
 
 [waybar.files]
 "config/waybar/config.json" = "~/.config/waybar/config"
