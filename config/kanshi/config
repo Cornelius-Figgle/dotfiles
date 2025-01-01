@@ -1,4 +1,15 @@
-profile {
+profile main {
 	output DP-1 position 0,0
-	output DP-2 position 1920,0
+	output DP-2 {
+		position 1920,0
+		mode 1920x1080
+	}
+}
+
+profile projector {
+	output DP-1 position 0,0
+	output DP-2 {
+		position 1920,0
+		mode 1280x720
+	}
 }

@@ -1,0 +1,11 @@
+includes = []
+packages = [
+  "bash", "tmux", "neofetch", "glances", 
+  "helix", "pypoetry", "git"
+]
+
+[files]
+
+[variables]
+
+

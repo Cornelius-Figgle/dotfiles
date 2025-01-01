@@ -15,7 +15,6 @@ Function mnemosyne { ssh root@192.168.0.26 }
 Function dionysus { ssh max@192.168.0.12 }
 Function iris { ssh root@192.168.0.21 }
 Function athena { ssh max@192.168.0.25 }
-Function hectia { ssh root@192.168.0.27 }
 Function hephaestus { ssh max@192.168.0.28 }
 
 # ====================
@@ -59,7 +58,7 @@ $ProgressPreference='SilentlyContinue'
 
 $env:WSL_UTF8=1
 
-$env:PATH += ";C:\Users\max\AppData\Roaming\Python\Python312\Scripts"
+$env:PATH += ";C:\Users\max\AppData\Roaming\Python\Python312\Scripts;C:\Users\max\.local\bin"
 	
 # ====================
 # Autostart

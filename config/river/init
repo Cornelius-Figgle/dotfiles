@@ -8,6 +8,8 @@ riverctl keyboard-layout gb
 riverctl spawn rivertile
 riverctl default-layout rivertile
 
+riverctl hide-cursor timeout 10000
+
 restart() { ( pkill $1; riverctl spawn $@ ) & }
 start()   { ( ps -C $1 || riverctl spawn $@ ) & }
 
@@ -20,8 +22,10 @@ restart "waybar"  # restart "yambar" && sleep 0.1 && riverctl focus-output next 
 restart "~/.config/river/scripts/2_FHD_swaybg.sh"
 start "pipewire"
 start "wireplumber"
+start "dunst"
 riverctl spawn "mpd --no-daemon"
 start "mpDris2"
+start "hassmpris-agent"
 start "wl-paste --type text --watch cliphist store"
 start "wl-paste --type image --watch cliphist store"
 riverctl spawn "flatpak run dev.lizardbyte.app.Sunshine"
@@ -62,7 +66,12 @@ for mode in normal locked; do
   riverctl map normal None KP_Left spawn "playerctl previous"
   riverctl map normal None KP_Begin spawn "playerctl play-pause"
   riverctl map normal None KP_Right spawn "playerctl next"
+  riverctl map normal None KP_End spawn "kanshictl switch main"
+  riverctl map normal None KP_Down spawn "kanshictl switch projector"
 done
+
+# remote
+riverctl map normal None KEY_PLAY spawn "playerctl play-pause"
 
 # move focus
 riverctl map normal $mod Left focus-view previous
@@ -117,11 +126,12 @@ done
 # window rules
 riverctl float-filter-add app-id 'launcher'
 riverctl float-filter-add app-id 'floating'
-riverctl float-filter-add app-id "org.gnome.Nautilus"
 riverctl float-filter-add app-id "org.gnome.Calculator"
+riverctl float-filter-add app-id "org.pulseaudio.pavucontrol"
 
 # network mounts
 sudo -A mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/auth /mnt/smb/athena/auth
+sudo -A mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/docs /mnt/smb/athena/docs
 sudo -A mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/music /mnt/smb/athena/music
 sudo -A mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/notes /mnt/smb/athena/notes
 sudo -A mount -t cifs -o credentials=/mnt/.athena,uid=1000,gid=1000 //192.168.0.25/setup /mnt/smb/athena/setup
