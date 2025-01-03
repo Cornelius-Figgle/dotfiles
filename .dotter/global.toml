@@ -48,6 +48,7 @@ gh_path = "/usr/bin/gh"
 
 [kanshi.files]
 "config/kanshi/config" = "~/.config/kanshi/config"
+"config/kanshi/scripts" = {target="~/.config/kanshi/scripts", type="symbolic", recurse=false}
 
 [irssi.files]
 "config/irssi/config" = "~/.irssi/config"

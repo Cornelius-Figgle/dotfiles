@@ -10,6 +10,7 @@ window#waybar {  /* bg of the bar */
 }
 
 #layout,
+#kanshi,
 #mpris,
 #wireplumber,
 #network,

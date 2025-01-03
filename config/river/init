@@ -18,7 +18,8 @@ export SUDO_ASKPASS="/home/max/.config/tofi/scripts/askpass.sh"
 # auto exec
 start "udiskie"
 restart "kanshi"
-restart "waybar"  # restart "yambar" && sleep 0.1 && riverctl focus-output next  && riverctl spawn "yambar"
+if [ ! -e '/tmp/kanshi.toggle' ]; then echo 'main' > '/tmp/kanshi.toggle'; fi
+restart "waybar"
 restart "~/.config/river/scripts/2_FHD_swaybg.sh"
 start "pipewire"
 start "wireplumber"
@@ -58,20 +59,25 @@ riverctl map normal $mod C close
 riverctl map normal $mod+Shift W spawn "~/.config/river/init"  # sort of reloads, but doesn't unset anything previously declared (just overwrites)
 riverctl map normal $mod+Shift E exit
 
-# media keys
+# macro keys
 for mode in normal locked; do
+  # numpad media keys
   riverctl map -repeat normal None KP_Home spawn "pamixer -d 5"
   riverctl map -repeat normal None KP_Up spawn "pamixer --toggle-mute"
   riverctl map -repeat normal None KP_Prior spawn "pamixer -i 5"
   riverctl map normal None KP_Left spawn "playerctl previous"
   riverctl map normal None KP_Begin spawn "playerctl play-pause"
   riverctl map normal None KP_Right spawn "playerctl next"
-  riverctl map normal None KP_End spawn "kanshictl switch main"
-  riverctl map normal None KP_Down spawn "kanshictl switch projector"
-done
 
-# remote
-riverctl map normal None KEY_PLAY spawn "playerctl play-pause"
+  # numpad output cfg
+  riverctl map normal None KP_Insert spawn "~/.config/kanshi/scripts/toggle.sh"
+
+  # mouse side buttons
+  riverctl map-pointer normal None BTN_EXTRA spawn "playerctl next"
+  riverctl map-pointer normal Shift BTN_EXTRA spawn "playerctl previous"
+  riverctl map-pointer normal None BTN_SIDE spawn "playerctl play-pause"
+  riverctl map-pointer normal Shift BTN_SIDE spawn "~/.config/kanshi/scripts/toggle.sh"
+done
 
 # move focus
 riverctl map normal $mod Left focus-view previous
@@ -79,9 +85,6 @@ riverctl map normal $mod Right focus-view next
 
 riverctl map normal $mod bracketleft focus-output previous
 riverctl map normal $mod bracketright focus-output next
-
-riverctl map-pointer normal None BTN_SIDE focus-output previous
-riverctl map-pointer normal None BTN_EXTRA focus-output next
 
 # move windows
 riverctl map normal $mod+Shift Left swap previous
