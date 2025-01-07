@@ -73,11 +73,11 @@ for mode in normal locked; do
   riverctl map normal None KP_Insert spawn "~/.config/kanshi/scripts/toggle.sh"
 
   # mouse side buttons
-  riverctl map-pointer normal None BTN_EXTRA spawn "playerctl play-pause"
-  riverctl map-pointer normal None BTN_SIDE spawn "~/.config/kanshi/scripts/toggle.sh"
+  riverctl map-pointer normal None BTN_SIDE spawn "playerctl play-pause"
+  riverctl map-pointer normal None BTN_EXTRA spawn "~/.config/kanshi/scripts/toggle.sh"
   
-  riverctl map-pointer normal Shift BTN_EXTRA spawn "playerctl next"
-  riverctl map-pointer normal Shift BTN_SIDE spawn "playerctl previous"
+  riverctl map-pointer normal Shift BTN_SIDE spawn "playerctl next"
+  riverctl map-pointer normal Shift BTN_EXTRA spawn "playerctl previous"
 done
 
 # move focus
