@@ -13,6 +13,9 @@
 "config/bash/autostart.sh" = "~/.bash/autostart.sh"
 "config/bash/variables.sh" = "~/.bash/variables.sh"
 
+[btop.files]
+"config/btop/config.conf" = "~/.config/btop/btop.conf"
+
 [cava]
 depends = ["tmux"]
 [cava.files]
@@ -23,9 +26,6 @@ depends = ["tmux"]
 
 [dunst.files]
 "config/dunst/config.conf" = "~/.config/dunst/dunstrc"
-
-[glances.files]
-"config/glances/config.ini" = "~/.config/glances/glances.conf"
 
 [git.files]
 "config/git/config.ini" = "~/.gitconfig"
