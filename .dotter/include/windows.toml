@@ -6,6 +6,10 @@
 [bash.files]
 "config/bash/config.sh" = "~/scoop/apps/git/current/etc/bash.bashrc"
 
+[btop.files]
+"config/btop/config.conf" = ""
+"config/btop/windows.conf" = "~/scoop/persist/btop-lhm/btop.conf"
+
 [git.variables]
 autocrlf = "true"
 gh_path = "'C:\\\\Users\\\\Max.Harrison\\\\scoop\\\\apps\\\\gh\\\\current\\\\bin\\\\gh.exe'"

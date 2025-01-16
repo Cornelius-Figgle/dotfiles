@@ -47,7 +47,7 @@ Function dot {
 }
 
 Function prompt {
-	"[$([char]27)[93m$($(whoami).split('\')[1])$([char]27)[0m@$([char]27)[95m$(hostname)$([char]27)[0m:$([char]27)[94m$($( get-item $PWD ).FullName.Replace($HOME, '~'))$([char]27)[92m$(if ($(git branch --show-current 2>$null)) {' #'+$(git branch --show-current 2>$null)})$([char]27)[0m] $([char]27)[91m$ $([char]27)[0m"
+	"[$([char]27)[93m$($(whoami).split('\')[1])$([char]27)[0m@$([char]27)[95m$(hostname)$([char]27)[0m:$([char]27)[94m$($(Split-Path -leaf -path $( get-item $PWD )).Replace($env:username, '~'))$([char]27)[92m$(if ($(git branch --show-current 2>$null)) {' #'+$(git branch --show-current 2>$null)})$([char]27)[0m] $([char]27)[91m$ $([char]27)[0m"
 }
 
 # ====================
