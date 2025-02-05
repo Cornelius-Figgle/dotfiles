@@ -1,13 +1,6 @@
-{{#if (eq dotter.os "unix")}}
-  shell = { program = 'bash', args = [] }
-{{/if}}
-{{#if (eq dotter.os "windows")}}
-  shell = { program = 'pwsh', args = ['-NoLogo'] }
-{{/if}}
+[general]
 working_directory = "None"
 live_config_reload = true
-# ipc_socket = true
-hints.enabled = []
 
 # [env]
 
@@ -120,6 +113,12 @@ thickness = 0.25
 
 [terminal]
 osc52 = "OnlyCopy"
+{{#if (eq dotter.os "unix")}}
+  shell = { program = 'bash', args = [] }
+{{/if}}
+{{#if (eq dotter.os "windows")}}
+  shell = { program = 'pwsh', args = ['-NoLogo'] }
+{{/if}}
 
 [mouse]
 hide_when_typing = false
