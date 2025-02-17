@@ -27,6 +27,9 @@ depends = ["tmux"]
 [dunst.files]
 "config/dunst/config.conf" = "~/.config/dunst/dunstrc"
 
+[fastfetch.files]
+"config/fastfetch/config.jsonc" = "~/.config/fastfetch/config.jsonc"
+
 [git.files]
 "config/git/config.ini" = "~/.gitconfig"
 [git.variables]
@@ -67,11 +70,6 @@ user_home = "~"
 
 [ncmpcpp.files]
 "config/ncmpcpp/config.conf" = "~/.config/ncmpcpp/config"
-
-[neofetch.files]
-"config/neofetch/config.conf" = "~/.config/neofetch/config.conf"
-[neofetch.variables]
-disks = "'/boot/EFI' '/' '/home'"
 
 [pwsh.files]
 "config/pwsh/config.ps1" = "~/Documents/Powershell/Microsoft.Powershell_profile.ps1"  # doesn't work for roaming profiles

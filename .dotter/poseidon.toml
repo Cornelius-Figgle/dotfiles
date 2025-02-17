@@ -1,7 +1,7 @@
 includes = []
 packages = [
   "river", "alacritty", "waybar", "dunst", "swaylock", "kanshi", "tofi",
-  "bash", "tmux", "neofetch", "gtk", "grub", "swappy",
+  "bash", "tmux", "fastfetch", "gtk", "grub", "swappy",
   "helix", "pypoetry", "git", "cava", "btop", "mpd", "ncmpcpp"
 ]
 
@@ -9,7 +9,6 @@ packages = [
 "config/tmux/silent-tmux.tmux" = "~/.silent-tmux.conf"
 
 [variables]
-disks = "'/dev/nvme0n1p1' '/dev/nvme0n1p2' '/dev/nvme0n1p3' '/dev/nvme1n1p1' '/dev/nvme1n1p2' '/dev/sda1' '/dev/sdb1'"
 mpd_host = "192.168.0.8"
 music_path = "/mnt/smb/athena/music"
 
