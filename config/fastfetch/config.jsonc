@@ -44,6 +44,10 @@
     },
     {
       "type": "disk",
+      "folders": "/data"
+    },
+    {
+      "type": "disk",
       "folders": "/vm"
     },
     
