@@ -30,6 +30,16 @@
 
     "separator",
 
+  {{#if (eq dotter.os "windows")}}
+    {
+      "type": "disk",
+      "folders": "C:\\"
+    },
+    {
+      "type": "disk",
+      "folders": "D:\\"
+    },
+  {{else}}
     {
       "type": "disk",
       "folders": "/boot/efi"
@@ -50,6 +60,7 @@
       "type": "disk",
       "folders": "/vm"
     },
+  {{/if}}
     
     "break",
 

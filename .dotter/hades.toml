@@ -1,13 +1,12 @@
 includes = [".dotter/include/windows.toml"]
 packages = [
   "alacritty",
-  "pwsh", "winfetch", "mpd", "ncmpcpp",
+  "pwsh", "fastfetch", "mpd", "ncmpcpp",
   "helix", "git", "pypoetry", "btop"
 ]
 
 [files]
 
 [variables]
-disks = "'C:','D:'"
 user_home = "c:/users/max"
 music_path = "m:/"
