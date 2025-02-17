@@ -24,6 +24,3 @@ gh_path = "'C:\\\\Users\\\\Max.Harrison\\\\scoop\\\\apps\\\\gh\\\\current\\\\bin
 
 [pypoetry.files]
 "config/pypoetry/config.toml" = "~/AppData/Roaming/pypoetry/config.toml"
-
-[winfetch.variables]
-disks = "'C:'"
