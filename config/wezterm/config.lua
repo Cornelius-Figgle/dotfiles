@@ -5,6 +5,10 @@ local config = wezterm.config_builder()
 -- general
 config.automatically_reload_config = true
 
+{{#if (eq dotter.os "windows")}}
+  config.default_prog = { 'pwsh', '-NoLogo' }
+{{/if}}
+
 -- window appearance
 config.enable_tab_bar = false
 
