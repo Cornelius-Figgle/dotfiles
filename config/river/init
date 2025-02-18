@@ -32,10 +32,10 @@ start "wl-paste --type image --watch cliphist store"
 riverctl spawn "flatpak run dev.lizardbyte.app.Sunshine"
 
 # spawners
-riverctl map normal $mod Q spawn "alacritty"
-riverctl map normal $mod+Shift Q spawn "alacritty --class 'floating'"
+riverctl map normal $mod Q spawn "wezterm start"
+riverctl map normal $mod+Shift Q spawn "wezterm start --class 'floating'"
 riverctl map normal $mod B spawn "brave-browser-stable"
-riverctl map normal $mod E spawn "alacritty --class 'floating' -e yazi"
+riverctl map normal $mod E spawn "wezterm start --class 'floating' -e yazi"
 riverctl map normal $mod R spawn "tofi-drun | xargs -I {} riverctl spawn \"{}\""
 riverctl map normal $mod+Shift R spawn "tofi-run | xargs -I {} riverctl spawn \"{}\""
 riverctl map normal $mod D spawn "~/.config/tofi/scripts/desktop_scripts.sh"

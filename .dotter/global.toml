@@ -100,3 +100,6 @@ net_adapter = "WiFi"
 [waybar.files]
 "config/waybar/config.json" = "~/.config/waybar/config"
 "config/waybar/style.css" = "~/.config/waybar/style.css"
+
+[wezterm.files]
+"config/wezterm/config.lua" = "~/.wezterm.lua"

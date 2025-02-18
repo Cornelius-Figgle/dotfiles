@@ -1,48 +1,43 @@
 #!/bin/bash
 
 function spawn_term_win {
-  riverctl spawn "alacritty -e $1"
+  riverctl spawn "wezterm $1"
 }
 
 function shoose {
   op=$(echo "
-max@poseidon                      [ssh]
-root@zeus                         [ssh]
-root@mnemosyne                    [ssh]
-max@hera                          [ssh]
 max@dionysus                      [ssh]
-max@athena                        [ssh]
+root@zeus                         [ssh]
 root@iris                         [ssh]
-root@hectia                       [ssh]
+max@apollo                        [rdp]
+max@athena                        [ssh]
+root@mnemosyne                    [ssh]
+max@astraeus                      [ssh]
 max@hephaestus                    [ssh]
 root@clio                         [ssh]
-max@apollo                        [rdp]
-paul.harrison@quicksilver         [rdp]" | tofi)
+max@odysseus                      [ssh]" | tofi)
 
   case $op in
-    "max@poseidon                      [ssh]")
-      spawn_term_win "ssh max@192.168.0.8"
+    "max@dionysus                      [ssh]")
+      spawn_term_win "ssh max@192.168.0.12"
       ;;
     "root@zeus                         [ssh]")
       spawn_term_win "ssh root@192.168.0.19"
       ;;
-    "root@mnemosyne                    [ssh]")
-      spawn_term_win "ssh root@192.168.0.26"
+    "root@iris                         [ssh]")
+      spawn_term_win "ssh root@192.168.0.21"
       ;;
-    "max@hera                          [ssh]")
-      spawn_term_win "ssh max@192.168.0.31"
-      ;;
-    "max@dionysus                      [ssh]")
-      spawn_term_win "ssh max@192.168.0.12"
+    "max@apollo                        [rdp]")
+      xfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
       ;;
     "max@athena                        [ssh]")
       spawn_term_win "ssh max@192.168.0.25"
       ;;
-    "root@iris                         [ssh]")
-      spawn_term_win "ssh root@192.168.0.21"
+    "root@mnemosyne                    [ssh]")
+      spawn_term_win "ssh root@192.168.0.26"
       ;;
-    "root@hectia                       [ssh]")
-      spawn_term_win "ssh root@192.168.0.27"
+    "max@astraeus                      [ssh]")
+      spawn_term_win "ssh max@192.168.0.27"
       ;;
     "max@hephaestus                    [ssh]")
       spawn_term_win "ssh max@192.168.0.28"
@@ -50,11 +45,8 @@ paul.harrison@quicksilver         [rdp]" | tofi)
     "root@clio                         [ssh]")
       spawn_term_win "ssh root@192.168.0.30"
       ;;
-    "max@apollo                        [rdp]")
-      xfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
-      ;;
-    "paul.harrison@quicksilver         [rdp]")
-      xfreerdp -v 192.168.0.11 -d FULLIMAGE -u paul.harrison --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
+    "max@odysseus                    [ssh]")
+      spawn_term_win "ssh max@192.168.0.31"
       ;;
   esac
 }
