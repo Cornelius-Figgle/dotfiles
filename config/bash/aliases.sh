@@ -2,11 +2,11 @@ alias cls='clear'
 alias ff='fastfetch'
 
 function wezsshu() {
-	wezterm ssh max@192.168.0.$1
+	nohup wezterm ssh max@192.168.0.$1 &
 }
 
 function wezsshr() {
-	wezterm ssh root@192.168.0.$1
+	nohup wezterm ssh root@192.168.0.$1 &
 }
 
 alias dot='./bin/dotter deploy --force --verbose'
