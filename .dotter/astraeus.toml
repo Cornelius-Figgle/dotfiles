@@ -1,6 +1,6 @@
 includes = [".dotter/include/lxc.toml"]
 packages = [
-  "ash", "neofetch", "tmux",
+  "ash", "fastfetch", "tmux",
   "helix", "git"
 ]
 
