@@ -15,7 +15,8 @@ root@mnemosyne                    [ssh]
 max@astraeus                      [ssh]
 max@hephaestus                    [ssh]
 root@clio                         [ssh]
-max@odysseus                      [ssh]" | tofi)
+max@odysseus                      [ssh]
+max@demeter                       [ssh]" | tofi)
 
   case $op in
     "max@dionysus                      [ssh]")
@@ -45,8 +46,11 @@ max@odysseus                      [ssh]" | tofi)
     "root@clio                         [ssh]")
       spawn_term_win "ssh root@192.168.0.30"
       ;;
-    "max@odysseus                    [ssh]")
+    "max@odysseus                      [ssh]")
       spawn_term_win "ssh max@192.168.0.31"
+      ;;
+    "max@demeter                       [ssh]")
+      spawn_term_win "ssh max@192.168.0.33"
       ;;
   esac
 }
