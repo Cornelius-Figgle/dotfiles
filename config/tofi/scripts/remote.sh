@@ -6,50 +6,50 @@ function spawn_term_win {
 
 function shoose {
   op=$(echo "
-max@dionysus                      [ssh]
-root@zeus                         [ssh]
-root@iris                         [ssh]
-max@apollo                        [rdp]
-max@athena                        [ssh]
-root@mnemosyne                    [ssh]
-max@astraeus                      [ssh]
-max@hephaestus                    [ssh]
-root@clio                         [ssh]
-max@odysseus                      [ssh]
-max@demeter                       [ssh]" | tofi)
+  max@dionysus
+  root@zeus
+  root@iris
+  max@apollo
+  max@athena
+  root@mnemosyne
+  max@astraeus
+  max@hephaestus
+  root@clio
+  max@odysseus
+  max@demeter" | tofi)
 
   case $op in
-    "max@dionysus                      [ssh]")
+    "  max@dionysus")
       spawn_term_win "ssh max@192.168.0.12"
       ;;
-    "root@zeus                         [ssh]")
+    "  root@zeus")
       spawn_term_win "ssh root@192.168.0.19"
       ;;
-    "root@iris                         [ssh]")
+    "  root@iris")
       spawn_term_win "ssh root@192.168.0.21"
       ;;
-    "max@apollo                        [rdp]")
+    "  max@apollo")
       xfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
       ;;
-    "max@athena                        [ssh]")
+    "  max@athena")
       spawn_term_win "ssh max@192.168.0.25"
       ;;
-    "root@mnemosyne                    [ssh]")
+    "  root@mnemosyne")
       spawn_term_win "ssh root@192.168.0.26"
       ;;
-    "max@astraeus                      [ssh]")
+    "  max@astraeus")
       spawn_term_win "ssh max@192.168.0.27"
       ;;
-    "max@hephaestus                    [ssh]")
+    "  max@hephaestus")
       spawn_term_win "ssh max@192.168.0.28"
       ;;
-    "root@clio                         [ssh]")
+    "  root@clio")
       spawn_term_win "ssh root@192.168.0.30"
       ;;
-    "max@odysseus                      [ssh]")
+    "  max@odysseus")
       spawn_term_win "ssh max@192.168.0.31"
       ;;
-    "max@demeter                       [ssh]")
+    "  max@demeter")
       spawn_term_win "ssh max@192.168.0.33"
       ;;
   esac
