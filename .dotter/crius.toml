@@ -1,0 +1,10 @@
+includes = [".dotter/include/lxc.toml"]
+packages = [
+  "bash", "fastfetch", "tmux",
+  "git"
+]
+
+[files]
+
+[variables]
+

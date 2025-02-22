@@ -52,6 +52,9 @@ function clio {
 function dionysus {
 	tmux-silent
 }
+function crius {
+	tmux-silent
+}
 
 if ! [ $1 ]; then
 	$(hostname)
