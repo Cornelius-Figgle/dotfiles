@@ -1,9 +1,10 @@
 includes = [".dotter/include/wsl.toml"]
 packages = [
-  "bash", "neofetch", "tmux", "helix", "git", "ncmpcpp", "mpd", "cava"
+  "bash", "fastfetch", "tmux", "helix", "git", "ncmpcpp", "mpd", "cava"
 ]
 
 [files]
+"config/tmux/silent-tmux.tmux" = "~/.silent-tmux.conf"
 
 [variables]
 mpd_host = "127.0.0.1"
