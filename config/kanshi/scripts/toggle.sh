@@ -3,8 +3,8 @@
 # requires: kanshi
 
 togglefile='/tmp/kanshi.toggle'
-profile1='main'
-profile2='projector'
+profile1='seventwenty'
+profile2='teneighty'
 
 if [ ! -e $togglefile ]; then
   echo $profile1

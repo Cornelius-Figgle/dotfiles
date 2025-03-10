@@ -1,15 +1,16 @@
-profile main {
+profile seventwenty {
 	output DP-1 position 0,0
-	output DP-2 {
-		position 1920,0
-		mode 1920x1080
+	output DP-2 position 1920,0
+	output DP-3 {
+		position 3840,0
+		mode 1280x720
 	}
 }
-
-profile projector {
+profile teneighty {
 	output DP-1 position 0,0
-	output DP-2 {
-		position 1920,0
-		mode 1280x720
+	output DP-2 position 1920,0
+	output DP-3 {
+		position 3840,0
+		mode 1920x1080
 	}
 }
