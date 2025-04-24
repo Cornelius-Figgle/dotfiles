@@ -11,8 +11,8 @@ Function touch { echo '' > $args[0] }
 Function glances-alias-fn { glances --disable-irix --separator --programs @args }
 # New-Alias -Name glances -Value glances-alias-fn  # disabled bc pwsh is bloody slow
 
-Function wezsshu { wezterm ssh max@192.168.0.$args[0] }
-Function wezsshr { wezterm ssh root@192.168.0.$args[0] }
+Function wezsshu { wezterm ssh max@192.168.0.$args }
+Function wezsshr { wezterm ssh root@192.168.0.$args }
 
 # ====================
 # Functions
