@@ -12,7 +12,7 @@
 
 [git.variables]
 autocrlf = "true"
-gh_path = "'C:\\\\Users\\\\Max.Harrison\\\\scoop\\\\apps\\\\gh\\\\current\\\\bin\\\\gh.exe'"
+gh_path = "'C:\\\\Users\\\\max\\\\scoop\\\\apps\\\\gh\\\\current\\\\bin\\\\gh.exe'"
 
 [helix.files]
 "config/helix/config.toml" = "~/scoop/persist/helix/config.toml"
