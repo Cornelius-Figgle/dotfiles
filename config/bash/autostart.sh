@@ -52,7 +52,7 @@ function clio {
 function dionysus {
 	tmux-silent
 }
-function crius {
+function laravel-portfolio {
 	tmux-silent
 }
 
