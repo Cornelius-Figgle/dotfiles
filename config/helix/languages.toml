@@ -1,0 +1,46 @@
+[language-server.wakatime]
+command = "wakatime-ls"
+
+[[language]]
+name = "toml"
+language-servers = [ "taplo", "tombi", "wakatime" ]
+
+[[language]]
+name = "json"
+language-servers = [ "vscode-json-language-server", "wakatime" ]
+
+[[language]]
+name = "jsonc"
+language-servers = [ "vscode-json-language-server", "wakatime" ]
+
+[[language]]
+name = "python"
+language-servers = ["ty", "ruff", "jedi", "pylsp", "wakatime"]
+
+[[language]]
+name = "bash"
+language-servers = [ "bash-language-server", "wakatime" ]
+
+[[language]]
+name = "lua"
+language-servers = [ "lua-language-server", "wakatime" ]
+
+[[language]]
+name = "yaml"
+language-servers = [ "yaml-language-server", "ansible-language-server", "wakatime" ]
+
+[[language]]
+name = "markdown"
+language-servers = [ "marksman", "markdown-oxide", "wakatime" ]
+
+[[language]]
+name = "dockerfile"
+language-servers = [ "docker-langserver", "wakatime" ]
+
+[[language]]
+name = "docker-compose"
+language-servers = [ "docker-compose-langserver", "yaml-language-server", "wakatime" ]
+
+[[language]]
+name = "powershell"
+language-servers = [ "bash-language-server", "wakatime" ]
