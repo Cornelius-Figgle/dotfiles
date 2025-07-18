@@ -12,7 +12,7 @@ function wezsshr() {
 }
 
 function jqbat() {
-	jq . $1 | bat --color always --language json
+	jq . $1 | bat --language json
 }
 
 alias dot='./bin/dotter deploy --force --verbose'
