@@ -11,7 +11,7 @@ function wezsshr() {
 	nohup wezterm ssh root@192.168.0.$1 &
 }
 
-function json() {
+function jqbat() {
 	jq . $1 | bat --color always --language json
 }
 
