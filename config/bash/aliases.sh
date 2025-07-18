@@ -11,6 +11,10 @@ function wezsshr() {
 	nohup wezterm ssh root@192.168.0.$1 &
 }
 
+function json() {
+	jq . $1 | bat --color always --language json
+}
+
 alias dot='./bin/dotter deploy --force --verbose'
 
 alias wl='dbus-run-session river'
