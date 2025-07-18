@@ -55,6 +55,9 @@ function dionysus {
 function laravel-portfolio {
 	tmux-silent
 }
+function vps-do-debian {
+	tmux-silent
+}
 
 if ! [ $1 ]; then
 	$(hostname)

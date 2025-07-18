@@ -1,8 +1,6 @@
 alias cls='clear'
 alias ff='fastfetch'
 
-alias cat='bat'
-
 function wezsshu() {
 	nohup wezterm ssh max@192.168.0.$1 &
 }
