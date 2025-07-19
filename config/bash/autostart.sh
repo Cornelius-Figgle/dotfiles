@@ -52,7 +52,7 @@ function clio {
 function dionysus {
 	tmux-silent
 }
-function laravel-portfolio {
+function vps-hl-debian {
 	tmux-silent
 }
 function vps-do-debian {
