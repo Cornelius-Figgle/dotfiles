@@ -17,7 +17,8 @@ function shoose {
   root@clio
   max@odysseus
   max@demeter
-  max@crius" | tofi)
+  max@vps-hl-debian
+  max@icarus" | tofi)
 
   case $op in
     "  max@dionysus")
@@ -53,8 +54,11 @@ function shoose {
     "  max@demeter")
       spawn_term_win "ssh max@192.168.0.33"
       ;;
-    "  max@crius")
+    "  max@vps-hl-debian")
       spawn_term_win "ssh max@192.168.0.34"
+      ;;
+    "  max@icarus")
+      spawn_term_win "ssh max@192.168.0.35"
       ;;
   esac
 }
