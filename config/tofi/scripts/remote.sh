@@ -12,6 +12,7 @@ function shoose {
   max@apollo
   max@athena
   truenas_admin@mnemosyne
+  root@mnemosyne-pbs
   max@astraeus
   max@hephaestus
   root@clio
@@ -38,6 +39,9 @@ function shoose {
       ;;
     "  truenas_admin@mnemosyne")
       spawn_term_win "ssh truenas_admin@192.168.0.26"
+      ;;
+    "  root@mnemosyne-pbs")
+      spawn_term_win "ssh root@192.168.0.26 -p 2222"
       ;;
     "  max@astraeus")
       spawn_term_win "ssh max@192.168.0.27"
