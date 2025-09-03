@@ -58,6 +58,9 @@ function vps-hl-debian {
 function vps-do-debian {
 	tmux-silent
 }
+function callum-tings {
+	tmux-silent
+}
 
 if ! [ $1 ]; then
 	$(hostname)

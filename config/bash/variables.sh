@@ -5,7 +5,7 @@
 # 
 # for more info: https://www.baeldung.com/linux/bash-set-and-export
 
-export PATH="$PATH:/home/max/.local/bin:/home/max/.cargo/bin:/usr/local/bin:/home/max/.config/herd-lite/bin"
+export PATH="$PATH:/home/max/.local/bin:/home/max/.cargo/bin:/usr/local/bin:/home/max/.config/herd-lite/bin:/usr/games"
 export XDG_SCREENSHOTS_DIR="/home/max/Screenshots"
 export PHP_INI_SCAN_DIR="/home/max/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
 export NVM_DIR="$HOME/.nvm"
