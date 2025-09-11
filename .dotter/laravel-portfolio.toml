@@ -1,0 +1,8 @@
+includes = [".dotter/include/wsl.toml"]
+packages = [
+  "bash", "tmux", "git"
+]
+
+[files]
+
+[variables]
