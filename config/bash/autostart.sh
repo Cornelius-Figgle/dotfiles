@@ -9,7 +9,7 @@ function tmux-silent {
 			session="$(tmux ls -F '#{session_name}|#{?session_attached,y,n}' 2>/dev/null | grep 'n$')"
 			if [ "$session" ]; then  # attach to last
     		exec tmux attach -t "$(echo "$session" | tail -n1 | cut -d'|' -f1)"
-			elif [ "$(hostname)" == "poseidon" ] || [ "$(hostname)" == "persephone" ]; then
+			elif [ "$(hostname)" == "poseidon" ]; then
     		exec tmux -f ~/.silent-tmux.conf  # no status bar
     	else
     		exec tmux
@@ -52,7 +52,13 @@ function clio {
 function dionysus {
 	tmux-silent
 }
-function crius {
+function vps-hl-debian {
+	tmux-silent
+}
+function vps-do-debian {
+	tmux-silent
+}
+function callum-tings {
 	tmux-silent
 }
 

@@ -1,14 +1,16 @@
 alias cls='clear'
 alias ff='fastfetch'
 
-alias cat='bat'
-
 function wezsshu() {
 	nohup wezterm ssh max@192.168.0.$1 &
 }
 
 function wezsshr() {
 	nohup wezterm ssh root@192.168.0.$1 &
+}
+
+function jqbat() {
+	jq . $1 | bat --language json
 }
 
 alias dot='./bin/dotter deploy --force --verbose'

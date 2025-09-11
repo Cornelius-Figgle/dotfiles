@@ -26,11 +26,9 @@ start "wireplumber"
 start "dunst"
 riverctl spawn "mpd --no-daemon"
 start "mpDris2"
-start "hassmpris-agent"
 start "wl-paste --type text --watch cliphist store"
 start "wl-paste --type image --watch cliphist store"
 riverctl spawn "flatpak run dev.lizardbyte.app.Sunshine"
-start "~/Downloads/urserver-3.13.0.2505/urserver"
 
 # spawners
 riverctl map normal $mod Q spawn "wezterm start"
