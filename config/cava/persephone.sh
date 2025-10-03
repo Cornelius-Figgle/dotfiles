@@ -4,7 +4,7 @@ echo "creating pipe"
 mkfifo /tmp/cava.fifo
 
 echo "starting Winscap"
-/mnt/s/windows/Winscap/winscap.exe 2 48000 16 > /tmp/cava.fifo &
+/mnt/d/01\ Homelab/01\ Software/Winscap/winscap.exe 2 44100 16 > /tmp/cava.fifo &
 
 echo "cava averaged"
 tmux send-keys "cava -p ~/.config/cava/config" ENTER
