@@ -6,4 +6,4 @@ packages = [
 [files]
 
 [variables]
-disks = "'/dev/pve/root' '/dev/pve/iso'"
+disks = "'/dev/mapper/pve-root' '/dev/mapper/pve-iso'"
