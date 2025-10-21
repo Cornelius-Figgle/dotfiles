@@ -1,7 +1,6 @@
 includes = []
 packages = [
-  "bash", "neofetch",
-  "git", "glances"
+  "bash", "fastfetch", "git"
 ]
 
 [files]
