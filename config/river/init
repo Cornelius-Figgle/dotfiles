@@ -18,7 +18,8 @@ export SUDO_ASKPASS="/home/max/.config/tofi/scripts/askpass.sh"
 # auto exec
 start "udiskie"
 restart "kanshi"
-if [ ! -e '/tmp/kanshi.toggle' ]; then echo 'seventwenty' > '/tmp/kanshi.toggle'; fi
+# if [ ! -e '/tmp/kanshi.toggle' ]; then echo 'seventwenty' > '/tmp/kanshi.toggle'; fi
+echo 'seventwenty' > '/tmp/kanshi.toggle'
 restart "waybar"
 restart "~/.config/river/scripts/2_FHD_swaybg.sh"
 start "pipewire"
