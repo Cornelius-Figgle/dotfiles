@@ -14,6 +14,8 @@ Function glances-alias-fn { glances --disable-irix --separator --programs @args 
 Function wezsshu { wezterm ssh max@192.168.0.$args }
 Function wezsshr { wezterm ssh root@192.168.0.$args }
 
+Function jqbat { jq . $args[0] | bat }
+
 # ====================
 # Functions
 # ====================
