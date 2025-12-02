@@ -9,8 +9,6 @@ function tmux-silent {
 			session="$(tmux ls -F '#{session_name}|#{?session_attached,y,n}' 2>/dev/null | grep 'n$')"
 			if [ "$session" ]; then  # attach to last
     		exec tmux attach -t "$(echo "$session" | tail -n1 | cut -d'|' -f1)"
-			elif [ "$(hostname)" == "poseidon" ]; then
-    		exec tmux -f ~/.silent-tmux.conf  # no status bar
     	else
     		exec tmux
 			fi

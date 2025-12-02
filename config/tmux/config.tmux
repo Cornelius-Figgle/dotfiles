@@ -1,24 +1,23 @@
-
 # ---------------------------------------------------------------------
 
-# reloads config
+# hot config reload (sorta)
 bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
-# prefix key
+# sensible prefix key
 unbind C-a
 set -g prefix C-a
 bind C-a send-prefix
 
-# mouse?
+# mouse support
 set -g mouse on
 
-# index 1
+# start indexing at 1
 set -g base-index 1
 setw -g pane-base-index 1
 set -g renumber-windows on
 
 # scroll history
-set-option -g history-limit 5000
+set-option -g history-limit 10000
 
 # better splits
 unbind %
@@ -52,24 +51,25 @@ bind -n C-i resize-pane -U 5
 bind -n C-u resize-pane -L 5
 bind -n C-p resize-pane -R 5
 
-
 # ---------------------------------------------------------------------
 
-set -g status-interval 2
-set -g status-left '#{prefix_highlight}[#{online_status}] '
-set -g status-right 'CPU: #(python3 -c "import psutil;print(psutil.cpu_percent(interval=2))")%% RAM: #(python3 -c "import psutil;print(psutil.virtual_memory().percent)")%% | %Y-%m-%d T %H:%M:%S'
-# set -g status-right '#(~/.tmux/plugins/tmux-mem-cpu-load/tmux-mem-cpu-load --interval 2) | %Y-%m-%d T %H:%M:%S'
-set -g status-right-length 120
-
-# ---------------------------------------------------------------------
-
+# status bar style
 set -g status-bg white
 set -g status-fg black
 set -g pane-active-border-style fg=white
 set -g pane-border-style fg=brightblack
 
-set -g @online_icon "online"
-set -g @offline_icon "offline"
+# status bar contents
+set -g status-interval 5
+set -g status-left ' '
+set -g status-right '"#(hostname)" | %Y-%m-%d T %H:%M:%S '
+# set -g status-right-length 120
+
+# only show status bar if >1 window
+# https://www.reddit.com/r/tmux/comments/90cm3w/help_how_to_show_status_if_number_of_windows_is/
+set -g status off
+set-hook -g window-linked "if -F '#{==:#{session_windows},1}' 'set -g status off' 'set -g status on'"
+set-hook -g window-unlinked "if -F '#{==:#{session_windows},1}' 'set -g status off' 'set -g status on'"
 
 # ---------------------------------------------------------------------
 
@@ -91,15 +91,3 @@ set-window-option -g aggressive-resize
 set -g allow-passthrough on
 set -ga update-environment TERM
 set -ga update-environment TERM_PROGRAM
-
-# ---------------------------------------------------------------------
-
-# List of plugins
-set -g @plugin 'tmux-plugins/tpm'
-# set -g @plugin 'ofirgall/tmux-window-name'
-# set -g @plugin 'tmux-plugins/tmux-yank'
-set -g @plugin 'tmux-plugins/tmux-online-status'
-set -g @plugin 'tmux-plugins/tmux-prefix-highlight'
-
-# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run '~/.tmux/plugins/tpm/tpm'
