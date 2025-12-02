@@ -74,7 +74,7 @@ set-hook -g window-unlinked "if -F '#{==:#{session_windows},1}' 'set -g status o
 # ---------------------------------------------------------------------
 
 # default `$TERM`
-set -g default-terminal xterm
+set -g default-terminal "${TERM}"
 
 # fixes tab-completion
 # https://web.archive.org/web/20140109014333/http://blog.e-thang.net/2012/08/14/tmux-and-bash-tab-completion/
