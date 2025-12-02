@@ -68,8 +68,8 @@ set -g status-right '"#(hostname)" | %Y-%m-%d T %H:%M:%S '
 # only show status bar if >1 window
 # https://www.reddit.com/r/tmux/comments/90cm3w/help_how_to_show_status_if_number_of_windows_is/
 set -g status off
-set-hook -g window-linked "if -F '#{==:#{session_windows},1}' 'set -g status off' 'set -g status on'"
-set-hook -g window-unlinked "if -F '#{==:#{session_windows},1}' 'set -g status off' 'set -g status on'"
+set-hook -g window-linked "if -F '#{==:#{session_windows},1}' 'set status off' 'set status on'"
+set-hook -g window-unlinked "if -F '#{==:#{session_windows},1}' 'set status off' 'set status on'"
 
 # ---------------------------------------------------------------------
 
