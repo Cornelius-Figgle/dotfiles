@@ -5,6 +5,7 @@ profile seventwenty {
 		position 3840,0
 		mode 1280x720
 	}
+	output DP-4 position 5120,0
 }
 profile teneighty {
 	output DP-1 position 0,0
@@ -13,4 +14,5 @@ profile teneighty {
 		position 3840,0
 		mode 1920x1080
 	}
+	output DP-4 position 5760,0
 }
