@@ -74,7 +74,7 @@ set-hook -g window-unlinked "if -F '#{==:#{session_windows},1}' 'set status off'
 # ---------------------------------------------------------------------
 
 # default `$TERM`
-set -g default-terminal "${TERM}"
+set -g default-terminal "xterm-256color" # "${TERM}"
 
 # fixes tab-completion
 # https://web.archive.org/web/20140109014333/http://blog.e-thang.net/2012/08/14/tmux-and-bash-tab-completion/
