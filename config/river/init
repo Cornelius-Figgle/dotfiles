@@ -29,7 +29,6 @@ riverctl spawn "mpd --no-daemon"
 start "mpDris2"
 start "wl-paste --type text --watch cliphist store"
 start "wl-paste --type image --watch cliphist store"
-riverctl spawn "flatpak run dev.lizardbyte.app.Sunshine"
 
 # spawners
 riverctl map normal $mod Q spawn "wezterm start"
