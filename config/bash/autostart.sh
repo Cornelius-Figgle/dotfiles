@@ -62,6 +62,10 @@ function callum-tings {
 function icarus {
 	tmux-silent
 }
+function Z025-NAS {
+	tmux-silent
+	eval "$(zoxide init --cmd cd bash)"
+}
 
 if ! [ $1 ]; then
 	$(hostname)
