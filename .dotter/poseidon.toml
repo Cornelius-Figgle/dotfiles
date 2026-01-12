@@ -6,7 +6,6 @@ packages = [
 ]
 
 [files]
-"config/tmux/silent-tmux.tmux" = "~/.silent-tmux.conf"
 
 [variables]
 mpd_host = "192.168.0.8"

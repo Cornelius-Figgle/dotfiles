@@ -34,7 +34,8 @@
     "exec": "cat /tmp/kanshi.toggle",
     "format": "[{}]",
     "interval": 5,
-    "on-click": "~/.config/kanshi/scripts/toggle.sh"
+    "on-click": "~/.config/kanshi/scripts/toggle.sh",
+    "on-click": "wdisplays"
   },
   "river/window": {
     "format": "{}"
