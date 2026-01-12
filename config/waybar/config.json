@@ -35,7 +35,7 @@
     "format": "[{}]",
     "interval": 5,
     "on-click": "~/.config/kanshi/scripts/toggle.sh",
-    "on-click": "wdisplays"
+    "on-click-right": "wdisplays"
   },
   "river/window": {
     "format": "{}"
