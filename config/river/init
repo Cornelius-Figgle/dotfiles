@@ -46,11 +46,8 @@ riverctl map normal $mod V spawn "cliphist list | tofi | cliphist decode | wl-co
 
 for mode in normal locked; do  # allows screenshots on lockscreen
   riverctl map $mode $mod S spawn 'riverctl spawn "grim -g \"$(slurp -w 0 -d)\" - | swappy -f - "'
-
   riverctl map $mode $mod+Control S spawn 'riverctl spawn "grim -g "5,30 1910x1045" - | swappy -f -"'
-
   riverctl map $mode $mod+Control+Shift S spawn 'riverctl spawn "grim -o DP-1 - | swappy -f -"'
-
   riverctl map $mode $mod+Shift S spawn 'riverctl spawn "grim - | swappy -f -"'
   
 done
@@ -137,7 +134,7 @@ riverctl float-filter-add app-id "org.gnome.Calculator"
 riverctl float-filter-add app-id "org.pulseaudio.pavucontrol"
 
 # network mounts
-sudo mount -a
+sudo -A mount -a
 
 # cleanup
 riverctl spawn "notify-send 'River Init Loaded'"
