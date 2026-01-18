@@ -66,6 +66,10 @@ function Z025-NAS {
 	tmux-silent
 	eval "$(zoxide init --cmd cd bash)"
 }
+function Z031-Photos {
+	tmux-silent
+	eval "$(zoxide init --cmd cd bash)"
+}
 
 if ! [ $1 ]; then
 	$(hostname)

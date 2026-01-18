@@ -1,0 +1,8 @@
+includes = []
+packages = [
+  "bash", "fastfetch", "tmux", "git", "helix"
+]
+
+[files]
+
+[variables]
