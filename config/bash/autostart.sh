@@ -70,6 +70,10 @@ function Z031-Photos {
 	tmux-silent
 	eval "$(zoxide init --cmd cd bash)"
 }
+function Z039-Docs {
+	tmux-silent
+	eval "$(zoxide init --cmd cd bash)"
+}
 
 if ! [ $1 ]; then
 	$(hostname)
