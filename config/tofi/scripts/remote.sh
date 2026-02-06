@@ -4,6 +4,10 @@ function spawn_ssh_win {
   riverctl spawn "wezterm ssh $1"
 }
 
+function spawn_rdp {
+  riverctl spawn "xfreerdp -v $2 -u $1 --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f"
+}
+
 function shoose {
   op=$(echo "
   max@dionysus
@@ -32,7 +36,7 @@ function shoose {
       spawn_ssh_win "root@192.168.0.21"
       ;;
     "  max@apollo")
-      xfreerdp -v 192.168.0.23 -u max --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
+      spawn_rdp "max" "192.168.0.23"
       ;;
     "  max@athena")
       spawn_ssh_win "max@192.168.0.25"
