@@ -9,66 +9,43 @@ function spawn_rdp {
 }
 
 function shoose {
-  op=$(echo "
-  max@dionysus
-  root@zeus
-  root@iris
-  max@apollo
-  max@athena
-  truenas_admin@mnemosyne
-  root@mnemosyne-pbs
-  max@astraeus
-  max@hephaestus
-  root@clio
-  max@odysseus
-  max@demeter
-  max@vps-hl-debian
-  max@icarus" | tofi)
+  # declare arrays
+  hostnames=()
+  commands=()
 
-  case $op in
-    "  max@dionysus")
-      spawn_ssh_win "max@192.168.0.12"
-      ;;
-    "  root@zeus")
-      spawn_ssh_win "root@192.168.0.19"
-      ;;
-    "  root@iris")
-      spawn_ssh_win "root@192.168.0.21"
-      ;;
-    "  max@apollo")
-      spawn_rdp "max" "192.168.0.23"
-      ;;
-    "  max@athena")
-      spawn_ssh_win "max@192.168.0.25"
-      ;;
-    "  truenas_admin@mnemosyne")
-      spawn_ssh_win "truenas_admin@192.168.0.26"
-      ;;
-    "  root@mnemosyne-pbs")
-      spawn_ssh_win "root@192.168.0.26:2222"
-      ;;
-    "  max@astraeus")
-      spawn_ssh_win "max@192.168.0.27"
-      ;;
-    "  max@hephaestus")
-      spawn_ssh_win "max@192.168.0.28"
-      ;;
-    "  root@clio")
-      spawn_ssh_win "root@192.168.0.30"
-      ;;
-    "  max@odysseus")
-      spawn_ssh_win "max@192.168.0.31"
-      ;;
-    "  max@demeter")
-      spawn_ssh_win "max@192.168.0.33"
-      ;;
-    "  max@vps-hl-debian")
-      spawn_ssh_win "max@192.168.0.34"
-      ;;
-    "  max@icarus")
-      spawn_ssh_win "max@192.168.0.35"
-      ;;
-  esac
+  # loop over files
+  for path in /mnt/smb/athena/public/01\ Homelab/00\ Documentation/Machines/*.md; do
+    # get data
+    name=$(basename "$path" .md)
+    user=$(grep "Main user:" "$path" | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'"' -f 2)
+    ip=$(grep "IP ext:" "$path" | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'"' -f 2)
+    os=$(grep "OS:" "$path" | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'"' -f 2)
+
+    if [ ! -z "$user" ] && [ ! -z "$ip" ] && [ "$ip" != "DCHP" ]; then
+      # populate arrays
+      hostnames+=( "$name" )
+
+      if [ "$os" == "Windows" ]; then
+        commands+=( "rdp $user 192.168.0.$ip" )
+      else
+        commands+=( "ssh $user@192.168.0.$ip" )
+      fi
+    fi
+  done
+
+  # get host
+  op=$(for i in ${!hostnames[@]}; do echo "  ${hostnames[$i]}"; done | tofi)
+
+  # run command
+  for i in ${!hostnames[@]}; do
+    if [ "$op" == "  ${hostnames[$i]}" ]; then
+      if [ "$(echo ${commands[$i]} | cut -d' ' -f 1)" == "rdp" ]; then
+        spawn_rdp "$(echo ${commands[$i]} | cut -d' ' -f 2)" "$(echo ${commands[$i]} | cut -d' ' -f 3)"
+      else
+        spawn_ssh_win "$(echo ${commands[$i]} | cut -d' ' -f 2)"
+      fi
+    fi
+  done
 }
 
 export SUDO_ASKPASS="/home/max/.config/tofi/scripts/askpass.sh"
