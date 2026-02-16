@@ -34,11 +34,11 @@ function shoose {
   done
 
   # get host
-  op=$(for i in ${!hostnames[@]}; do echo "  ${hostnames[$i]}"; done | tofi)
+  op=$(for i in ${!hostnames[@]}; do echo "${hostnames[$i]}"; done | tofi)
 
   # run command
   for i in ${!hostnames[@]}; do
-    if [ "$op" == "  ${hostnames[$i]}" ]; then
+    if [ "$op" == "${hostnames[$i]}" ]; then
       if [ "$(echo ${commands[$i]} | cut -d' ' -f 1)" == "rdp" ]; then
         spawn_rdp "$(echo ${commands[$i]} | cut -d' ' -f 2)" "$(echo ${commands[$i]} | cut -d' ' -f 3)"
       else
