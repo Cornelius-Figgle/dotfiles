@@ -78,8 +78,11 @@ fi
 if [ -e ~/.bash/variables.sh ]; then
     . ~/.bash/variables.sh
 fi
-if [ -e ~/.bash/autostart.sh ]; then
-	. ~/.bash/autostart.sh
+if [ -e ~/.bash/tmux.sh ]; then
+	. ~/.bash/tmux.sh
+fi
+if [ -e ~/.bash/zoxide.sh ]; then
+	. ~/.bash/zoxide.sh
 fi
 
 export NVM_DIR="$HOME/.nvm"

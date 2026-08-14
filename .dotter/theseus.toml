@@ -1,11 +1,10 @@
 includes = []
 packages = [
-  "bash", "tmux", "neofetch", "btop", 
-  "helix", "pypoetry", "git", "mpd", "ncmpcpp"
+  "bash", "fastfetch", "tmux", "git", "helix"
 ]
 
 [files]
+"config/bash/tmux.sh" = "~/.bash/tmux.sh"
+"config/bash/zoxide.sh" = "~/.bash/zoxide.sh"
 
 [variables]
-
-

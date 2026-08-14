@@ -1,10 +1,9 @@
 includes = []
 packages = [
-  "bash", "neofetch",
-  "git", "glances"
+  "bash", "fastfetch", "tmux", "git", "helix"
 ]
 
 [files]
+"config/bash/zoxide.sh" = "~/.bash/zoxide.sh"
 
 [variables]
-disks = "'/dev/pbs/root'"

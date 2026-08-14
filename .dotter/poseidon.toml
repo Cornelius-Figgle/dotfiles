@@ -6,6 +6,8 @@ packages = [
 ]
 
 [files]
+"config/bash/tmux.sh" = "~/.bash/tmux.sh"
+"config/bash/zoxide.sh" = "~/.bash/zoxide.sh"
 
 [variables]
 mpd_host = "192.168.0.8"

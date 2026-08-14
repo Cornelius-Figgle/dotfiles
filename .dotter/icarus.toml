@@ -1,10 +1,10 @@
-includes = [".dotter/include/lxc.toml"]
+includes = []
 packages = [
-  "bash", "fastfetch", "tmux",
-  "git"
+  "bash", "fastfetch", "tmux", "git", "helix"
 ]
 
 [files]
+"config/bash/tmux.sh" = "~/.bash/tmux.sh"
+"config/bash/zoxide.sh" = "~/.bash/zoxide.sh"
 
 [variables]
-

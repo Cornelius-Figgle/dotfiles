@@ -1,8 +1,6 @@
 includes = [".dotter/include/windows.toml"]
 packages = [
-  "wezterm",
-  "pwsh", "fastfetch", "mpd", "ncmpcpp",
-  "helix", "git", "pypoetry", "btop"
+  "wezterm", "pwsh", "fastfetch", "helix", "git", "pypoetry", "btop"
 ]
 
 [files]
