@@ -26,9 +26,9 @@ function shoose {
       hostnames+=( "$name" )
 
       if [ "$os" == "Windows" ]; then
-        commands+=( "rdp $user 192.168.0.$ip" )
+        commands+=( "rdp $user 10.0.10.$ip" )
       else
-        commands+=( "ssh $user@192.168.0.$ip" )
+        commands+=( "ssh $user@10.0.10.$ip" )
       fi
     fi
   done
