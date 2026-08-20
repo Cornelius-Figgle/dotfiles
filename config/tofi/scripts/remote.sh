@@ -18,7 +18,7 @@ function shoose {
     # get data
     name=$(basename "$path" .md)
     user=$(grep "Main user:" "$path" | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'"' -f 2)
-    ip=$(grep "IP ext:" "$path" | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'"' -f 2)
+    ip=$(grep "IP Ext:" "$path" | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'"' -f 2)
     os=$(grep "OS:" "$path" | cut -d':' -f 2 | cut -d' ' -f 2 | cut -d'"' -f 2)
 
     if [ ! -z "$user" ] && [ ! -z "$ip" ] && [ "$ip" != "DCHP" ]; then
