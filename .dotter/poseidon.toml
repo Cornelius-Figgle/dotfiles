@@ -10,7 +10,7 @@ packages = [
 "config/bash/zoxide.sh" = "~/.bash/zoxide.sh"
 
 [variables]
-mpd_host = "192.168.0.8"
+mpd_host = "10.0.10.8"
 music_path = "/mnt/smb/athena/music"
 
 
