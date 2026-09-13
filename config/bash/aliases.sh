@@ -46,8 +46,6 @@ function visl() {
 	fi
 }
 
-function 
-
 function 0x0() {
 	$* > /tmp/bash_0x0.txt
 	curl -F'file=@/tmp/bash_0x0.txt' https://0x0.st/
