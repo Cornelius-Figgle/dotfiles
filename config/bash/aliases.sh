@@ -2,11 +2,11 @@ alias cls='clear'
 alias ff='fastfetch'
 
 function wezsshu() {
-	nohup wezterm ssh max@192.168.0.$1 &
+	nohup wezterm ssh max@10.0.10.$1 &
 }
 
 function wezsshr() {
-	nohup wezterm ssh root@192.168.0.$1 &
+	nohup wezterm ssh root@10.0.10.0.$1 &
 }
 
 function jqbat() {
@@ -27,6 +27,26 @@ function cddir() {
 	mkdir $1
  	cd $1
 }
+
+function visl() {
+	if [[ $(hostname) -eq "persephone" ]]; then
+		# winscap
+		mkfifo /tmp/cava.fifo
+		/mnt/p/01\ Homelab/01\ Software/Winscap/winscap.exe 2 44100 16 > /tmp/cava.fifo &
+	fi
+
+	if [[ $1 -eq "s" ]]; then
+		# top-bottom stereo split via tmux
+		tmux send-keys "cava -p ~/.config/cava/left" ENTER
+		tmux split-pane -v
+		tmux send-keys "cava -p ~/.config/cava/right" ENTER
+	else
+		# single window mono
+		tmux send-keys "cava -p ~/.config/cava/config" ENTER
+	fi
+}
+
+function 
 
 function 0x0() {
 	$* > /tmp/bash_0x0.txt
