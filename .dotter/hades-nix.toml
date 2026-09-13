@@ -1,7 +1,7 @@
 includes = []
 packages = [
   "wezterm", "bash", "fastfetch", "helix", "git", "pypoetry", "btop", "tmux",
-  "mpd", "ncmpcpp", "rmpc"
+  "mpd", "ncmpcpp", "rmpc", "cava"
 ]
 
 [files]
