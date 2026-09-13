@@ -1,1 +1,0 @@
-if [[ -d "/home/max/syncthing" ]]; then machines_dir="/home/max/syncthing/00 Documentation/Machines/"; else machines_dir="/mnt/smb/athena/public/01 Homelab/00 Documentation/Machines/"; fi
