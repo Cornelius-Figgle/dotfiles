@@ -1,0 +1,2 @@
+21:53:44.347  WARN   wezterm_ssh::pty > ssh: setenv TERM_PROGRAM=WezTerm failed: RequestDenied: Channel request env failed. Check the AcceptEnv setting on the ssh server side. Additional errors with setting env vars in this session will be logged at debug log level.
+21:54:25.817  WARN   wezterm_ssh::pty > ssh: setenv WEZTERM_REMOTE_PANE=0 failed: RequestDenied: Channel request env failed. Check the AcceptEnv setting on the ssh server side. Additional errors with setting env vars in this session will be logged at debug log level.
