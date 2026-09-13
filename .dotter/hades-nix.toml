@@ -1,6 +1,7 @@
 includes = []
 packages = [
-  "wezterm", "bash", "fastfetch", "helix", "git", "pypoetry", "btop", "tmux"
+  "wezterm", "bash", "fastfetch", "helix", "git", "pypoetry", "btop", "tmux",
+  "mpd", "ncmpcpp", "rmpc"
 ]
 
 [files]
@@ -8,3 +9,4 @@ packages = [
 "config/bash/zoxide.sh" = "~/.bash/zoxide.sh"
 
 [variables]
+music_path = "~/syncthing/music"
