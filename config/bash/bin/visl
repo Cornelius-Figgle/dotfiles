@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+
+if [[ "$(hostname)" == "persephone" ]]; then
+	# winscap
+	mkfifo /tmp/cava.fifo
+	/mnt/p/01\ Homelab/01\ Software/Winscap/winscap.exe 2 44100 16 > /tmp/cava.fifo &
+fi
+
+if [[ $1 -eq "s" ]]; then
+	# top-bottom stereo split via tmux
+	tmux send-keys "cava -p ~/.config/cava/left" ENTER
+	tmux split-pane -v
+	tmux send-keys "cava -p ~/.config/cava/right" ENTER
+else
+	# single window mono
+	tmux send-keys "cava -p ~/.config/cava/config" ENTER
+fi

@@ -11,7 +11,7 @@
 "config/bash/config.sh" = "~/.bashrc"
 "config/bash/aliases.sh" = "~/.bash/aliases.sh"
 "config/bash/variables.sh" = "~/.bash/variables.sh"
-"config/bash/scripts" = {target="~/.bash/scripts", type="symbolic", recurse=false}
+"config/bash/bin" = {target="~/.bash/bin", type="symbolic", recurse=false}
 
 [btop.files]
 "config/btop/config.conf" = "~/.config/btop/btop.conf"
