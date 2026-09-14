@@ -4,26 +4,26 @@ alias dot='./bin/dotter deploy --force --verbose'
 alias wl='dbus-run-session river'
 alias qh="echo $(whoami) @ $(hostname) on $(ip -o route get to 8.8.8.8 | sed -n 's/.*src \([0-9.]\+\).*/\1/p') for $(uptime | cut -d' ' -f5 | cut -d',' -f1)"
 
-if [[ "$(hostname)" == "poseidon" ]]; then
+{{#if (eq dotter.hostname "poseidon")}}
 	chooser="tofi"
-else
+{{else}}
 	chooser="fzf"
-fi
+{{/if}}
 
 function spawn_ssh_win {
-	if [[ "$(hostname)" == "poseidon" ]]; then
+	{{#if (eq dotter.hostname "poseidon")}}
 		riverctl spawn "wezterm ssh $1"
-	else
+	{{else}}
 		ssh $1
-	fi
+	{{/if}}
 }
 
 function spawn_rdp {
-	if [[ "$(hostname)" == "poseidon" ]]; then
+	{{#if (eq dotter.hostname "poseidon")}}
 		riverctl spawn "xfreerdp -v $2 -u $1 --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f"
-	else
+	{{else}}
 		xfreerdp -v $2 -u $1 --sec tls --disable-wallpaper --disable-themes --disable-fonts --disable-aero --disable-window-drag --disable-menu-anims -f
-	fi
+	{{/if}}
 }
 
 function jqbat() {
@@ -42,11 +42,11 @@ function cddir() {
 }
 
 function visl() {
-	if [[ "$(hostname)" == "persephone" ]]; then
+	{{#if (eq dotter.hostname "persephone")}}
 		# winscap
 		mkfifo /tmp/cava.fifo
 		/mnt/p/01\ Homelab/01\ Software/Winscap/winscap.exe 2 44100 16 > /tmp/cava.fifo &
-	fi
+	{{/if}}
 
 	if [[ $1 -eq "s" ]]; then
 		# top-bottom stereo split via tmux
