@@ -1,0 +1,16 @@
+#!/usr/bin/bash
+
+# graphical sudo prompt
+export SUDO_ASKPASS=$(kdialog --password $0)
+
+# reset NTP
+sudo -A timedatectl set-ntp false
+sudo -A timedatectl set-ntp true
+
+# reload BT kernel modules
+sudo -A modprobe -r btusb
+sudo -A modprobe btusb
+sudo -A systemctl restart bluetooth
+
+# reload audio drivers and music server
+systemctl --user restart wireplumber pipewire pipewire-pulse mpd
