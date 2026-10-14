@@ -26,3 +26,5 @@ export ProgressPreference='SilentlyContinue'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 export WSL_UTF8=1
+
+export QT_QPA_PLATFORM=xcb
