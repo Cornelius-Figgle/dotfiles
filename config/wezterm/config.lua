@@ -24,5 +24,24 @@ config.colors = { background = '#202020', foreground = '#bbc2cf' }
 config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 10.0
 
+-- toggle background colour
+wezterm.on('toggle-black', function(window, pane)
+  local overrides = window:get_config_overrides() or {}
+  if not overrides.colors then
+    overrides.colors = { background = '#000000', foreground = '#bbc2cf' }
+  else
+    overrides.colors = nil
+  end
+  window:set_config_overrides(overrides)
+end)
+
+config.keys = {
+  {
+    key = 'B',
+    mods = 'CTRL',
+    action = wezterm.action.EmitEvent 'toggle-black',
+  },
+}
+
 -- more boilerplate
 return config
