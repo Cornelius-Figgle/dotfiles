@@ -54,6 +54,9 @@ gh_path = "/usr/bin/gh"
 "config/kanshi/config" = "~/.config/kanshi/config"
 "config/kanshi/toggle.sh" = "~/.config/kanshi/toggle.sh"
 
+[keyd.files]
+"config/keyd/config.conf" = {target="/etc/keyd/default.conf", type="symbolic", owner="root"}
+
 [irssi.files]
 "config/irssi/config" = "~/.irssi/config"
 "config/irssi/default.theme" = "~/.irssi/default.theme"
