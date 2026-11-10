@@ -6,7 +6,7 @@ if [[ "$(hostname)" == "persephone" ]]; then
 	/mnt/p/01\ Homelab/01\ Software/Winscap/winscap.exe 2 44100 16 > /tmp/cava.fifo &
 fi
 
-if [ $1 -eq "s" ]; then
+if [[ "$1" == "s" ]]; then
 	# top-bottom stereo split via tmux
 	tmux send-keys "cava -p ~/.config/cava/left" ENTER
 	tmux split-pane -v
